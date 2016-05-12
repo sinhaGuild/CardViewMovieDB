@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <android.support.v7.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:id="@+id/view"
+        android:layout_marginTop="1dp"
         android:layout_height="250sp"
-        card_view:cardBackgroundColor="#1E1E1E"
-        card_view:cardElevation="20dp">
+        card_view:cardBackgroundColor="#1E1E1E">
 
         <com.android.volley.toolbox.NetworkImageView
             android:id="@+id/backdrop_path"
