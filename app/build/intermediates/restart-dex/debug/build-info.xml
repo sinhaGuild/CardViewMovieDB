@@ -1,24 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="22"
-    density="xxxhdpi"
+    abi="x86"
+    api-level="23"
+    density="xhdpi"
     format="7"
-    timestamp="1463025238726302000" >
+    timestamp="1463148955783317000"
+    verifier="IMPLEMENTED_INTERFACES_CHANGE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="468" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="103" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
-    <build timestamp="1463025238726302000" />
+    <artifact
+        location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+        type="DEX" />
+
+    <build timestamp="1463148431371238000" >
+        <artifact
+            location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="1463148542444610000"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/builds/debug/1463148542444610000/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build timestamp="1463148721042190000" >
+        <artifact
+            location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="1463148955783317000"
+        verifier="IMPLEMENTED_INTERFACES_CHANGE" >
+        <artifact
+            location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+            type="DEX" />
+    </build>
 
 </instant-run>

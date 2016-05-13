@@ -8,7 +8,9 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -27,7 +29,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-    //Creating a List of superheroes
+    //Creating a List of movies
     private List<MovieDBAdapter> listMovieDB;
     private int resultCount = 0;
     //Creating Views
@@ -46,35 +48,28 @@ public class MainActivity extends AppCompatActivity {
 //		recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-//		toolbar = (Toolbar) findViewById(R.id.toolbar);
-//		setSupportActionBar(this.toolbar);
 
-        //Initializing our superheroes list
+        //Adding Touch response
+        recyclerView.addOnItemTouchListener(
+                new RecyclerItemClickListener(this, new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+                        Toast.makeText(MainActivity.this, "Touch at :" + position, Toast.LENGTH_SHORT).show();
+                    }
+                })
+        );
+
+        //Initializing our list
         listMovieDB = new ArrayList<>();
 
-//		//Initialize user input
-//		user_input = (EditText) findViewById(R.id.user_input);
-
-        //Calling method to get data
+        //getting Json response and parsing it
         getData();
-    }
 
-//	private Button.OnClickListener getEditViewClickListner = new Button.OnClickListener() {
-//		@Override
-//		public void onClick(View v) {
-//			EditText editText = (EditText) findViewById(R.id.user_input);
-//			CharSequence editTextValue = editText.getText().toString();
-//			setTitle(editTextValue);
-//
-//		}
-//	};
+    }
 
 
     //This method will get data from the web api
     private void getData() {
-        //Showing a progress dialog
-//		final ProgressDialog loading = ProgressDialog.show(this,"Loading Data", "Please wait...",false,false);
-
 
         /**
          * Build the URL with variable value of page
@@ -82,12 +77,12 @@ public class MainActivity extends AppCompatActivity {
          */
         Uri.Builder builder = new Uri.Builder();
         builder.scheme("https").
-                authority(Config.DATA_URL).
+                authority(ConfigList.DATA_URL).
                 appendPath("3").
                 appendPath("movie").
-                appendPath(Config.MDB_NOW_PLAYING).
-                appendQueryParameter(Config.API_KEY, Config.API_KEY_VALUE).
-                appendQueryParameter(Config.PAGES, String.valueOf(1));
+                appendPath(ConfigList.MDB_NOW_PLAYING).
+                appendQueryParameter(ConfigList.API_KEY, ConfigList.API_KEY_VALUE).
+                appendQueryParameter(ConfigList.PAGES, String.valueOf(1));
         Log.v("URL :", builder.build().toString());
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, builder.build().toString(), null,
@@ -97,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                         // display response
                         Log.d("Response", response.toString());
                         try {
-                            resultCount = response.getInt(Config.TOTAL_PAGES);
+                            resultCount = response.getInt(ConfigList.TOTAL_PAGES);
                             JSONArray jsonArray = response.getJSONArray("results");
                             parseData(jsonArray);
                             Log.v("Response is:", jsonArray.toString());
@@ -122,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 //		//Creating a json array request
-//		JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Config.DATA_URL,
+//		JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(ConfigList.DATA_URL,
 //				new Response.Listener<JSONArray>() {
 //					@Override
 //					public void onResponse(JSONArray response) {
@@ -150,14 +145,14 @@ public class MainActivity extends AppCompatActivity {
             JSONObject json = null;
             try {
                 json = array.getJSONObject(i);
-                movieDBAdapter.setPoster_path(json.getString(Config.TAG_IMAGE_URL));
-                movieDBAdapter.setBackdrop_path(json.getString(Config.TAG_BACKDROP));
-                movieDBAdapter.setOriginalTitle(json.getString(Config.TAG_TITLE));
-                movieDBAdapter.setVote_average(json.getInt(Config.TAG_VOTER_RATING));
-//				movieDBAdapter.setPopularity(json.getInt(Config.TAG_POPULARITY));
-//				movieDBAdapter.setLanguage(json.getString(Config.TAG_LANGUAGE));
-                movieDBAdapter.setReleaseDate(json.getString(Config.TAG_REAL_RELEASE_DATE));
-//				movieDBAdapter.setOverview(json.getString(Config.TAG_OVERVIEW));
+                movieDBAdapter.setPoster_path(json.getString(ConfigList.TAG_IMAGE_URL));
+                movieDBAdapter.setBackdrop_path(json.getString(ConfigList.TAG_BACKDROP));
+                movieDBAdapter.setOriginalTitle(json.getString(ConfigList.TAG_TITLE));
+                movieDBAdapter.setVote_average(json.getDouble(ConfigList.TAG_VOTER_RATING));
+//				movieDBAdapter.setPopularity(json.getInt(ConfigList.TAG_POPULARITY));
+//				movieDBAdapter.setLanguage(json.getString(ConfigList.TAG_LANGUAGE));
+                movieDBAdapter.setReleaseDate(json.getString(ConfigList.TAG_REAL_RELEASE_DATE));
+//				movieDBAdapter.setOverview(json.getString(ConfigList.TAG_OVERVIEW));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -176,15 +171,5 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
-//	@Override
-//	public boolean onOptionsItemSelected(MenuItem item) {
-//		int id = item.getItemId();
-//		if (id == R.id.action_MovieDB){
-//			return true;
-//		}
-//		return super.onOptionsItemSelected(item);
-//	}
-
 
 }

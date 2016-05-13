@@ -2,7 +2,7 @@ package com.example.cardviewdemo;
 
 import android.util.Log;
 
-import java.util.ArrayList;
+import java.text.DecimalFormat;
 
 /**
  * Created by anuragsinha on 16-05-07.
@@ -86,8 +86,9 @@ public class MovieDBAdapter {
         return vote_average;
     }
 
-    public void setVote_average(int vote_average) {
-        this.vote_average = String.valueOf(vote_average);
+    public void setVote_average(double vote_average) {
+        DecimalFormat precision = new DecimalFormat("0.0");
+        this.vote_average = precision.format(vote_average);
     }
 
 }
