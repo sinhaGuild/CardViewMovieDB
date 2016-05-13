@@ -1,4 +1,4 @@
-package com.example.cardviewdemo;
+package com.example.cardviewdemo.data;
 
 /**
  * Created by anuragsinha on 16-05-13.
@@ -6,8 +6,7 @@ package com.example.cardviewdemo;
 public class ConfigItem {
 
     //URL of my API
-//    public static final String DATA_URL = "http://api.themoviedb.org/3/movie/now_playing?api_key=f5ebdbf26f1f950bf415ff4c7d72c476";
-
+//http://api.themoviedb.org/3/movie/271110?api_key=f5ebdbf26f1f950bf415ff4c7d72c476
     public static final String DATA_URL = "api.themoviedb.org";
 
 //    //Options for MovieDB

@@ -8,9 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -18,6 +15,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.cardviewdemo.data.CardAdapterMovieDB;
+import com.example.cardviewdemo.data.ConfigList;
+import com.example.cardviewdemo.data.MovieDBAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerView.Adapter adapter;
-    private EditText user_input;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,19 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Initializing Views
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-//		recyclerView.setHasFixedSize(true);
+        recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-
-        //Adding Touch response
-        recyclerView.addOnItemTouchListener(
-                new RecyclerItemClickListener(this, new RecyclerItemClickListener.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(View view, int position) {
-                        Toast.makeText(MainActivity.this, "Touch at :" + position, Toast.LENGTH_SHORT).show();
-                    }
-                })
-        );
 
         //Initializing our list
         listMovieDB = new ArrayList<>();

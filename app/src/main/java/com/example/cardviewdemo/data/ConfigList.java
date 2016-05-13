@@ -1,4 +1,4 @@
-package com.example.cardviewdemo;
+package com.example.cardviewdemo.data;
 
 /**
  * Created by anuragsinha on 16-05-07.

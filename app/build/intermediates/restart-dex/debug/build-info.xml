@@ -4,49 +4,29 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="1463148955783317000"
-    verifier="IMPLEMENTED_INTERFACES_CHANGE" >
+    timestamp="1463175017620540000" >
 
     <task
         name="javac"
-        duration="468" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="103" />
+        duration="0" />
     <task
         name="verifier"
-        duration="1" />
+        duration="0" />
 
     <artifact
-        location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-        type="DEX" />
+        location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="1463148431371238000" >
+    <build timestamp="1463175017620540000" >
         <artifact
             location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="1463148542444610000"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/builds/debug/1463148542444610000/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build timestamp="1463148721042190000" >
-        <artifact
-            location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
-    </build>
-    <build
-        timestamp="1463148955783317000"
-        verifier="IMPLEMENTED_INTERFACES_CHANGE" >
-        <artifact
-            location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>

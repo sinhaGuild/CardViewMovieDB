@@ -1,6 +1,7 @@
-package com.example.cardviewdemo;
+package com.example.cardviewdemo.data;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Typeface;
@@ -12,28 +13,34 @@ import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
+import com.example.cardviewdemo.CardViewDetailActivity;
+import com.example.cardviewdemo.CustomVolleyRequest;
+import com.example.cardviewdemo.R;
 
 import java.util.List;
 
 /**
  * Created by anuragsinha on 16-05-07.
  */
-public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.ViewHolder>{
+public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.ViewHolder> {
 
-    //List of movieDBAdapter
+    //List of movieDBAdapter for CardView list
     List<MovieDBAdapter> movieDBAdapter;
+
     private ImageLoader imageLoader;
     private Context context;
 
+
     public CardAdapterMovieDB(List<MovieDBAdapter> movieDBAdapter, Context context) {
         super();
-        //Getting all the superheroes
+        //Getting all the cards
         this.movieDBAdapter = movieDBAdapter;
         this.context = context;
     }
 
+
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(ViewGroup parent, final int viewType) {
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.single_card_new2, parent, false);
         ViewHolder viewHolder = new ViewHolder(v);
@@ -43,13 +50,18 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
+        //Initialize Card List
         MovieDBAdapter movieDBAdapter1 = movieDBAdapter.get(position);
-
         imageLoader = CustomVolleyRequest.getInstance(context).getImageLoader();
         imageLoader.get(movieDBAdapter1.getPoster_path(), ImageLoader.getImageListener(holder.poster_path, R.drawable.loading, android.R.drawable.ic_dialog_alert));
         imageLoader.get(movieDBAdapter1.getBackdrop_path(), ImageLoader.getImageListener(holder.backdrop_path, R.drawable.loading, android.R.drawable.ic_dialog_alert));
 
 
+        //Set default image if the API return is null
+        holder.poster_path.setErrorImageResId(R.drawable.update);
+        holder.backdrop_path.setErrorImageResId(R.drawable.update);
+
+        //Set all other attributes
         holder.poster_path.setImageUrl(movieDBAdapter1.getPoster_path(), imageLoader);
         holder.backdrop_path.setImageUrl(movieDBAdapter1.getPoster_path(), imageLoader);
         holder.original_title.setText(movieDBAdapter1.getOriginalTitle());
@@ -81,6 +93,7 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
         notifyItemRemoved(position);
     }
 
+
     class ViewHolder extends RecyclerView.ViewHolder{
         public NetworkImageView poster_path;
         public NetworkImageView backdrop_path;
@@ -94,7 +107,6 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
 
         public ViewHolder(View itemView) {
             super(itemView);
-
             poster_path = (NetworkImageView) itemView.findViewById(R.id.poster_path);
             backdrop_path = (NetworkImageView) itemView.findViewById(R.id.backdrop_path);
 
@@ -104,12 +116,18 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
             original_title = (TextView) itemView.findViewById(R.id.original_title);
             vote_average = (TextView) itemView.findViewById(R.id.vote_average);
             release_date = (TextView) itemView.findViewById(R.id.release_date);
-//            original_title.setOnClickListener(this);
             //            popularity = (TextView) itemView.findViewById(R.id.popularity);
 //            language = (TextView) itemView.findViewById(R.id.original_language);
 //            overview = (TextView) itemView.findViewById(R.id.overview2);
 //            original_title.setTypeface(tp);
 //            popularity.setTypeface(tp);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(v.getContext(), CardViewDetailActivity.class);
+                    v.getContext().startActivity(intent);
+                }
+            });
         }
 
         //Convert ImageView to greyscale
