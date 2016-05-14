@@ -9,13 +9,12 @@
     android:backgroundTintMode="multiply"
     android:orientation="vertical">
 
-
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp">
 
-        <ImageView
+        <com.android.volley.toolbox.NetworkImageView
             android:id="@+id/iv"
             android:layout_width="180dp"
             android:layout_height="240dp"
@@ -42,7 +41,9 @@
             android:layout_below="@id/genre_tv"
             android:layout_toRightOf="@id/iv"
             android:paddingLeft="10dp"
-            android:text="genre details here" />
+            android:text="genre details here"
+            android:textSize="10sp"
+            app:customFont="fonts/Roboto-Regular.ttf" />
 
         <com.example.TextViewPlus
             android:id="@+id/language_tv"
@@ -64,8 +65,68 @@
             android:layout_below="@id/language_tv"
             android:layout_toRightOf="@id/iv"
             android:paddingLeft="10dp"
-            android:text="language details here" />
+            android:text="language details here"
+            android:textSize="10sp"
+            app:customFont="fonts/Roboto-Regular.ttf" />
+
+
+        <com.example.TextViewPlus
+            android:id="@+id/production_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/language_detail"
+            android:layout_toRightOf="@id/iv"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="STUDIO"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:customFont="fonts/Roboto-Bold.ttf" />
+
+        <com.example.TextViewPlus
+            android:id="@+id/production_company_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/production_tv"
+            android:layout_toRightOf="@id/iv"
+            android:paddingLeft="10dp"
+            android:text="studio details here"
+            android:textSize="10sp"
+            app:customFont="fonts/Roboto-Regular.ttf" />
     </RelativeLayout>
 
+    <com.example.TextViewPlus
+        android:id="@+id/tagline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:paddingBottom="10dp"
+        android:text="@string/excerpt_example"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:customFont="fonts/Gabrielle.ttf" />
+
+    <com.example.TextViewPlus
+        android:id="@+id/overview_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="PLOT"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:customFont="fonts/Roboto-Bold.ttf" />
+
+    <com.example.TextViewPlus
+        android:id="@+id/overview_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/production_tv"
+        android:layout_toRightOf="@id/iv"
+        android:paddingLeft="10dp"
+        android:text="movie plot here"
+        android:textSize="10sp"
+        app:customFont="fonts/Roboto-Regular.ttf" />
 
 </LinearLayout>
