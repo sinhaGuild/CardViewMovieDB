@@ -3807,8 +3807,8 @@
                     "startLine": 234,
                     "startColumn": 4,
                     "startOffset": 30883,
-                    "endColumn": 65,
-                    "endOffset": 30944
+                    "endColumn": 66,
+                    "endOffset": 30945
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/values/strings.xml",
@@ -3816,8 +3816,8 @@
                         "startLine": 9,
                         "startColumn": 4,
                         "startOffset": 353,
-                        "endColumn": 65,
-                        "endOffset": 414
+                        "endColumn": 66,
+                        "endOffset": 415
                     }
                 }
             },
@@ -3825,9 +3825,9 @@
                 "to": {
                     "startLine": 235,
                     "startColumn": 4,
-                    "startOffset": 30949,
+                    "startOffset": 30950,
                     "endColumn": 69,
-                    "endOffset": 31014
+                    "endOffset": 31015
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/values/strings.xml",
@@ -3844,9 +3844,9 @@
                 "to": {
                     "startLine": 236,
                     "startColumn": 4,
-                    "startOffset": 31019,
+                    "startOffset": 31020,
                     "endColumn": 52,
-                    "endOffset": 31067
+                    "endOffset": 31068
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/values/strings.xml",
@@ -3863,9 +3863,9 @@
                 "to": {
                     "startLine": 237,
                     "startColumn": 4,
-                    "startOffset": 31072,
+                    "startOffset": 31073,
                     "endColumn": 70,
-                    "endOffset": 31138
+                    "endOffset": 31139
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -3882,9 +3882,9 @@
                 "to": {
                     "startLine": 238,
                     "startColumn": 4,
-                    "startOffset": 31143,
+                    "startOffset": 31144,
                     "endColumn": 77,
-                    "endOffset": 31216
+                    "endOffset": 31217
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -3901,9 +3901,9 @@
                 "to": {
                     "startLine": 239,
                     "startColumn": 4,
-                    "startOffset": 31221,
+                    "startOffset": 31222,
                     "endColumn": 89,
-                    "endOffset": 31306
+                    "endOffset": 31307
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -3920,9 +3920,9 @@
                 "to": {
                     "startLine": 240,
                     "startColumn": 4,
-                    "startOffset": 31311,
+                    "startOffset": 31312,
                     "endColumn": 87,
-                    "endOffset": 31394
+                    "endOffset": 31395
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -3939,9 +3939,9 @@
                 "to": {
                     "startLine": 241,
                     "startColumn": 4,
-                    "startOffset": 31399,
+                    "startOffset": 31400,
                     "endColumn": 95,
-                    "endOffset": 31490
+                    "endOffset": 31491
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -3958,10 +3958,10 @@
                 "to": {
                     "startLine": 242,
                     "startColumn": 4,
-                    "startOffset": 31495,
+                    "startOffset": 31496,
                     "endLine": 248,
                     "endColumn": 12,
-                    "endOffset": 31789
+                    "endOffset": 31790
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/values/styles.xml",
@@ -3979,10 +3979,10 @@
                 "to": {
                     "startLine": 249,
                     "startColumn": 4,
-                    "startOffset": 31794,
+                    "startOffset": 31795,
                     "endLine": 250,
                     "endColumn": 12,
-                    "endOffset": 31852
+                    "endOffset": 31853
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/values/styles.xml",
@@ -4000,10 +4000,10 @@
                 "to": {
                     "startLine": 251,
                     "startColumn": 4,
-                    "startOffset": 31857,
+                    "startOffset": 31858,
                     "endLine": 257,
                     "endColumn": 12,
-                    "endOffset": 32353
+                    "endOffset": 32354
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4021,9 +4021,9 @@
                 "to": {
                     "startLine": 258,
                     "startColumn": 4,
-                    "startOffset": 32358,
+                    "startOffset": 32359,
                     "endColumn": 88,
-                    "endOffset": 32442
+                    "endOffset": 32443
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4040,10 +4040,10 @@
                 "to": {
                     "startLine": 259,
                     "startColumn": 4,
-                    "startOffset": 32447,
+                    "startOffset": 32448,
                     "endLine": 262,
                     "endColumn": 12,
-                    "endOffset": 32689
+                    "endOffset": 32690
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4061,10 +4061,10 @@
                 "to": {
                     "startLine": 263,
                     "startColumn": 4,
-                    "startOffset": 32694,
+                    "startOffset": 32695,
                     "endLine": 266,
                     "endColumn": 12,
-                    "endOffset": 32970
+                    "endOffset": 32971
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4082,10 +4082,10 @@
                 "to": {
                     "startLine": 267,
                     "startColumn": 4,
-                    "startOffset": 32975,
+                    "startOffset": 32976,
                     "endLine": 273,
                     "endColumn": 12,
-                    "endOffset": 33384
+                    "endOffset": 33385
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/res/values/values.xml",
@@ -4103,10 +4103,10 @@
                 "to": {
                     "startLine": 274,
                     "startColumn": 4,
-                    "startOffset": 33389,
+                    "startOffset": 33390,
                     "endLine": 278,
                     "endColumn": 12,
-                    "endOffset": 33669
+                    "endOffset": 33670
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4124,10 +4124,10 @@
                 "to": {
                     "startLine": 279,
                     "startColumn": 4,
-                    "startOffset": 33674,
+                    "startOffset": 33675,
                     "endLine": 284,
                     "endColumn": 12,
-                    "endOffset": 34062
+                    "endOffset": 34063
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4145,10 +4145,10 @@
                 "to": {
                     "startLine": 285,
                     "startColumn": 4,
-                    "startOffset": 34067,
+                    "startOffset": 34068,
                     "endLine": 291,
                     "endColumn": 12,
-                    "endOffset": 34539
+                    "endOffset": 34540
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4166,10 +4166,10 @@
                 "to": {
                     "startLine": 292,
                     "startColumn": 4,
-                    "startOffset": 34544,
+                    "startOffset": 34545,
                     "endLine": 295,
                     "endColumn": 12,
-                    "endOffset": 34761
+                    "endOffset": 34762
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4187,10 +4187,10 @@
                 "to": {
                     "startLine": 296,
                     "startColumn": 4,
-                    "startOffset": 34766,
+                    "startOffset": 34767,
                     "endLine": 299,
                     "endColumn": 12,
-                    "endOffset": 34983
+                    "endOffset": 34984
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4208,10 +4208,10 @@
                 "to": {
                     "startLine": 300,
                     "startColumn": 4,
-                    "startOffset": 34988,
+                    "startOffset": 34989,
                     "endLine": 304,
                     "endColumn": 12,
-                    "endOffset": 35251
+                    "endOffset": 35252
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4229,10 +4229,10 @@
                 "to": {
                     "startLine": 305,
                     "startColumn": 4,
-                    "startOffset": 35256,
+                    "startOffset": 35257,
                     "endLine": 308,
                     "endColumn": 12,
-                    "endOffset": 35478
+                    "endOffset": 35479
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4250,10 +4250,10 @@
                 "to": {
                     "startLine": 309,
                     "startColumn": 4,
-                    "startOffset": 35483,
+                    "startOffset": 35484,
                     "endLine": 312,
                     "endColumn": 12,
-                    "endOffset": 35708
+                    "endOffset": 35709
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4271,10 +4271,10 @@
                 "to": {
                     "startLine": 313,
                     "startColumn": 4,
-                    "startOffset": 35713,
+                    "startOffset": 35714,
                     "endLine": 316,
                     "endColumn": 12,
-                    "endOffset": 35938
+                    "endOffset": 35939
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4292,10 +4292,10 @@
                 "to": {
                     "startLine": 317,
                     "startColumn": 4,
-                    "startOffset": 35943,
+                    "startOffset": 35944,
                     "endLine": 320,
                     "endColumn": 12,
-                    "endOffset": 36168
+                    "endOffset": 36169
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4313,10 +4313,10 @@
                 "to": {
                     "startLine": 321,
                     "startColumn": 4,
-                    "startOffset": 36173,
+                    "startOffset": 36174,
                     "endLine": 324,
                     "endColumn": 12,
-                    "endOffset": 36398
+                    "endOffset": 36399
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4334,10 +4334,10 @@
                 "to": {
                     "startLine": 325,
                     "startColumn": 4,
-                    "startOffset": 36403,
+                    "startOffset": 36404,
                     "endLine": 328,
                     "endColumn": 12,
-                    "endOffset": 36625
+                    "endOffset": 36626
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4355,10 +4355,10 @@
                 "to": {
                     "startLine": 329,
                     "startColumn": 4,
-                    "startOffset": 36630,
+                    "startOffset": 36631,
                     "endLine": 332,
                     "endColumn": 12,
-                    "endOffset": 36864
+                    "endOffset": 36865
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4376,10 +4376,10 @@
                 "to": {
                     "startLine": 333,
                     "startColumn": 4,
-                    "startOffset": 36869,
+                    "startOffset": 36870,
                     "endLine": 336,
                     "endColumn": 12,
-                    "endOffset": 37090
+                    "endOffset": 37091
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4397,10 +4397,10 @@
                 "to": {
                     "startLine": 337,
                     "startColumn": 4,
-                    "startOffset": 37095,
+                    "startOffset": 37096,
                     "endLine": 340,
                     "endColumn": 12,
-                    "endOffset": 37335
+                    "endOffset": 37336
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4418,10 +4418,10 @@
                 "to": {
                     "startLine": 341,
                     "startColumn": 4,
-                    "startOffset": 37340,
+                    "startOffset": 37341,
                     "endLine": 342,
                     "endColumn": 12,
-                    "endOffset": 37465
+                    "endOffset": 37466
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4439,10 +4439,10 @@
                 "to": {
                     "startLine": 343,
                     "startColumn": 4,
-                    "startOffset": 37470,
+                    "startOffset": 37471,
                     "endLine": 344,
                     "endColumn": 12,
-                    "endOffset": 37595
+                    "endOffset": 37596
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4460,10 +4460,10 @@
                 "to": {
                     "startLine": 345,
                     "startColumn": 4,
-                    "startOffset": 37600,
+                    "startOffset": 37601,
                     "endLine": 348,
                     "endColumn": 12,
-                    "endOffset": 37825
+                    "endOffset": 37826
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4481,10 +4481,10 @@
                 "to": {
                     "startLine": 349,
                     "startColumn": 4,
-                    "startOffset": 37830,
+                    "startOffset": 37831,
                     "endLine": 352,
                     "endColumn": 12,
-                    "endOffset": 38073
+                    "endOffset": 38074
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4502,10 +4502,10 @@
                 "to": {
                     "startLine": 353,
                     "startColumn": 4,
-                    "startOffset": 38078,
+                    "startOffset": 38079,
                     "endLine": 356,
                     "endColumn": 12,
-                    "endOffset": 38292
+                    "endOffset": 38293
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4523,10 +4523,10 @@
                 "to": {
                     "startLine": 357,
                     "startColumn": 4,
-                    "startOffset": 38297,
+                    "startOffset": 38298,
                     "endLine": 361,
                     "endColumn": 12,
-                    "endOffset": 38575
+                    "endOffset": 38576
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4544,10 +4544,10 @@
                 "to": {
                     "startLine": 362,
                     "startColumn": 4,
-                    "startOffset": 38580,
+                    "startOffset": 38581,
                     "endLine": 365,
                     "endColumn": 12,
-                    "endOffset": 38783
+                    "endOffset": 38784
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4565,10 +4565,10 @@
                 "to": {
                     "startLine": 366,
                     "startColumn": 4,
-                    "startOffset": 38788,
+                    "startOffset": 38789,
                     "endLine": 368,
                     "endColumn": 12,
-                    "endOffset": 38914
+                    "endOffset": 38915
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4586,10 +4586,10 @@
                 "to": {
                     "startLine": 369,
                     "startColumn": 4,
-                    "startOffset": 38919,
+                    "startOffset": 38920,
                     "endLine": 372,
                     "endColumn": 12,
-                    "endOffset": 39141
+                    "endOffset": 39142
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4607,10 +4607,10 @@
                 "to": {
                     "startLine": 373,
                     "startColumn": 4,
-                    "startOffset": 39146,
+                    "startOffset": 39147,
                     "endLine": 376,
                     "endColumn": 12,
-                    "endOffset": 39387
+                    "endOffset": 39388
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4628,10 +4628,10 @@
                 "to": {
                     "startLine": 377,
                     "startColumn": 4,
-                    "startOffset": 39392,
+                    "startOffset": 39393,
                     "endLine": 380,
                     "endColumn": 12,
-                    "endOffset": 39612
+                    "endOffset": 39613
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4649,10 +4649,10 @@
                 "to": {
                     "startLine": 381,
                     "startColumn": 4,
-                    "startOffset": 39617,
+                    "startOffset": 39618,
                     "endLine": 384,
                     "endColumn": 12,
-                    "endOffset": 39859
+                    "endOffset": 39860
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4670,10 +4670,10 @@
                 "to": {
                     "startLine": 385,
                     "startColumn": 4,
-                    "startOffset": 39864,
+                    "startOffset": 39865,
                     "endLine": 388,
                     "endColumn": 12,
-                    "endOffset": 40080
+                    "endOffset": 40081
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4691,10 +4691,10 @@
                 "to": {
                     "startLine": 389,
                     "startColumn": 4,
-                    "startOffset": 40085,
+                    "startOffset": 40086,
                     "endLine": 392,
                     "endColumn": 12,
-                    "endOffset": 40325
+                    "endOffset": 40326
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4712,10 +4712,10 @@
                 "to": {
                     "startLine": 393,
                     "startColumn": 4,
-                    "startOffset": 40330,
+                    "startOffset": 40331,
                     "endLine": 396,
                     "endColumn": 12,
-                    "endOffset": 40601
+                    "endOffset": 40602
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4733,10 +4733,10 @@
                 "to": {
                     "startLine": 397,
                     "startColumn": 4,
-                    "startOffset": 40606,
+                    "startOffset": 40607,
                     "endLine": 400,
                     "endColumn": 12,
-                    "endOffset": 40902
+                    "endOffset": 40903
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4754,10 +4754,10 @@
                 "to": {
                     "startLine": 401,
                     "startColumn": 4,
-                    "startOffset": 40907,
+                    "startOffset": 40908,
                     "endLine": 404,
                     "endColumn": 12,
-                    "endOffset": 41226
+                    "endOffset": 41227
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4775,10 +4775,10 @@
                 "to": {
                     "startLine": 405,
                     "startColumn": 4,
-                    "startOffset": 41231,
+                    "startOffset": 41232,
                     "endLine": 408,
                     "endColumn": 12,
-                    "endOffset": 41517
+                    "endOffset": 41518
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4796,10 +4796,10 @@
                 "to": {
                     "startLine": 409,
                     "startColumn": 4,
-                    "startOffset": 41522,
+                    "startOffset": 41523,
                     "endLine": 412,
                     "endColumn": 12,
-                    "endOffset": 41831
+                    "endOffset": 41832
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4817,9 +4817,9 @@
                 "to": {
                     "startLine": 413,
                     "startColumn": 4,
-                    "startOffset": 41836,
+                    "startOffset": 41837,
                     "endColumn": 136,
-                    "endOffset": 41968
+                    "endOffset": 41969
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4836,9 +4836,9 @@
                 "to": {
                     "startLine": 414,
                     "startColumn": 4,
-                    "startOffset": 41973,
+                    "startOffset": 41974,
                     "endColumn": 130,
-                    "endOffset": 42099
+                    "endOffset": 42100
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4855,9 +4855,9 @@
                 "to": {
                     "startLine": 415,
                     "startColumn": 4,
-                    "startOffset": 42104,
+                    "startOffset": 42105,
                     "endColumn": 104,
-                    "endOffset": 42204
+                    "endOffset": 42205
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4874,10 +4874,10 @@
                 "to": {
                     "startLine": 416,
                     "startColumn": 4,
-                    "startOffset": 42209,
+                    "startOffset": 42210,
                     "endLine": 418,
                     "endColumn": 12,
-                    "endOffset": 42408
+                    "endOffset": 42409
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4895,10 +4895,10 @@
                 "to": {
                     "startLine": 419,
                     "startColumn": 4,
-                    "startOffset": 42413,
+                    "startOffset": 42414,
                     "endLine": 421,
                     "endColumn": 12,
-                    "endOffset": 42616
+                    "endOffset": 42617
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4916,10 +4916,10 @@
                 "to": {
                     "startLine": 422,
                     "startColumn": 4,
-                    "startOffset": 42621,
+                    "startOffset": 42622,
                     "endLine": 423,
                     "endColumn": 12,
-                    "endOffset": 42740
+                    "endOffset": 42741
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4937,10 +4937,10 @@
                 "to": {
                     "startLine": 424,
                     "startColumn": 4,
-                    "startOffset": 42745,
+                    "startOffset": 42746,
                     "endLine": 425,
                     "endColumn": 12,
-                    "endOffset": 42864
+                    "endOffset": 42865
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4958,9 +4958,9 @@
                 "to": {
                     "startLine": 426,
                     "startColumn": 4,
-                    "startOffset": 42869,
+                    "startOffset": 42870,
                     "endColumn": 104,
-                    "endOffset": 42969
+                    "endOffset": 42970
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4977,9 +4977,9 @@
                 "to": {
                     "startLine": 427,
                     "startColumn": 4,
-                    "startOffset": 42974,
+                    "startOffset": 42975,
                     "endColumn": 116,
-                    "endOffset": 43086
+                    "endOffset": 43087
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -4996,10 +4996,10 @@
                 "to": {
                     "startLine": 428,
                     "startColumn": 4,
-                    "startOffset": 43091,
+                    "startOffset": 43092,
                     "endLine": 430,
                     "endColumn": 12,
-                    "endOffset": 43300
+                    "endOffset": 43301
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5017,10 +5017,10 @@
                 "to": {
                     "startLine": 431,
                     "startColumn": 4,
-                    "startOffset": 43305,
+                    "startOffset": 43306,
                     "endLine": 432,
                     "endColumn": 12,
-                    "endOffset": 43446
+                    "endOffset": 43447
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5038,10 +5038,10 @@
                 "to": {
                     "startLine": 433,
                     "startColumn": 4,
-                    "startOffset": 43451,
+                    "startOffset": 43452,
                     "endLine": 434,
                     "endColumn": 12,
-                    "endOffset": 43586
+                    "endOffset": 43587
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5059,10 +5059,10 @@
                 "to": {
                     "startLine": 435,
                     "startColumn": 4,
-                    "startOffset": 43591,
+                    "startOffset": 43592,
                     "endLine": 436,
                     "endColumn": 12,
-                    "endOffset": 43672
+                    "endOffset": 43673
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5080,10 +5080,10 @@
                 "to": {
                     "startLine": 437,
                     "startColumn": 4,
-                    "startOffset": 43677,
+                    "startOffset": 43678,
                     "endLine": 441,
                     "endColumn": 12,
-                    "endOffset": 44020
+                    "endOffset": 44021
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5101,9 +5101,9 @@
                 "to": {
                     "startLine": 442,
                     "startColumn": 4,
-                    "startOffset": 44025,
+                    "startOffset": 44026,
                     "endColumn": 87,
-                    "endOffset": 44108
+                    "endOffset": 44109
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5120,10 +5120,10 @@
                 "to": {
                     "startLine": 443,
                     "startColumn": 4,
-                    "startOffset": 44113,
+                    "startOffset": 44114,
                     "endLine": 446,
                     "endColumn": 12,
-                    "endOffset": 44338
+                    "endOffset": 44339
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5141,10 +5141,10 @@
                 "to": {
                     "startLine": 447,
                     "startColumn": 4,
-                    "startOffset": 44343,
+                    "startOffset": 44344,
                     "endLine": 452,
                     "endColumn": 12,
-                    "endOffset": 44756
+                    "endOffset": 44757
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5162,10 +5162,10 @@
                 "to": {
                     "startLine": 453,
                     "startColumn": 4,
-                    "startOffset": 44761,
+                    "startOffset": 44762,
                     "endLine": 456,
                     "endColumn": 12,
-                    "endOffset": 44989
+                    "endOffset": 44990
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5183,9 +5183,9 @@
                 "to": {
                     "startLine": 457,
                     "startColumn": 4,
-                    "startOffset": 44994,
+                    "startOffset": 44995,
                     "endColumn": 81,
-                    "endOffset": 45071
+                    "endOffset": 45072
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5202,10 +5202,10 @@
                 "to": {
                     "startLine": 458,
                     "startColumn": 4,
-                    "startOffset": 45076,
+                    "startOffset": 45077,
                     "endLine": 459,
                     "endColumn": 12,
-                    "endOffset": 45169
+                    "endOffset": 45170
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5223,10 +5223,10 @@
                 "to": {
                     "startLine": 460,
                     "startColumn": 4,
-                    "startOffset": 45174,
+                    "startOffset": 45175,
                     "endLine": 470,
                     "endColumn": 12,
-                    "endOffset": 45786
+                    "endOffset": 45787
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5244,9 +5244,9 @@
                 "to": {
                     "startLine": 471,
                     "startColumn": 4,
-                    "startOffset": 45791,
+                    "startOffset": 45792,
                     "endColumn": 99,
-                    "endOffset": 45886
+                    "endOffset": 45887
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5263,10 +5263,10 @@
                 "to": {
                     "startLine": 472,
                     "startColumn": 4,
-                    "startOffset": 45891,
+                    "startOffset": 45892,
                     "endLine": 475,
                     "endColumn": 12,
-                    "endOffset": 46122
+                    "endOffset": 46123
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5284,10 +5284,10 @@
                 "to": {
                     "startLine": 476,
                     "startColumn": 4,
-                    "startOffset": 46127,
+                    "startOffset": 46128,
                     "endLine": 481,
                     "endColumn": 12,
-                    "endOffset": 46546
+                    "endOffset": 46547
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5305,10 +5305,10 @@
                 "to": {
                     "startLine": 482,
                     "startColumn": 4,
-                    "startOffset": 46551,
+                    "startOffset": 46552,
                     "endLine": 485,
                     "endColumn": 12,
-                    "endOffset": 46785
+                    "endOffset": 46786
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5326,9 +5326,9 @@
                 "to": {
                     "startLine": 486,
                     "startColumn": 4,
-                    "startOffset": 46790,
+                    "startOffset": 46791,
                     "endColumn": 93,
-                    "endOffset": 46879
+                    "endOffset": 46880
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5345,9 +5345,9 @@
                 "to": {
                     "startLine": 487,
                     "startColumn": 4,
-                    "startOffset": 46884,
+                    "startOffset": 46885,
                     "endColumn": 88,
-                    "endOffset": 46968
+                    "endOffset": 46969
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5364,10 +5364,10 @@
                 "to": {
                     "startLine": 488,
                     "startColumn": 4,
-                    "startOffset": 46973,
+                    "startOffset": 46974,
                     "endLine": 491,
                     "endColumn": 12,
-                    "endOffset": 47205
+                    "endOffset": 47206
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5385,10 +5385,10 @@
                 "to": {
                     "startLine": 492,
                     "startColumn": 4,
-                    "startOffset": 47210,
+                    "startOffset": 47211,
                     "endLine": 517,
                     "endColumn": 12,
-                    "endOffset": 49156
+                    "endOffset": 49157
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5406,10 +5406,10 @@
                 "to": {
                     "startLine": 518,
                     "startColumn": 4,
-                    "startOffset": 49161,
+                    "startOffset": 49162,
                     "endLine": 521,
                     "endColumn": 12,
-                    "endOffset": 49398
+                    "endOffset": 49399
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5427,10 +5427,10 @@
                 "to": {
                     "startLine": 522,
                     "startColumn": 4,
-                    "startOffset": 49403,
+                    "startOffset": 49404,
                     "endLine": 548,
                     "endColumn": 12,
-                    "endOffset": 51480
+                    "endOffset": 51481
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5448,10 +5448,10 @@
                 "to": {
                     "startLine": 549,
                     "startColumn": 4,
-                    "startOffset": 51485,
+                    "startOffset": 51486,
                     "endLine": 703,
                     "endColumn": 12,
-                    "endOffset": 61346
+                    "endOffset": 61347
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5469,10 +5469,10 @@
                 "to": {
                     "startLine": 704,
                     "startColumn": 4,
-                    "startOffset": 61351,
+                    "startOffset": 61352,
                     "endLine": 725,
                     "endColumn": 12,
-                    "endOffset": 62613
+                    "endOffset": 62614
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5490,10 +5490,10 @@
                 "to": {
                     "startLine": 726,
                     "startColumn": 4,
-                    "startOffset": 62618,
+                    "startOffset": 62619,
                     "endLine": 880,
                     "endColumn": 12,
-                    "endOffset": 72589
+                    "endOffset": 72590
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5511,10 +5511,10 @@
                 "to": {
                     "startLine": 881,
                     "startColumn": 4,
-                    "startOffset": 72594,
+                    "startOffset": 72595,
                     "endLine": 902,
                     "endColumn": 12,
-                    "endOffset": 73870
+                    "endOffset": 73871
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5532,10 +5532,10 @@
                 "to": {
                     "startLine": 903,
                     "startColumn": 4,
-                    "startOffset": 73875,
+                    "startOffset": 73876,
                     "endLine": 909,
                     "endColumn": 12,
-                    "endOffset": 74406
+                    "endOffset": 74407
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5553,10 +5553,10 @@
                 "to": {
                     "startLine": 910,
                     "startColumn": 4,
-                    "startOffset": 74411,
+                    "startOffset": 74412,
                     "endLine": 914,
                     "endColumn": 12,
-                    "endOffset": 74736
+                    "endOffset": 74737
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5574,10 +5574,10 @@
                 "to": {
                     "startLine": 915,
                     "startColumn": 4,
-                    "startOffset": 74741,
+                    "startOffset": 74742,
                     "endLine": 935,
                     "endColumn": 12,
-                    "endOffset": 75859
+                    "endOffset": 75860
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5595,10 +5595,10 @@
                 "to": {
                     "startLine": 936,
                     "startColumn": 4,
-                    "startOffset": 75864,
+                    "startOffset": 75865,
                     "endLine": 940,
                     "endColumn": 12,
-                    "endOffset": 76115
+                    "endOffset": 76116
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5616,10 +5616,10 @@
                 "to": {
                     "startLine": 941,
                     "startColumn": 4,
-                    "startOffset": 76120,
+                    "startOffset": 76121,
                     "endLine": 945,
                     "endColumn": 12,
-                    "endOffset": 76351
+                    "endOffset": 76352
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5637,10 +5637,10 @@
                 "to": {
                     "startLine": 946,
                     "startColumn": 4,
-                    "startOffset": 76356,
+                    "startOffset": 76357,
                     "endLine": 955,
                     "endColumn": 12,
-                    "endOffset": 76898
+                    "endOffset": 76899
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5658,10 +5658,10 @@
                 "to": {
                     "startLine": 956,
                     "startColumn": 4,
-                    "startOffset": 76903,
+                    "startOffset": 76904,
                     "endLine": 964,
                     "endColumn": 12,
-                    "endOffset": 77392
+                    "endOffset": 77393
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5679,10 +5679,10 @@
                 "to": {
                     "startLine": 965,
                     "startColumn": 4,
-                    "startOffset": 77397,
+                    "startOffset": 77398,
                     "endLine": 973,
                     "endColumn": 12,
-                    "endOffset": 77997
+                    "endOffset": 77998
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5700,10 +5700,10 @@
                 "to": {
                     "startLine": 974,
                     "startColumn": 4,
-                    "startOffset": 78002,
+                    "startOffset": 78003,
                     "endLine": 976,
                     "endColumn": 12,
-                    "endOffset": 78145
+                    "endOffset": 78146
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5721,10 +5721,10 @@
                 "to": {
                     "startLine": 977,
                     "startColumn": 4,
-                    "startOffset": 78150,
+                    "startOffset": 78151,
                     "endLine": 983,
                     "endColumn": 12,
-                    "endOffset": 78733
+                    "endOffset": 78734
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5742,10 +5742,10 @@
                 "to": {
                     "startLine": 984,
                     "startColumn": 4,
-                    "startOffset": 78738,
+                    "startOffset": 78739,
                     "endLine": 991,
                     "endColumn": 12,
-                    "endOffset": 79297
+                    "endOffset": 79298
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5763,10 +5763,10 @@
                 "to": {
                     "startLine": 992,
                     "startColumn": 4,
-                    "startOffset": 79302,
+                    "startOffset": 79303,
                     "endLine": 998,
                     "endColumn": 12,
-                    "endOffset": 79672
+                    "endOffset": 79673
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5784,9 +5784,9 @@
                 "to": {
                     "startLine": 999,
                     "startColumn": 4,
-                    "startOffset": 79677,
+                    "startOffset": 79678,
                     "endColumn": 117,
-                    "endOffset": 79790
+                    "endOffset": 79791
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5803,10 +5803,10 @@
                 "to": {
                     "startLine": 1000,
                     "startColumn": 4,
-                    "startOffset": 79795,
+                    "startOffset": 79796,
                     "endLine": 1008,
                     "endColumn": 12,
-                    "endOffset": 80328
+                    "endOffset": 80329
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5824,10 +5824,10 @@
                 "to": {
                     "startLine": 1009,
                     "startColumn": 4,
-                    "startOffset": 80333,
+                    "startOffset": 80334,
                     "endLine": 1011,
                     "endColumn": 12,
-                    "endOffset": 80485
+                    "endOffset": 80486
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5845,10 +5845,10 @@
                 "to": {
                     "startLine": 1012,
                     "startColumn": 4,
-                    "startOffset": 80490,
+                    "startOffset": 80491,
                     "endLine": 1014,
                     "endColumn": 12,
-                    "endOffset": 80629
+                    "endOffset": 80630
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5866,10 +5866,10 @@
                 "to": {
                     "startLine": 1015,
                     "startColumn": 4,
-                    "startOffset": 80634,
+                    "startOffset": 80635,
                     "endLine": 1019,
                     "endColumn": 12,
-                    "endOffset": 80949
+                    "endOffset": 80950
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5887,10 +5887,10 @@
                 "to": {
                     "startLine": 1020,
                     "startColumn": 4,
-                    "startOffset": 80954,
+                    "startOffset": 80955,
                     "endLine": 1023,
                     "endColumn": 12,
-                    "endOffset": 81205
+                    "endOffset": 81206
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5908,10 +5908,10 @@
                 "to": {
                     "startLine": 1024,
                     "startColumn": 4,
-                    "startOffset": 81210,
+                    "startOffset": 81211,
                     "endLine": 1027,
                     "endColumn": 12,
-                    "endOffset": 81375
+                    "endOffset": 81376
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5929,10 +5929,10 @@
                 "to": {
                     "startLine": 1028,
                     "startColumn": 4,
-                    "startOffset": 81380,
+                    "startOffset": 81381,
                     "endLine": 1030,
                     "endColumn": 12,
-                    "endOffset": 81516
+                    "endOffset": 81517
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5950,9 +5950,9 @@
                 "to": {
                     "startLine": 1031,
                     "startColumn": 4,
-                    "startOffset": 81521,
+                    "startOffset": 81522,
                     "endColumn": 63,
-                    "endOffset": 81580
+                    "endOffset": 81581
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5969,10 +5969,10 @@
                 "to": {
                     "startLine": 1032,
                     "startColumn": 4,
-                    "startOffset": 81585,
+                    "startOffset": 81586,
                     "endLine": 1035,
                     "endColumn": 12,
-                    "endOffset": 81862
+                    "endOffset": 81863
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -5990,10 +5990,10 @@
                 "to": {
                     "startLine": 1036,
                     "startColumn": 4,
-                    "startOffset": 81867,
+                    "startOffset": 81868,
                     "endLine": 1039,
                     "endColumn": 12,
-                    "endOffset": 82148
+                    "endOffset": 82149
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6011,10 +6011,10 @@
                 "to": {
                     "startLine": 1040,
                     "startColumn": 4,
-                    "startOffset": 82153,
+                    "startOffset": 82154,
                     "endLine": 1049,
                     "endColumn": 12,
-                    "endOffset": 82824
+                    "endOffset": 82825
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6032,10 +6032,10 @@
                 "to": {
                     "startLine": 1050,
                     "startColumn": 4,
-                    "startOffset": 82829,
+                    "startOffset": 82830,
                     "endLine": 1054,
                     "endColumn": 12,
-                    "endOffset": 83088
+                    "endOffset": 83089
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6053,10 +6053,10 @@
                 "to": {
                     "startLine": 1055,
                     "startColumn": 4,
-                    "startOffset": 83093,
+                    "startOffset": 83094,
                     "endLine": 1061,
                     "endColumn": 12,
-                    "endOffset": 83426
+                    "endOffset": 83427
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6074,10 +6074,10 @@
                 "to": {
                     "startLine": 1062,
                     "startColumn": 4,
-                    "startOffset": 83431,
+                    "startOffset": 83432,
                     "endLine": 1067,
                     "endColumn": 12,
-                    "endOffset": 83779
+                    "endOffset": 83780
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6095,9 +6095,9 @@
                 "to": {
                     "startLine": 1068,
                     "startColumn": 4,
-                    "startOffset": 83784,
+                    "startOffset": 83785,
                     "endColumn": 93,
-                    "endOffset": 83873
+                    "endOffset": 83874
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6114,10 +6114,10 @@
                 "to": {
                     "startLine": 1069,
                     "startColumn": 4,
-                    "startOffset": 83878,
+                    "startOffset": 83879,
                     "endLine": 1071,
                     "endColumn": 12,
-                    "endOffset": 84059
+                    "endOffset": 84060
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6135,10 +6135,10 @@
                 "to": {
                     "startLine": 1072,
                     "startColumn": 4,
-                    "startOffset": 84064,
+                    "startOffset": 84065,
                     "endLine": 1075,
                     "endColumn": 12,
-                    "endOffset": 84365
+                    "endOffset": 84366
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6156,10 +6156,10 @@
                 "to": {
                     "startLine": 1076,
                     "startColumn": 4,
-                    "startOffset": 84370,
+                    "startOffset": 84371,
                     "endLine": 1080,
                     "endColumn": 12,
-                    "endOffset": 84627
+                    "endOffset": 84628
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6177,10 +6177,10 @@
                 "to": {
                     "startLine": 1081,
                     "startColumn": 4,
-                    "startOffset": 84632,
+                    "startOffset": 84633,
                     "endLine": 1082,
                     "endColumn": 12,
-                    "endOffset": 84752
+                    "endOffset": 84753
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6198,10 +6198,10 @@
                 "to": {
                     "startLine": 1083,
                     "startColumn": 4,
-                    "startOffset": 84757,
+                    "startOffset": 84758,
                     "endLine": 1084,
                     "endColumn": 12,
-                    "endOffset": 84879
+                    "endOffset": 84880
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6219,10 +6219,10 @@
                 "to": {
                     "startLine": 1085,
                     "startColumn": 4,
-                    "startOffset": 84884,
+                    "startOffset": 84885,
                     "endLine": 1087,
                     "endColumn": 12,
-                    "endOffset": 85118
+                    "endOffset": 85119
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6240,10 +6240,10 @@
                 "to": {
                     "startLine": 1088,
                     "startColumn": 4,
-                    "startOffset": 85123,
+                    "startOffset": 85124,
                     "endLine": 1090,
                     "endColumn": 12,
-                    "endOffset": 85329
+                    "endOffset": 85330
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6261,10 +6261,10 @@
                 "to": {
                     "startLine": 1091,
                     "startColumn": 4,
-                    "startOffset": 85334,
+                    "startOffset": 85335,
                     "endLine": 1092,
                     "endColumn": 12,
-                    "endOffset": 85448
+                    "endOffset": 85449
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6282,10 +6282,10 @@
                 "to": {
                     "startLine": 1093,
                     "startColumn": 4,
-                    "startOffset": 85453,
+                    "startOffset": 85454,
                     "endLine": 1096,
                     "endColumn": 12,
-                    "endOffset": 85641
+                    "endOffset": 85642
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6303,10 +6303,10 @@
                 "to": {
                     "startLine": 1097,
                     "startColumn": 4,
-                    "startOffset": 85646,
+                    "startOffset": 85647,
                     "endLine": 1103,
                     "endColumn": 12,
-                    "endOffset": 86096
+                    "endOffset": 86097
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6324,10 +6324,10 @@
                 "to": {
                     "startLine": 1104,
                     "startColumn": 4,
-                    "startOffset": 86101,
+                    "startOffset": 86102,
                     "endLine": 1106,
                     "endColumn": 12,
-                    "endOffset": 86277
+                    "endOffset": 86278
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6345,10 +6345,10 @@
                 "to": {
                     "startLine": 1107,
                     "startColumn": 4,
-                    "startOffset": 86282,
+                    "startOffset": 86283,
                     "endLine": 1109,
                     "endColumn": 12,
-                    "endOffset": 86399
+                    "endOffset": 86400
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6366,10 +6366,10 @@
                 "to": {
                     "startLine": 1110,
                     "startColumn": 4,
-                    "startOffset": 86404,
+                    "startOffset": 86405,
                     "endLine": 1113,
                     "endColumn": 12,
-                    "endOffset": 86658
+                    "endOffset": 86659
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6387,10 +6387,10 @@
                 "to": {
                     "startLine": 1114,
                     "startColumn": 4,
-                    "startOffset": 86663,
+                    "startOffset": 86664,
                     "endLine": 1115,
                     "endColumn": 12,
-                    "endOffset": 86771
+                    "endOffset": 86772
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6408,10 +6408,10 @@
                 "to": {
                     "startLine": 1116,
                     "startColumn": 4,
-                    "startOffset": 86776,
+                    "startOffset": 86777,
                     "endLine": 1119,
                     "endColumn": 12,
-                    "endOffset": 86958
+                    "endOffset": 86959
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6429,10 +6429,10 @@
                 "to": {
                     "startLine": 1120,
                     "startColumn": 4,
-                    "startOffset": 86963,
+                    "startOffset": 86964,
                     "endLine": 1121,
                     "endColumn": 12,
-                    "endOffset": 87060
+                    "endOffset": 87061
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6450,10 +6450,10 @@
                 "to": {
                     "startLine": 1122,
                     "startColumn": 4,
-                    "startOffset": 87065,
+                    "startOffset": 87066,
                     "endLine": 1127,
                     "endColumn": 12,
-                    "endOffset": 87504
+                    "endOffset": 87505
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6471,10 +6471,10 @@
                 "to": {
                     "startLine": 1128,
                     "startColumn": 4,
-                    "startOffset": 87509,
+                    "startOffset": 87510,
                     "endLine": 1129,
                     "endColumn": 12,
-                    "endOffset": 87628
+                    "endOffset": 87629
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6492,10 +6492,10 @@
                 "to": {
                     "startLine": 1130,
                     "startColumn": 4,
-                    "startOffset": 87633,
+                    "startOffset": 87634,
                     "endLine": 1133,
                     "endColumn": 12,
-                    "endOffset": 87913
+                    "endOffset": 87914
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6513,10 +6513,10 @@
                 "to": {
                     "startLine": 1134,
                     "startColumn": 4,
-                    "startOffset": 87918,
+                    "startOffset": 87919,
                     "endLine": 1141,
                     "endColumn": 12,
-                    "endOffset": 88421
+                    "endOffset": 88422
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6534,10 +6534,10 @@
                 "to": {
                     "startLine": 1142,
                     "startColumn": 4,
-                    "startOffset": 88426,
+                    "startOffset": 88427,
                     "endLine": 1149,
                     "endColumn": 12,
-                    "endOffset": 88917
+                    "endOffset": 88918
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6555,10 +6555,10 @@
                 "to": {
                     "startLine": 1150,
                     "startColumn": 4,
-                    "startOffset": 88922,
+                    "startOffset": 88923,
                     "endLine": 1161,
                     "endColumn": 12,
-                    "endOffset": 89804
+                    "endOffset": 89805
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6576,10 +6576,10 @@
                 "to": {
                     "startLine": 1162,
                     "startColumn": 4,
-                    "startOffset": 89809,
+                    "startOffset": 89810,
                     "endLine": 1167,
                     "endColumn": 12,
-                    "endOffset": 90098
+                    "endOffset": 90099
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6597,10 +6597,10 @@
                 "to": {
                     "startLine": 1168,
                     "startColumn": 4,
-                    "startOffset": 90103,
+                    "startOffset": 90104,
                     "endLine": 1176,
                     "endColumn": 12,
-                    "endOffset": 90668
+                    "endOffset": 90669
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6618,10 +6618,10 @@
                 "to": {
                     "startLine": 1177,
                     "startColumn": 4,
-                    "startOffset": 90673,
+                    "startOffset": 90674,
                     "endLine": 1187,
                     "endColumn": 12,
-                    "endOffset": 91400
+                    "endOffset": 91401
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6639,10 +6639,10 @@
                 "to": {
                     "startLine": 1188,
                     "startColumn": 4,
-                    "startOffset": 91405,
+                    "startOffset": 91406,
                     "endLine": 1190,
                     "endColumn": 12,
-                    "endOffset": 91572
+                    "endOffset": 91573
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6660,10 +6660,10 @@
                 "to": {
                     "startLine": 1191,
                     "startColumn": 4,
-                    "startOffset": 91577,
+                    "startOffset": 91578,
                     "endLine": 1195,
                     "endColumn": 12,
-                    "endOffset": 91908
+                    "endOffset": 91909
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6681,10 +6681,10 @@
                 "to": {
                     "startLine": 1196,
                     "startColumn": 4,
-                    "startOffset": 91913,
+                    "startOffset": 91914,
                     "endLine": 1207,
                     "endColumn": 12,
-                    "endOffset": 92816
+                    "endOffset": 92817
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6702,10 +6702,10 @@
                 "to": {
                     "startLine": 1208,
                     "startColumn": 4,
-                    "startOffset": 92821,
+                    "startOffset": 92822,
                     "endLine": 1212,
                     "endColumn": 12,
-                    "endOffset": 93094
+                    "endOffset": 93095
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6723,10 +6723,10 @@
                 "to": {
                     "startLine": 1213,
                     "startColumn": 4,
-                    "startOffset": 93099,
+                    "startOffset": 93100,
                     "endLine": 1214,
                     "endColumn": 12,
-                    "endOffset": 93158
+                    "endOffset": 93159
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/res/values/values.xml",
@@ -6744,10 +6744,10 @@
                 "to": {
                     "startLine": 1215,
                     "startColumn": 4,
-                    "startOffset": 93163,
+                    "startOffset": 93164,
                     "endLine": 1217,
                     "endColumn": 12,
-                    "endOffset": 93284
+                    "endOffset": 93285
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/res/values/values.xml",
@@ -6765,10 +6765,10 @@
                 "to": {
                     "startLine": 1218,
                     "startColumn": 4,
-                    "startOffset": 93289,
+                    "startOffset": 93290,
                     "endLine": 1220,
                     "endColumn": 12,
-                    "endOffset": 93412
+                    "endOffset": 93413
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/res/values/values.xml",
@@ -6786,10 +6786,10 @@
                 "to": {
                     "startLine": 1221,
                     "startColumn": 4,
-                    "startOffset": 93417,
+                    "startOffset": 93418,
                     "endLine": 1258,
                     "endColumn": 12,
-                    "endOffset": 96274
+                    "endOffset": 96275
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6807,10 +6807,10 @@
                 "to": {
                     "startLine": 1259,
                     "startColumn": 4,
-                    "startOffset": 96279,
+                    "startOffset": 96280,
                     "endLine": 1297,
                     "endColumn": 12,
-                    "endOffset": 99276
+                    "endOffset": 99277
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6828,9 +6828,9 @@
                 "to": {
                     "startLine": 1298,
                     "startColumn": 4,
-                    "startOffset": 99281,
+                    "startOffset": 99282,
                     "endColumn": 61,
-                    "endOffset": 99338
+                    "endOffset": 99339
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6847,10 +6847,10 @@
                 "to": {
                     "startLine": 1299,
                     "startColumn": 4,
-                    "startOffset": 99343,
+                    "startOffset": 99344,
                     "endLine": 1308,
                     "endColumn": 12,
-                    "endOffset": 99968
+                    "endOffset": 99969
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6868,10 +6868,10 @@
                 "to": {
                     "startLine": 1309,
                     "startColumn": 4,
-                    "startOffset": 99973,
+                    "startOffset": 99974,
                     "endLine": 1317,
                     "endColumn": 12,
-                    "endOffset": 100582
+                    "endOffset": 100583
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6889,9 +6889,9 @@
                 "to": {
                     "startLine": 1318,
                     "startColumn": 4,
-                    "startOffset": 100587,
+                    "startOffset": 100588,
                     "endColumn": 85,
-                    "endOffset": 100668
+                    "endOffset": 100669
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6908,10 +6908,10 @@
                 "to": {
                     "startLine": 1319,
                     "startColumn": 4,
-                    "startOffset": 100673,
+                    "startOffset": 100674,
                     "endLine": 1320,
                     "endColumn": 12,
-                    "endOffset": 100781
+                    "endOffset": 100782
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6929,10 +6929,10 @@
                 "to": {
                     "startLine": 1321,
                     "startColumn": 4,
-                    "startOffset": 100786,
+                    "startOffset": 100787,
                     "endLine": 1324,
                     "endColumn": 12,
-                    "endOffset": 101010
+                    "endOffset": 101011
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6950,10 +6950,10 @@
                 "to": {
                     "startLine": 1325,
                     "startColumn": 4,
-                    "startOffset": 101015,
+                    "startOffset": 101016,
                     "endLine": 1327,
                     "endColumn": 12,
-                    "endOffset": 101170
+                    "endOffset": 101171
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6971,10 +6971,10 @@
                 "to": {
                     "startLine": 1328,
                     "startColumn": 4,
-                    "startOffset": 101175,
+                    "startOffset": 101176,
                     "endLine": 1330,
                     "endColumn": 12,
-                    "endOffset": 101322
+                    "endOffset": 101323
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -6992,10 +6992,10 @@
                 "to": {
                     "startLine": 1331,
                     "startColumn": 4,
-                    "startOffset": 101327,
+                    "startOffset": 101328,
                     "endLine": 1333,
                     "endColumn": 12,
-                    "endOffset": 101493
+                    "endOffset": 101494
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7013,10 +7013,10 @@
                 "to": {
                     "startLine": 1334,
                     "startColumn": 4,
-                    "startOffset": 101498,
+                    "startOffset": 101499,
                     "endLine": 1336,
                     "endColumn": 12,
-                    "endOffset": 101660
+                    "endOffset": 101661
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7034,10 +7034,10 @@
                 "to": {
                     "startLine": 1337,
                     "startColumn": 4,
-                    "startOffset": 101665,
+                    "startOffset": 101666,
                     "endLine": 1340,
                     "endColumn": 12,
-                    "endOffset": 101903
+                    "endOffset": 101904
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7055,10 +7055,10 @@
                 "to": {
                     "startLine": 1341,
                     "startColumn": 4,
-                    "startOffset": 101908,
+                    "startOffset": 101909,
                     "endLine": 1343,
                     "endColumn": 12,
-                    "endOffset": 102073
+                    "endOffset": 102074
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7076,10 +7076,10 @@
                 "to": {
                     "startLine": 1344,
                     "startColumn": 4,
-                    "startOffset": 102078,
+                    "startOffset": 102079,
                     "endLine": 1346,
                     "endColumn": 12,
-                    "endOffset": 102246
+                    "endOffset": 102247
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7097,10 +7097,10 @@
                 "to": {
                     "startLine": 1347,
                     "startColumn": 4,
-                    "startOffset": 102251,
+                    "startOffset": 102252,
                     "endLine": 1349,
                     "endColumn": 12,
-                    "endOffset": 102417
+                    "endOffset": 102418
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7118,10 +7118,10 @@
                 "to": {
                     "startLine": 1350,
                     "startColumn": 4,
-                    "startOffset": 102422,
+                    "startOffset": 102423,
                     "endLine": 1353,
                     "endColumn": 12,
-                    "endOffset": 102691
+                    "endOffset": 102692
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7139,10 +7139,10 @@
                 "to": {
                     "startLine": 1354,
                     "startColumn": 4,
-                    "startOffset": 102696,
+                    "startOffset": 102697,
                     "endLine": 1356,
                     "endColumn": 12,
-                    "endOffset": 102890
+                    "endOffset": 102891
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7160,10 +7160,10 @@
                 "to": {
                     "startLine": 1357,
                     "startColumn": 4,
-                    "startOffset": 102895,
+                    "startOffset": 102896,
                     "endLine": 1360,
                     "endColumn": 12,
-                    "endOffset": 103095
+                    "endOffset": 103096
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7181,10 +7181,10 @@
                 "to": {
                     "startLine": 1361,
                     "startColumn": 4,
-                    "startOffset": 103100,
+                    "startOffset": 103101,
                     "endLine": 1364,
                     "endColumn": 12,
-                    "endOffset": 103425
+                    "endOffset": 103426
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7202,9 +7202,9 @@
                 "to": {
                     "startLine": 1365,
                     "startColumn": 4,
-                    "startOffset": 103430,
+                    "startOffset": 103431,
                     "endColumn": 83,
-                    "endOffset": 103509
+                    "endOffset": 103510
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7221,9 +7221,9 @@
                 "to": {
                     "startLine": 1366,
                     "startColumn": 4,
-                    "startOffset": 103514,
+                    "startOffset": 103515,
                     "endColumn": 95,
-                    "endOffset": 103605
+                    "endOffset": 103606
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7240,9 +7240,9 @@
                 "to": {
                     "startLine": 1367,
                     "startColumn": 4,
-                    "startOffset": 103610,
+                    "startOffset": 103611,
                     "endColumn": 95,
-                    "endOffset": 103701
+                    "endOffset": 103702
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7259,9 +7259,9 @@
                 "to": {
                     "startLine": 1368,
                     "startColumn": 4,
-                    "startOffset": 103706,
+                    "startOffset": 103707,
                     "endColumn": 97,
-                    "endOffset": 103799
+                    "endOffset": 103800
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7278,9 +7278,9 @@
                 "to": {
                     "startLine": 1369,
                     "startColumn": 4,
-                    "startOffset": 103804,
+                    "startOffset": 103805,
                     "endColumn": 99,
-                    "endOffset": 103899
+                    "endOffset": 103900
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7297,9 +7297,9 @@
                 "to": {
                     "startLine": 1370,
                     "startColumn": 4,
-                    "startOffset": 103904,
+                    "startOffset": 103905,
                     "endColumn": 101,
-                    "endOffset": 104001
+                    "endOffset": 104002
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7316,9 +7316,9 @@
                 "to": {
                     "startLine": 1371,
                     "startColumn": 4,
-                    "startOffset": 104006,
+                    "startOffset": 104007,
                     "endColumn": 101,
-                    "endOffset": 104103
+                    "endOffset": 104104
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7335,9 +7335,9 @@
                 "to": {
                     "startLine": 1372,
                     "startColumn": 4,
-                    "startOffset": 104108,
+                    "startOffset": 104109,
                     "endColumn": 101,
-                    "endOffset": 104205
+                    "endOffset": 104206
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7354,9 +7354,9 @@
                 "to": {
                     "startLine": 1373,
                     "startColumn": 4,
-                    "startOffset": 104210,
+                    "startOffset": 104211,
                     "endColumn": 101,
-                    "endOffset": 104307
+                    "endOffset": 104308
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7373,9 +7373,9 @@
                 "to": {
                     "startLine": 1374,
                     "startColumn": 4,
-                    "startOffset": 104312,
+                    "startOffset": 104313,
                     "endColumn": 101,
-                    "endOffset": 104409
+                    "endOffset": 104410
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7392,9 +7392,9 @@
                 "to": {
                     "startLine": 1375,
                     "startColumn": 4,
-                    "startOffset": 104414,
+                    "startOffset": 104415,
                     "endColumn": 99,
-                    "endOffset": 104509
+                    "endOffset": 104510
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7411,9 +7411,9 @@
                 "to": {
                     "startLine": 1376,
                     "startColumn": 4,
-                    "startOffset": 104514,
+                    "startOffset": 104515,
                     "endColumn": 95,
-                    "endOffset": 104605
+                    "endOffset": 104606
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7430,9 +7430,9 @@
                 "to": {
                     "startLine": 1377,
                     "startColumn": 4,
-                    "startOffset": 104610,
+                    "startOffset": 104611,
                     "endColumn": 111,
-                    "endOffset": 104717
+                    "endOffset": 104718
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7449,9 +7449,9 @@
                 "to": {
                     "startLine": 1378,
                     "startColumn": 4,
-                    "startOffset": 104722,
+                    "startOffset": 104723,
                     "endColumn": 128,
-                    "endOffset": 104846
+                    "endOffset": 104847
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7468,9 +7468,9 @@
                 "to": {
                     "startLine": 1379,
                     "startColumn": 4,
-                    "startOffset": 104851,
+                    "startOffset": 104852,
                     "endColumn": 122,
-                    "endOffset": 104969
+                    "endOffset": 104970
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7487,10 +7487,10 @@
                 "to": {
                     "startLine": 1380,
                     "startColumn": 4,
-                    "startOffset": 104974,
+                    "startOffset": 104975,
                     "endLine": 1381,
                     "endColumn": 12,
-                    "endOffset": 105123
+                    "endOffset": 105124
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7508,10 +7508,10 @@
                 "to": {
                     "startLine": 1382,
                     "startColumn": 4,
-                    "startOffset": 105128,
+                    "startOffset": 105129,
                     "endLine": 1383,
                     "endColumn": 12,
-                    "endOffset": 105277
+                    "endOffset": 105278
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7529,9 +7529,9 @@
                 "to": {
                     "startLine": 1384,
                     "startColumn": 4,
-                    "startOffset": 105282,
+                    "startOffset": 105283,
                     "endColumn": 97,
-                    "endOffset": 105375
+                    "endOffset": 105376
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7548,9 +7548,9 @@
                 "to": {
                     "startLine": 1385,
                     "startColumn": 4,
-                    "startOffset": 105380,
+                    "startOffset": 105381,
                     "endColumn": 113,
-                    "endOffset": 105489
+                    "endOffset": 105490
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7567,9 +7567,9 @@
                 "to": {
                     "startLine": 1386,
                     "startColumn": 4,
-                    "startOffset": 105494,
+                    "startOffset": 105495,
                     "endColumn": 93,
-                    "endOffset": 105583
+                    "endOffset": 105584
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7586,10 +7586,10 @@
                 "to": {
                     "startLine": 1387,
                     "startColumn": 4,
-                    "startOffset": 105588,
+                    "startOffset": 105589,
                     "endLine": 1388,
                     "endColumn": 12,
-                    "endOffset": 105723
+                    "endOffset": 105724
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7607,10 +7607,10 @@
                 "to": {
                     "startLine": 1389,
                     "startColumn": 4,
-                    "startOffset": 105728,
+                    "startOffset": 105729,
                     "endLine": 1390,
                     "endColumn": 12,
-                    "endOffset": 105857
+                    "endOffset": 105858
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7628,9 +7628,9 @@
                 "to": {
                     "startLine": 1391,
                     "startColumn": 4,
-                    "startOffset": 105862,
+                    "startOffset": 105863,
                     "endColumn": 95,
-                    "endOffset": 105953
+                    "endOffset": 105954
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7647,9 +7647,9 @@
                 "to": {
                     "startLine": 1392,
                     "startColumn": 4,
-                    "startOffset": 105958,
+                    "startOffset": 105959,
                     "endColumn": 111,
-                    "endOffset": 106065
+                    "endOffset": 106066
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7666,9 +7666,9 @@
                 "to": {
                     "startLine": 1393,
                     "startColumn": 4,
-                    "startOffset": 106070,
+                    "startOffset": 106071,
                     "endColumn": 99,
-                    "endOffset": 106165
+                    "endOffset": 106166
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7685,9 +7685,9 @@
                 "to": {
                     "startLine": 1394,
                     "startColumn": 4,
-                    "startOffset": 106170,
+                    "startOffset": 106171,
                     "endColumn": 115,
-                    "endOffset": 106281
+                    "endOffset": 106282
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7704,9 +7704,9 @@
                 "to": {
                     "startLine": 1395,
                     "startColumn": 4,
-                    "startOffset": 106286,
+                    "startOffset": 106287,
                     "endColumn": 95,
-                    "endOffset": 106377
+                    "endOffset": 106378
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7723,9 +7723,9 @@
                 "to": {
                     "startLine": 1396,
                     "startColumn": 4,
-                    "startOffset": 106382,
+                    "startOffset": 106383,
                     "endColumn": 111,
-                    "endOffset": 106489
+                    "endOffset": 106490
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7742,10 +7742,10 @@
                 "to": {
                     "startLine": 1397,
                     "startColumn": 4,
-                    "startOffset": 106494,
+                    "startOffset": 106495,
                     "endLine": 1398,
                     "endColumn": 12,
-                    "endOffset": 106629
+                    "endOffset": 106630
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7763,9 +7763,9 @@
                 "to": {
                     "startLine": 1399,
                     "startColumn": 4,
-                    "startOffset": 106634,
+                    "startOffset": 106635,
                     "endColumn": 135,
-                    "endOffset": 106765
+                    "endOffset": 106766
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7782,10 +7782,10 @@
                 "to": {
                     "startLine": 1400,
                     "startColumn": 4,
-                    "startOffset": 106770,
+                    "startOffset": 106771,
                     "endLine": 1401,
                     "endColumn": 12,
-                    "endOffset": 106929
+                    "endOffset": 106930
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7803,9 +7803,9 @@
                 "to": {
                     "startLine": 1402,
                     "startColumn": 4,
-                    "startOffset": 106934,
+                    "startOffset": 106935,
                     "endColumn": 129,
-                    "endOffset": 107059
+                    "endOffset": 107060
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7822,10 +7822,10 @@
                 "to": {
                     "startLine": 1403,
                     "startColumn": 4,
-                    "startOffset": 107064,
+                    "startOffset": 107065,
                     "endLine": 1404,
                     "endColumn": 12,
-                    "endOffset": 107217
+                    "endOffset": 107218
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7843,10 +7843,10 @@
                 "to": {
                     "startLine": 1405,
                     "startColumn": 4,
-                    "startOffset": 107222,
+                    "startOffset": 107223,
                     "endLine": 1406,
                     "endColumn": 12,
-                    "endOffset": 107367
+                    "endOffset": 107368
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7864,9 +7864,9 @@
                 "to": {
                     "startLine": 1407,
                     "startColumn": 4,
-                    "startOffset": 107372,
+                    "startOffset": 107373,
                     "endColumn": 140,
-                    "endOffset": 107508
+                    "endOffset": 107509
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7883,10 +7883,10 @@
                 "to": {
                     "startLine": 1408,
                     "startColumn": 4,
-                    "startOffset": 107513,
+                    "startOffset": 107514,
                     "endLine": 1409,
                     "endColumn": 12,
-                    "endOffset": 107652
+                    "endOffset": 107653
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7904,9 +7904,9 @@
                 "to": {
                     "startLine": 1410,
                     "startColumn": 4,
-                    "startOffset": 107657,
+                    "startOffset": 107658,
                     "endColumn": 134,
-                    "endOffset": 107787
+                    "endOffset": 107788
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7923,9 +7923,9 @@
                 "to": {
                     "startLine": 1411,
                     "startColumn": 4,
-                    "startOffset": 107792,
+                    "startOffset": 107793,
                     "endColumn": 111,
-                    "endOffset": 107899
+                    "endOffset": 107900
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7942,9 +7942,9 @@
                 "to": {
                     "startLine": 1412,
                     "startColumn": 4,
-                    "startOffset": 107904,
+                    "startOffset": 107905,
                     "endColumn": 127,
-                    "endOffset": 108027
+                    "endOffset": 108028
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7961,10 +7961,10 @@
                 "to": {
                     "startLine": 1413,
                     "startColumn": 4,
-                    "startOffset": 108032,
+                    "startOffset": 108033,
                     "endLine": 1414,
                     "endColumn": 12,
-                    "endOffset": 108163
+                    "endOffset": 108164
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -7982,10 +7982,10 @@
                 "to": {
                     "startLine": 1415,
                     "startColumn": 4,
-                    "startOffset": 108168,
+                    "startOffset": 108169,
                     "endLine": 1416,
                     "endColumn": 12,
-                    "endOffset": 108305
+                    "endOffset": 108306
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8003,10 +8003,10 @@
                 "to": {
                     "startLine": 1417,
                     "startColumn": 4,
-                    "startOffset": 108310,
+                    "startOffset": 108311,
                     "endLine": 1418,
                     "endColumn": 12,
-                    "endOffset": 108447
+                    "endOffset": 108448
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8024,9 +8024,9 @@
                 "to": {
                     "startLine": 1419,
                     "startColumn": 4,
-                    "startOffset": 108452,
+                    "startOffset": 108453,
                     "endColumn": 111,
-                    "endOffset": 108559
+                    "endOffset": 108560
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8043,9 +8043,9 @@
                 "to": {
                     "startLine": 1420,
                     "startColumn": 4,
-                    "startOffset": 108564,
+                    "startOffset": 108565,
                     "endColumn": 139,
-                    "endOffset": 108699
+                    "endOffset": 108700
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8062,9 +8062,9 @@
                 "to": {
                     "startLine": 1421,
                     "startColumn": 4,
-                    "startOffset": 108704,
+                    "startOffset": 108705,
                     "endColumn": 67,
-                    "endOffset": 108767
+                    "endOffset": 108768
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8081,9 +8081,9 @@
                 "to": {
                     "startLine": 1422,
                     "startColumn": 4,
-                    "startOffset": 108772,
+                    "startOffset": 108773,
                     "endColumn": 72,
-                    "endOffset": 108840
+                    "endOffset": 108841
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8100,9 +8100,9 @@
                 "to": {
                     "startLine": 1423,
                     "startColumn": 4,
-                    "startOffset": 108845,
+                    "startOffset": 108846,
                     "endColumn": 73,
-                    "endOffset": 108914
+                    "endOffset": 108915
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8119,9 +8119,9 @@
                 "to": {
                     "startLine": 1424,
                     "startColumn": 4,
-                    "startOffset": 108919,
+                    "startOffset": 108920,
                     "endColumn": 72,
-                    "endOffset": 108987
+                    "endOffset": 108988
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8138,9 +8138,9 @@
                 "to": {
                     "startLine": 1425,
                     "startColumn": 4,
-                    "startOffset": 108992,
+                    "startOffset": 108993,
                     "endColumn": 73,
-                    "endOffset": 109061
+                    "endOffset": 109062
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8157,10 +8157,10 @@
                 "to": {
                     "startLine": 1426,
                     "startColumn": 4,
-                    "startOffset": 109066,
+                    "startOffset": 109067,
                     "endLine": 1427,
                     "endColumn": 12,
-                    "endOffset": 109207
+                    "endOffset": 109208
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8178,10 +8178,10 @@
                 "to": {
                     "startLine": 1428,
                     "startColumn": 4,
-                    "startOffset": 109212,
+                    "startOffset": 109213,
                     "endLine": 1429,
                     "endColumn": 12,
-                    "endOffset": 109351
+                    "endOffset": 109352
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8199,10 +8199,10 @@
                 "to": {
                     "startLine": 1430,
                     "startColumn": 4,
-                    "startOffset": 109356,
+                    "startOffset": 109357,
                     "endLine": 1431,
                     "endColumn": 12,
-                    "endOffset": 109489
+                    "endOffset": 109490
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8220,9 +8220,9 @@
                 "to": {
                     "startLine": 1432,
                     "startColumn": 4,
-                    "startOffset": 109494,
+                    "startOffset": 109495,
                     "endColumn": 65,
-                    "endOffset": 109555
+                    "endOffset": 109556
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8239,9 +8239,9 @@
                 "to": {
                     "startLine": 1433,
                     "startColumn": 4,
-                    "startOffset": 109560,
+                    "startOffset": 109561,
                     "endColumn": 89,
-                    "endOffset": 109645
+                    "endOffset": 109646
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8258,9 +8258,9 @@
                 "to": {
                     "startLine": 1434,
                     "startColumn": 4,
-                    "startOffset": 109650,
+                    "startOffset": 109651,
                     "endColumn": 75,
-                    "endOffset": 109721
+                    "endOffset": 109722
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8277,9 +8277,9 @@
                 "to": {
                     "startLine": 1435,
                     "startColumn": 4,
-                    "startOffset": 109726,
+                    "startOffset": 109727,
                     "endColumn": 103,
-                    "endOffset": 109825
+                    "endOffset": 109826
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8296,9 +8296,9 @@
                 "to": {
                     "startLine": 1436,
                     "startColumn": 4,
-                    "startOffset": 109830,
+                    "startOffset": 109831,
                     "endColumn": 89,
-                    "endOffset": 109915
+                    "endOffset": 109916
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8315,9 +8315,9 @@
                 "to": {
                     "startLine": 1437,
                     "startColumn": 4,
-                    "startOffset": 109920,
+                    "startOffset": 109921,
                     "endColumn": 101,
-                    "endOffset": 110017
+                    "endOffset": 110018
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8334,9 +8334,9 @@
                 "to": {
                     "startLine": 1438,
                     "startColumn": 4,
-                    "startOffset": 110022,
+                    "startOffset": 110023,
                     "endColumn": 107,
-                    "endOffset": 110125
+                    "endOffset": 110126
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8353,9 +8353,9 @@
                 "to": {
                     "startLine": 1439,
                     "startColumn": 4,
-                    "startOffset": 110130,
+                    "startOffset": 110131,
                     "endColumn": 107,
-                    "endOffset": 110233
+                    "endOffset": 110234
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8372,9 +8372,9 @@
                 "to": {
                     "startLine": 1440,
                     "startColumn": 4,
-                    "startOffset": 110238,
+                    "startOffset": 110239,
                     "endColumn": 99,
-                    "endOffset": 110333
+                    "endOffset": 110334
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8391,9 +8391,9 @@
                 "to": {
                     "startLine": 1441,
                     "startColumn": 4,
-                    "startOffset": 110338,
+                    "startOffset": 110339,
                     "endColumn": 79,
-                    "endOffset": 110413
+                    "endOffset": 110414
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8410,9 +8410,9 @@
                 "to": {
                     "startLine": 1442,
                     "startColumn": 4,
-                    "startOffset": 110418,
+                    "startOffset": 110419,
                     "endColumn": 91,
-                    "endOffset": 110505
+                    "endOffset": 110506
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8429,9 +8429,9 @@
                 "to": {
                     "startLine": 1443,
                     "startColumn": 4,
-                    "startOffset": 110510,
+                    "startOffset": 110511,
                     "endColumn": 97,
-                    "endOffset": 110603
+                    "endOffset": 110604
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8448,10 +8448,10 @@
                 "to": {
                     "startLine": 1444,
                     "startColumn": 4,
-                    "startOffset": 110608,
+                    "startOffset": 110609,
                     "endLine": 1445,
                     "endColumn": 12,
-                    "endOffset": 110713
+                    "endOffset": 110714
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8469,9 +8469,9 @@
                 "to": {
                     "startLine": 1446,
                     "startColumn": 4,
-                    "startOffset": 110718,
+                    "startOffset": 110719,
                     "endColumn": 77,
-                    "endOffset": 110791
+                    "endOffset": 110792
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8488,9 +8488,9 @@
                 "to": {
                     "startLine": 1447,
                     "startColumn": 4,
-                    "startOffset": 110796,
+                    "startOffset": 110797,
                     "endColumn": 105,
-                    "endOffset": 110897
+                    "endOffset": 110898
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8507,9 +8507,9 @@
                 "to": {
                     "startLine": 1448,
                     "startColumn": 4,
-                    "startOffset": 110902,
+                    "startOffset": 110903,
                     "endColumn": 91,
-                    "endOffset": 110989
+                    "endOffset": 110990
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8526,9 +8526,9 @@
                 "to": {
                     "startLine": 1449,
                     "startColumn": 4,
-                    "startOffset": 110994,
+                    "startOffset": 110995,
                     "endColumn": 103,
-                    "endOffset": 111093
+                    "endOffset": 111094
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8545,9 +8545,9 @@
                 "to": {
                     "startLine": 1450,
                     "startColumn": 4,
-                    "startOffset": 111098,
+                    "startOffset": 111099,
                     "endColumn": 109,
-                    "endOffset": 111203
+                    "endOffset": 111204
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8564,10 +8564,10 @@
                 "to": {
                     "startLine": 1451,
                     "startColumn": 4,
-                    "startOffset": 111208,
+                    "startOffset": 111209,
                     "endLine": 1452,
                     "endColumn": 12,
-                    "endOffset": 111325
+                    "endOffset": 111326
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8585,10 +8585,10 @@
                 "to": {
                     "startLine": 1453,
                     "startColumn": 4,
-                    "startOffset": 111330,
+                    "startOffset": 111331,
                     "endLine": 1456,
                     "endColumn": 12,
-                    "endOffset": 111488
+                    "endOffset": 111489
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8606,10 +8606,10 @@
                 "to": {
                     "startLine": 1457,
                     "startColumn": 4,
-                    "startOffset": 111493,
+                    "startOffset": 111494,
                     "endLine": 1460,
                     "endColumn": 12,
-                    "endOffset": 111645
+                    "endOffset": 111646
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8627,9 +8627,9 @@
                 "to": {
                     "startLine": 1461,
                     "startColumn": 4,
-                    "startOffset": 111650,
+                    "startOffset": 111651,
                     "endColumn": 79,
-                    "endOffset": 111725
+                    "endOffset": 111726
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8646,9 +8646,9 @@
                 "to": {
                     "startLine": 1462,
                     "startColumn": 4,
-                    "startOffset": 111730,
+                    "startOffset": 111731,
                     "endColumn": 99,
-                    "endOffset": 111825
+                    "endOffset": 111826
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8665,9 +8665,9 @@
                 "to": {
                     "startLine": 1463,
                     "startColumn": 4,
-                    "startOffset": 111830,
+                    "startOffset": 111831,
                     "endColumn": 89,
-                    "endOffset": 111915
+                    "endOffset": 111916
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8684,9 +8684,9 @@
                 "to": {
                     "startLine": 1464,
                     "startColumn": 4,
-                    "startOffset": 111920,
+                    "startOffset": 111921,
                     "endColumn": 109,
-                    "endOffset": 112025
+                    "endOffset": 112026
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8703,9 +8703,9 @@
                 "to": {
                     "startLine": 1465,
                     "startColumn": 4,
-                    "startOffset": 112030,
+                    "startOffset": 112031,
                     "endColumn": 91,
-                    "endOffset": 112117
+                    "endOffset": 112118
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8722,10 +8722,10 @@
                 "to": {
                     "startLine": 1466,
                     "startColumn": 4,
-                    "startOffset": 112122,
+                    "startOffset": 112123,
                     "endLine": 1467,
                     "endColumn": 12,
-                    "endOffset": 112217
+                    "endOffset": 112218
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8743,10 +8743,10 @@
                 "to": {
                     "startLine": 1468,
                     "startColumn": 4,
-                    "startOffset": 112222,
+                    "startOffset": 112223,
                     "endLine": 1469,
                     "endColumn": 12,
-                    "endOffset": 112329
+                    "endOffset": 112330
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8764,10 +8764,10 @@
                 "to": {
                     "startLine": 1470,
                     "startColumn": 4,
-                    "startOffset": 112334,
+                    "startOffset": 112335,
                     "endLine": 1471,
                     "endColumn": 12,
-                    "endOffset": 112443
+                    "endOffset": 112444
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8785,10 +8785,10 @@
                 "to": {
                     "startLine": 1472,
                     "startColumn": 4,
-                    "startOffset": 112448,
+                    "startOffset": 112449,
                     "endLine": 1473,
                     "endColumn": 12,
-                    "endOffset": 112559
+                    "endOffset": 112560
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8806,10 +8806,10 @@
                 "to": {
                     "startLine": 1474,
                     "startColumn": 4,
-                    "startOffset": 112564,
+                    "startOffset": 112565,
                     "endLine": 1475,
                     "endColumn": 12,
-                    "endOffset": 112675
+                    "endOffset": 112676
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8827,9 +8827,9 @@
                 "to": {
                     "startLine": 1476,
                     "startColumn": 4,
-                    "startOffset": 112680,
+                    "startOffset": 112681,
                     "endColumn": 93,
-                    "endOffset": 112769
+                    "endOffset": 112770
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8846,9 +8846,9 @@
                 "to": {
                     "startLine": 1477,
                     "startColumn": 4,
-                    "startOffset": 112774,
+                    "startOffset": 112775,
                     "endColumn": 113,
-                    "endOffset": 112883
+                    "endOffset": 112884
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8865,9 +8865,9 @@
                 "to": {
                     "startLine": 1478,
                     "startColumn": 4,
-                    "startOffset": 112888,
+                    "startOffset": 112889,
                     "endColumn": 111,
-                    "endOffset": 112995
+                    "endOffset": 112996
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8884,10 +8884,10 @@
                 "to": {
                     "startLine": 1479,
                     "startColumn": 4,
-                    "startOffset": 113000,
+                    "startOffset": 113001,
                     "endLine": 1480,
                     "endColumn": 12,
-                    "endOffset": 113097
+                    "endOffset": 113098
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8905,10 +8905,10 @@
                 "to": {
                     "startLine": 1481,
                     "startColumn": 4,
-                    "startOffset": 113102,
+                    "startOffset": 113103,
                     "endLine": 1482,
                     "endColumn": 12,
-                    "endOffset": 113217
+                    "endOffset": 113218
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8926,10 +8926,10 @@
                 "to": {
                     "startLine": 1483,
                     "startColumn": 4,
-                    "startOffset": 113222,
+                    "startOffset": 113223,
                     "endLine": 1484,
                     "endColumn": 12,
-                    "endOffset": 113339
+                    "endOffset": 113340
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8947,9 +8947,9 @@
                 "to": {
                     "startLine": 1485,
                     "startColumn": 4,
-                    "startOffset": 113344,
+                    "startOffset": 113345,
                     "endColumn": 81,
-                    "endOffset": 113421
+                    "endOffset": 113422
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8966,9 +8966,9 @@
                 "to": {
                     "startLine": 1486,
                     "startColumn": 4,
-                    "startOffset": 113426,
+                    "startOffset": 113427,
                     "endColumn": 103,
-                    "endOffset": 113525
+                    "endOffset": 113526
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -8985,9 +8985,9 @@
                 "to": {
                     "startLine": 1487,
                     "startColumn": 4,
-                    "startOffset": 113530,
+                    "startOffset": 113531,
                     "endColumn": 119,
-                    "endOffset": 113645
+                    "endOffset": 113646
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9004,9 +9004,9 @@
                 "to": {
                     "startLine": 1488,
                     "startColumn": 4,
-                    "startOffset": 113650,
+                    "startOffset": 113651,
                     "endColumn": 125,
-                    "endOffset": 113771
+                    "endOffset": 113772
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9023,9 +9023,9 @@
                 "to": {
                     "startLine": 1489,
                     "startColumn": 4,
-                    "startOffset": 113776,
+                    "startOffset": 113777,
                     "endColumn": 97,
-                    "endOffset": 113869
+                    "endOffset": 113870
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9042,9 +9042,9 @@
                 "to": {
                     "startLine": 1490,
                     "startColumn": 4,
-                    "startOffset": 113874,
+                    "startOffset": 113875,
                     "endColumn": 93,
-                    "endOffset": 113963
+                    "endOffset": 113964
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9061,9 +9061,9 @@
                 "to": {
                     "startLine": 1491,
                     "startColumn": 4,
-                    "startOffset": 113968,
+                    "startOffset": 113969,
                     "endColumn": 87,
-                    "endOffset": 114051
+                    "endOffset": 114052
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9080,9 +9080,9 @@
                 "to": {
                     "startLine": 1492,
                     "startColumn": 4,
-                    "startOffset": 114056,
+                    "startOffset": 114057,
                     "endColumn": 111,
-                    "endOffset": 114163
+                    "endOffset": 114164
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9099,9 +9099,9 @@
                 "to": {
                     "startLine": 1493,
                     "startColumn": 4,
-                    "startOffset": 114168,
+                    "startOffset": 114169,
                     "endColumn": 115,
-                    "endOffset": 114279
+                    "endOffset": 114280
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9118,9 +9118,9 @@
                 "to": {
                     "startLine": 1494,
                     "startColumn": 4,
-                    "startOffset": 114284,
+                    "startOffset": 114285,
                     "endColumn": 121,
-                    "endOffset": 114401
+                    "endOffset": 114402
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9137,9 +9137,9 @@
                 "to": {
                     "startLine": 1495,
                     "startColumn": 4,
-                    "startOffset": 114406,
+                    "startOffset": 114407,
                     "endColumn": 111,
-                    "endOffset": 114513
+                    "endOffset": 114514
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9156,10 +9156,10 @@
                 "to": {
                     "startLine": 1496,
                     "startColumn": 4,
-                    "startOffset": 114518,
+                    "startOffset": 114519,
                     "endLine": 1498,
                     "endColumn": 12,
-                    "endOffset": 114688
+                    "endOffset": 114689
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9177,9 +9177,9 @@
                 "to": {
                     "startLine": 1499,
                     "startColumn": 4,
-                    "startOffset": 114693,
+                    "startOffset": 114694,
                     "endColumn": 115,
-                    "endOffset": 114804
+                    "endOffset": 114805
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9196,9 +9196,9 @@
                 "to": {
                     "startLine": 1500,
                     "startColumn": 4,
-                    "startOffset": 114809,
+                    "startOffset": 114810,
                     "endColumn": 85,
-                    "endOffset": 114890
+                    "endOffset": 114891
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9215,9 +9215,9 @@
                 "to": {
                     "startLine": 1501,
                     "startColumn": 4,
-                    "startOffset": 114895,
+                    "startOffset": 114896,
                     "endColumn": 91,
-                    "endOffset": 114982
+                    "endOffset": 114983
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9234,10 +9234,10 @@
                 "to": {
                     "startLine": 1502,
                     "startColumn": 4,
-                    "startOffset": 114987,
+                    "startOffset": 114988,
                     "endLine": 1503,
                     "endColumn": 12,
-                    "endOffset": 115094
+                    "endOffset": 115095
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9255,10 +9255,10 @@
                 "to": {
                     "startLine": 1504,
                     "startColumn": 4,
-                    "startOffset": 115099,
+                    "startOffset": 115100,
                     "endLine": 1505,
                     "endColumn": 12,
-                    "endOffset": 115218
+                    "endOffset": 115219
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9276,9 +9276,9 @@
                 "to": {
                     "startLine": 1506,
                     "startColumn": 4,
-                    "startOffset": 115223,
+                    "startOffset": 115224,
                     "endColumn": 66,
-                    "endOffset": 115285
+                    "endOffset": 115286
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9295,10 +9295,10 @@
                 "to": {
                     "startLine": 1507,
                     "startColumn": 4,
-                    "startOffset": 115290,
+                    "startOffset": 115291,
                     "endLine": 1508,
                     "endColumn": 12,
-                    "endOffset": 115411
+                    "endOffset": 115412
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9316,9 +9316,9 @@
                 "to": {
                     "startLine": 1509,
                     "startColumn": 4,
-                    "startOffset": 115416,
+                    "startOffset": 115417,
                     "endColumn": 67,
-                    "endOffset": 115479
+                    "endOffset": 115480
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9335,10 +9335,10 @@
                 "to": {
                     "startLine": 1510,
                     "startColumn": 4,
-                    "startOffset": 115484,
+                    "startOffset": 115485,
                     "endLine": 1511,
                     "endColumn": 12,
-                    "endOffset": 115607
+                    "endOffset": 115608
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9356,10 +9356,10 @@
                 "to": {
                     "startLine": 1512,
                     "startColumn": 4,
-                    "startOffset": 115612,
+                    "startOffset": 115613,
                     "endLine": 1513,
                     "endColumn": 12,
-                    "endOffset": 115751
+                    "endOffset": 115752
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9377,10 +9377,10 @@
                 "to": {
                     "startLine": 1514,
                     "startColumn": 4,
-                    "startOffset": 115756,
+                    "startOffset": 115757,
                     "endLine": 1515,
                     "endColumn": 12,
-                    "endOffset": 115879
+                    "endOffset": 115880
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9398,9 +9398,9 @@
                 "to": {
                     "startLine": 1516,
                     "startColumn": 4,
-                    "startOffset": 115884,
+                    "startOffset": 115885,
                     "endColumn": 68,
-                    "endOffset": 115948
+                    "endOffset": 115949
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9417,9 +9417,9 @@
                 "to": {
                     "startLine": 1517,
                     "startColumn": 4,
-                    "startOffset": 115953,
+                    "startOffset": 115954,
                     "endColumn": 94,
-                    "endOffset": 116043
+                    "endOffset": 116044
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9436,9 +9436,9 @@
                 "to": {
                     "startLine": 1518,
                     "startColumn": 4,
-                    "startOffset": 116048,
+                    "startOffset": 116049,
                     "endColumn": 114,
-                    "endOffset": 116158
+                    "endOffset": 116159
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9455,9 +9455,9 @@
                 "to": {
                     "startLine": 1519,
                     "startColumn": 4,
-                    "startOffset": 116163,
+                    "startOffset": 116164,
                     "endColumn": 112,
-                    "endOffset": 116271
+                    "endOffset": 116272
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9474,9 +9474,9 @@
                 "to": {
                     "startLine": 1520,
                     "startColumn": 4,
-                    "startOffset": 116276,
+                    "startOffset": 116277,
                     "endColumn": 98,
-                    "endOffset": 116370
+                    "endOffset": 116371
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9493,9 +9493,9 @@
                 "to": {
                     "startLine": 1521,
                     "startColumn": 4,
-                    "startOffset": 116375,
+                    "startOffset": 116376,
                     "endColumn": 108,
-                    "endOffset": 116479
+                    "endOffset": 116480
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9512,9 +9512,9 @@
                 "to": {
                     "startLine": 1522,
                     "startColumn": 4,
-                    "startOffset": 116484,
+                    "startOffset": 116485,
                     "endColumn": 110,
-                    "endOffset": 116590
+                    "endOffset": 116591
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9531,9 +9531,9 @@
                 "to": {
                     "startLine": 1523,
                     "startColumn": 4,
-                    "startOffset": 116595,
+                    "startOffset": 116596,
                     "endColumn": 110,
-                    "endOffset": 116701
+                    "endOffset": 116702
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9550,9 +9550,9 @@
                 "to": {
                     "startLine": 1524,
                     "startColumn": 4,
-                    "startOffset": 116706,
+                    "startOffset": 116707,
                     "endColumn": 100,
-                    "endOffset": 116802
+                    "endOffset": 116803
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9569,9 +9569,9 @@
                 "to": {
                     "startLine": 1525,
                     "startColumn": 4,
-                    "startOffset": 116807,
+                    "startOffset": 116808,
                     "endColumn": 104,
-                    "endOffset": 116907
+                    "endOffset": 116908
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9588,10 +9588,10 @@
                 "to": {
                     "startLine": 1526,
                     "startColumn": 4,
-                    "startOffset": 116912,
+                    "startOffset": 116913,
                     "endLine": 1527,
                     "endColumn": 12,
-                    "endOffset": 117019
+                    "endOffset": 117020
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9609,10 +9609,10 @@
                 "to": {
                     "startLine": 1528,
                     "startColumn": 4,
-                    "startOffset": 117024,
+                    "startOffset": 117025,
                     "endLine": 1529,
                     "endColumn": 12,
-                    "endOffset": 117149
+                    "endOffset": 117150
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9630,9 +9630,9 @@
                 "to": {
                     "startLine": 1530,
                     "startColumn": 4,
-                    "startOffset": 117154,
+                    "startOffset": 117155,
                     "endColumn": 90,
-                    "endOffset": 117240
+                    "endOffset": 117241
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9649,9 +9649,9 @@
                 "to": {
                     "startLine": 1531,
                     "startColumn": 4,
-                    "startOffset": 117245,
+                    "startOffset": 117246,
                     "endColumn": 122,
-                    "endOffset": 117363
+                    "endOffset": 117364
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9668,10 +9668,10 @@
                 "to": {
                     "startLine": 1532,
                     "startColumn": 4,
-                    "startOffset": 117368,
+                    "startOffset": 117369,
                     "endLine": 1533,
                     "endColumn": 12,
-                    "endOffset": 117475
+                    "endOffset": 117476
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9689,9 +9689,9 @@
                 "to": {
                     "startLine": 1534,
                     "startColumn": 4,
-                    "startOffset": 117480,
+                    "startOffset": 117481,
                     "endColumn": 85,
-                    "endOffset": 117561
+                    "endOffset": 117562
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9708,9 +9708,9 @@
                 "to": {
                     "startLine": 1535,
                     "startColumn": 4,
-                    "startOffset": 117566,
+                    "startOffset": 117567,
                     "endColumn": 103,
-                    "endOffset": 117665
+                    "endOffset": 117666
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9727,10 +9727,10 @@
                 "to": {
                     "startLine": 1536,
                     "startColumn": 4,
-                    "startOffset": 117670,
+                    "startOffset": 117671,
                     "endLine": 1537,
                     "endColumn": 12,
-                    "endOffset": 117773
+                    "endOffset": 117774
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9748,10 +9748,10 @@
                 "to": {
                     "startLine": 1538,
                     "startColumn": 4,
-                    "startOffset": 117778,
+                    "startOffset": 117779,
                     "endLine": 1539,
                     "endColumn": 12,
-                    "endOffset": 117873
+                    "endOffset": 117874
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9769,10 +9769,10 @@
                 "to": {
                     "startLine": 1540,
                     "startColumn": 4,
-                    "startOffset": 117878,
+                    "startOffset": 117879,
                     "endLine": 1541,
                     "endColumn": 12,
-                    "endOffset": 117991
+                    "endOffset": 117992
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9790,10 +9790,10 @@
                 "to": {
                     "startLine": 1542,
                     "startColumn": 4,
-                    "startOffset": 117996,
+                    "startOffset": 117997,
                     "endLine": 1543,
                     "endColumn": 12,
-                    "endOffset": 118095
+                    "endOffset": 118096
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9811,10 +9811,10 @@
                 "to": {
                     "startLine": 1544,
                     "startColumn": 4,
-                    "startOffset": 118100,
+                    "startOffset": 118101,
                     "endLine": 1545,
                     "endColumn": 12,
-                    "endOffset": 118199
+                    "endOffset": 118200
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9832,10 +9832,10 @@
                 "to": {
                     "startLine": 1546,
                     "startColumn": 4,
-                    "startOffset": 118204,
+                    "startOffset": 118205,
                     "endLine": 1547,
                     "endColumn": 12,
-                    "endOffset": 118325
+                    "endOffset": 118326
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9853,9 +9853,9 @@
                 "to": {
                     "startLine": 1548,
                     "startColumn": 4,
-                    "startOffset": 118330,
+                    "startOffset": 118331,
                     "endColumn": 87,
-                    "endOffset": 118413
+                    "endOffset": 118414
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9872,9 +9872,9 @@
                 "to": {
                     "startLine": 1549,
                     "startColumn": 4,
-                    "startOffset": 118418,
+                    "startOffset": 118419,
                     "endColumn": 107,
-                    "endOffset": 118521
+                    "endOffset": 118522
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9891,9 +9891,9 @@
                 "to": {
                     "startLine": 1550,
                     "startColumn": 4,
-                    "startOffset": 118526,
+                    "startOffset": 118527,
                     "endColumn": 99,
-                    "endOffset": 118621
+                    "endOffset": 118622
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9910,9 +9910,9 @@
                 "to": {
                     "startLine": 1551,
                     "startColumn": 4,
-                    "startOffset": 118626,
+                    "startOffset": 118627,
                     "endColumn": 89,
-                    "endOffset": 118711
+                    "endOffset": 118712
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9929,9 +9929,9 @@
                 "to": {
                     "startLine": 1552,
                     "startColumn": 4,
-                    "startOffset": 118716,
+                    "startOffset": 118717,
                     "endColumn": 109,
-                    "endOffset": 118821
+                    "endOffset": 118822
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9948,9 +9948,9 @@
                 "to": {
                     "startLine": 1553,
                     "startColumn": 4,
-                    "startOffset": 118826,
+                    "startOffset": 118827,
                     "endColumn": 83,
-                    "endOffset": 118905
+                    "endOffset": 118906
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9967,9 +9967,9 @@
                 "to": {
                     "startLine": 1554,
                     "startColumn": 4,
-                    "startOffset": 118910,
+                    "startOffset": 118911,
                     "endColumn": 83,
-                    "endOffset": 118989
+                    "endOffset": 118990
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -9986,9 +9986,9 @@
                 "to": {
                     "startLine": 1555,
                     "startColumn": 4,
-                    "startOffset": 118994,
+                    "startOffset": 118995,
                     "endColumn": 53,
-                    "endOffset": 119043
+                    "endOffset": 119044
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -10005,9 +10005,9 @@
                 "to": {
                     "startLine": 1556,
                     "startColumn": 4,
-                    "startOffset": 119048,
+                    "startOffset": 119049,
                     "endColumn": 63,
-                    "endOffset": 119107
+                    "endOffset": 119108
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -10024,9 +10024,9 @@
                 "to": {
                     "startLine": 1557,
                     "startColumn": 4,
-                    "startOffset": 119112,
+                    "startOffset": 119113,
                     "endColumn": 105,
-                    "endOffset": 119213
+                    "endOffset": 119214
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -10043,9 +10043,9 @@
                 "to": {
                     "startLine": 1558,
                     "startColumn": 4,
-                    "startOffset": 119218,
+                    "startOffset": 119219,
                     "endColumn": 109,
-                    "endOffset": 119323
+                    "endOffset": 119324
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -10062,9 +10062,9 @@
                 "to": {
                     "startLine": 1559,
                     "startColumn": 4,
-                    "startOffset": 119328,
+                    "startOffset": 119329,
                     "endColumn": 83,
-                    "endOffset": 119407
+                    "endOffset": 119408
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -10081,9 +10081,9 @@
                 "to": {
                     "startLine": 1560,
                     "startColumn": 4,
-                    "startOffset": 119412,
+                    "startOffset": 119413,
                     "endColumn": 119,
-                    "endOffset": 119527
+                    "endOffset": 119528
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",

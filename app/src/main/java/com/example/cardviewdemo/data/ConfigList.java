@@ -32,4 +32,5 @@ public class ConfigList {
     public static final String TAG_OVERVIEW = "overview";
     public static final String TAG_VOTER_RATING = "vote_average";
     public static final String TOTAL_PAGES = "total_pages";
+    public static final String MOVIE_ID = "id";
 }

@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     //Creating a List of movies
     private List<MovieDBAdapter> listMovieDB;
-    private int resultCount = 0;
     //Creating Views
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
@@ -81,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
                         // display response
                         Log.d("Response", response.toString());
                         try {
-                            resultCount = response.getInt(ConfigList.TOTAL_PAGES);
                             JSONArray jsonArray = response.getJSONArray("results");
                             parseData(jsonArray);
                             Log.v("Response is:", jsonArray.toString());
@@ -135,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 json = array.getJSONObject(i);
                 movieDBAdapter.setPoster_path(json.getString(ConfigList.TAG_IMAGE_URL));
+                movieDBAdapter.setMovie_id(json.getInt(ConfigList.MOVIE_ID));
                 movieDBAdapter.setBackdrop_path(json.getString(ConfigList.TAG_BACKDROP));
                 movieDBAdapter.setOriginalTitle(json.getString(ConfigList.TAG_TITLE));
                 movieDBAdapter.setVote_average(json.getDouble(ConfigList.TAG_VOTER_RATING));

@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
@@ -26,6 +27,7 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
 
     //List of movieDBAdapter for CardView list
     List<MovieDBAdapter> movieDBAdapter;
+    int[] movieID;
 
     private ImageLoader imageLoader;
     private Context context;
@@ -36,6 +38,14 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
         //Getting all the cards
         this.movieDBAdapter = movieDBAdapter;
         this.context = context;
+        if (movieDBAdapter.size() != 0) {
+            movieID = new int[movieDBAdapter.size()];
+            for (int i = 0; i < movieDBAdapter.size(); i++) {
+                this.movieID[i] = movieDBAdapter.get(i).getMovie_id();
+            }
+        } else {
+            Toast.makeText(context, " is empty", Toast.LENGTH_SHORT).show();
+        }
     }
 
 
@@ -93,7 +103,6 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
         notifyItemRemoved(position);
     }
 
-
     class ViewHolder extends RecyclerView.ViewHolder{
         public NetworkImageView poster_path;
         public NetworkImageView backdrop_path;
@@ -105,7 +114,7 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
         public TextView vote_average;
         Typeface tp = Typeface.createFromAsset(context.getAssets(), "fonts/segoeuil.ttf");
 
-        public ViewHolder(View itemView) {
+        public ViewHolder(final View itemView) {
             super(itemView);
             poster_path = (NetworkImageView) itemView.findViewById(R.id.poster_path);
             backdrop_path = (NetworkImageView) itemView.findViewById(R.id.backdrop_path);
@@ -125,6 +134,9 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(v.getContext(), CardViewDetailActivity.class);
+                    int position = getAdapterPosition();
+                    int movie_id = movieID[position];
+                    intent.putExtra("movie_id", String.valueOf(movie_id));
                     v.getContext().startActivity(intent);
                 }
             });

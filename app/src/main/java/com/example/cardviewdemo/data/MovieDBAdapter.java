@@ -20,8 +20,21 @@ public class MovieDBAdapter {
     private String language;
     private String overview;
     private String vote_average;
+    private int movie_id;
+
 
     //Getters and Setters
+
+    public int getMovie_id() {
+        return movie_id;
+    }
+
+    public void setMovie_id(int movie_id) {
+        this.movie_id = movie_id;
+    }
+
+
+
     public String getPoster_path() {
         return poster_path;
     }
