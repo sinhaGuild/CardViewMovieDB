@@ -120,7 +120,7 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
             backdrop_path = (NetworkImageView) itemView.findViewById(R.id.backdrop_path);
 
             //Set background Image to Grey
-            setImageToGreyScale(backdrop_path);
+            setImageToGreyScale(poster_path);
 
             original_title = (TextView) itemView.findViewById(R.id.original_title);
             vote_average = (TextView) itemView.findViewById(R.id.vote_average);

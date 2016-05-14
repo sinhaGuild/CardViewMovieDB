@@ -1,34 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/poster_path_detail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backdrop"
-    android:backgroundTint="@android:color/holo_red_dark"
-    android:backgroundTintMode="multiply"
     android:orientation="vertical">
+    <!--android:background="@drawable/backdrop"-->
+    <!--android:backgroundTint="@android:color/holo_red_dark"-->
+    <!--android:backgroundTintMode="multiply"-->
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        android:layout_height="wrap_content">
+
 
         <com.android.volley.toolbox.NetworkImageView
-            android:id="@+id/iv"
+            android:id="@+id/backdrop_path_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:backgroundTintMode="add"
+            android:scaleType="centerCrop"
+            android:src="@drawable/backdrop" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/poster_path_detail"
             android:layout_width="180dp"
             android:layout_height="240dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:background="@android:color/white"
             android:padding="1dp"
             android:scaleType="fitXY"
             android:src="@drawable/poster" />
 
         <com.example.TextViewPlus
+            android:id="@+id/original_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/poster_path_detail"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="TITLE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:customFont="fonts/Roboto-Bold.ttf" />
+
+        <com.example.TextViewPlus
+            android:id="@+id/original_title_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/original_title_tv"
+            android:layout_toRightOf="@id/poster_path_detail"
+            android:paddingLeft="10dp"
+            android:text="genre details here"
+            android:textSize="10sp"
+            app:customFont="fonts/Roboto-Regular.ttf" />
+
+
+        <com.example.TextViewPlus
             android:id="@+id/genre_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/iv"
+            android:layout_below="@id/original_title_detail"
+            android:layout_toRightOf="@id/poster_path_detail"
             android:paddingLeft="10dp"
+            android:paddingTop="10dp"
             android:text="GENRE"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -39,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/genre_tv"
-            android:layout_toRightOf="@id/iv"
+            android:layout_toRightOf="@id/poster_path_detail"
             android:paddingLeft="10dp"
             android:text="genre details here"
             android:textSize="10sp"
@@ -50,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/genre_detail"
-            android:layout_toRightOf="@id/iv"
+            android:layout_toRightOf="@id/poster_path_detail"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="LANGUAGE"
@@ -63,7 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/language_tv"
-            android:layout_toRightOf="@id/iv"
+            android:layout_toRightOf="@id/poster_path_detail"
             android:paddingLeft="10dp"
             android:text="language details here"
             android:textSize="10sp"
@@ -75,7 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/language_detail"
-            android:layout_toRightOf="@id/iv"
+            android:layout_toRightOf="@id/poster_path_detail"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="STUDIO"
@@ -88,45 +125,74 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/production_tv"
-            android:layout_toRightOf="@id/iv"
+            android:layout_toRightOf="@id/poster_path_detail"
             android:paddingLeft="10dp"
             android:text="studio details here"
             android:textSize="10sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
+
+        <com.example.TextViewPlus
+            android:id="@+id/vote_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/production_company_detail"
+            android:layout_toRightOf="@id/poster_path_detail"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="VOTE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:customFont="fonts/Roboto-Bold.ttf" />
+
+        <com.example.TextViewPlus
+            android:id="@+id/vote_average_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vote_tv"
+            android:layout_toRightOf="@id/poster_path_detail"
+            android:paddingLeft="10dp"
+            android:text="studio details here"
+            android:textSize="10sp"
+            app:customFont="fonts/Roboto-Regular.ttf" />
+
+
+        <com.example.TextViewPlus
+            android:id="@+id/tagline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/poster_path_detail"
+            android:gravity="center|center_vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/excerpt_example"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:customFont="fonts/Gabrielle.ttf" />
+
+        <com.example.TextViewPlus
+            android:id="@+id/overview_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tagline"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="PLOT"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:customFont="fonts/Roboto-Bold.ttf" />
+
+        <com.example.TextViewPlus
+            android:id="@+id/overview_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overview_tv"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="movie plot here"
+            android:textSize="10sp"
+            app:customFont="fonts/Roboto-Regular.ttf" />
+
     </RelativeLayout>
-
-    <com.example.TextViewPlus
-        android:id="@+id/tagline"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center|center_vertical"
-        android:paddingBottom="10dp"
-        android:text="@string/excerpt_example"
-        android:textColor="@android:color/white"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:customFont="fonts/Gabrielle.ttf" />
-
-    <com.example.TextViewPlus
-        android:id="@+id/overview_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:paddingTop="10dp"
-        android:text="PLOT"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:customFont="fonts/Roboto-Bold.ttf" />
-
-    <com.example.TextViewPlus
-        android:id="@+id/overview_detail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/production_tv"
-        android:layout_toRightOf="@id/iv"
-        android:paddingLeft="10dp"
-        android:text="movie plot here"
-        android:textSize="10sp"
-        app:customFont="fonts/Roboto-Regular.ttf" />
-
 </LinearLayout>

@@ -145,12 +145,13 @@ public class CardViewDetailActivity extends AppCompatActivity {
             movieDBItemDetail.setPoster_path(object.getString(ConfigItem.TAG_IMAGE_URL));
             movieDBItemDetail.setBackdrop_path(object.getString(ConfigItem.TAG_BACKDROP));
             movieDBItemDetail.setOriginal_title(object.getString(ConfigItem.TAG_TITLE));
-            movieDBItemDetail.setVote_average(object.getDouble(ConfigItem.TAG_VOTER_RATING));
-            movieDBItemDetail.setPopularity(object.getInt(ConfigItem.TAG_POPULARITY));
+//            movieDBItemDetail.setVote_average(object.getDouble(ConfigItem.TAG_VOTER_RATING));
+//            movieDBItemDetail.setPopularity(object.getInt(ConfigItem.TAG_POPULARITY));
             movieDBItemDetail.setOriginal_language(object.getString(ConfigItem.TAG_LANGUAGE));
             movieDBItemDetail.setRelease_date(object.getString(ConfigItem.TAG_REAL_RELEASE_DATE));
-            movieDBItemDetail.setOverview(object.getString(ConfigList.TAG_OVERVIEW));
+            movieDBItemDetail.setOverview(object.getString(ConfigItem.TAG_OVERVIEW));
             movieDBItemDetail.setTagline(object.getString(ConfigItem.TAGLINE));
+//            movieDBItemDetail.setRevenue(object.getString(ConfigItem.BUDGET));
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -169,15 +170,15 @@ public class CardViewDetailActivity extends AppCompatActivity {
         NetworkImageView poster_path = (NetworkImageView) findViewById(R.id.poster_path_detail);
         NetworkImageView backdrop_path = (NetworkImageView) findViewById(R.id.backdrop_path_detail);
         TextView original_title = (TextView) findViewById(R.id.original_title_detail);
-        TextView release_date = (TextView) findViewById(R.id.release_date_detail);
-        TextView vote_average = (TextView) findViewById(R.id.vote_average_detail);
+//        TextView release_date = (TextView) findViewById(R.id.release_date_detail);
+//        TextView vote_average = (TextView) findViewById(R.id.vote_average_detail);
         TextView tagline = (TextView) findViewById(R.id.tagline);
         TextView genre = (TextView) findViewById(R.id.genre_detail);
         TextView language = (TextView) findViewById(R.id.language_detail);
-        TextView runtime = (TextView) findViewById(R.id.runtime_detail);
+//        TextView runtime = (TextView) findViewById(R.id.runtime_detail);
         TextView production_company = (TextView) findViewById(R.id.production_company_detail);
-        TextView budget = (TextView) findViewById(R.id.budget_detail);
-        TextView revenue = (TextView) findViewById(R.id.revenue_detail);
+//        TextView budget = (TextView) findViewById(R.id.budget_detail);
+//        TextView revenue = (TextView) findViewById(R.id.revenue_detail);
         TextView overview = (TextView) findViewById(R.id.overview_detail);
 
         imageLoader = CustomVolleyRequest.getInstance(this).getImageLoader();
@@ -193,15 +194,15 @@ public class CardViewDetailActivity extends AppCompatActivity {
         poster_path.setImageUrl(item.getPoster_path(), imageLoader);
         backdrop_path.setImageUrl(item.getBackdrop_path(), imageLoader);
         original_title.setText(item.getOriginal_title());
-        release_date.setText(item.getRelease_date());
+//        release_date.setText(item.getRelease_date());
 //        vote_average.setText(item.getVote_average());
         tagline.setText(item.getTagline());
         genre.setText(item.getGenreString());
         language.setText(item.getOriginal_language());
-        runtime.setText(item.getRuntime());
+//        runtime.setText(item.getRuntime());
         production_company.setText(item.getProductionCompanyString());
-        budget.setText(item.getBudget());
-        revenue.setText(item.getRevenue());
+//        budget.setText(item.getBudget());
+//        revenue.setText(item.getRevenue());
         overview.setText(item.getOverview());
 
     }
