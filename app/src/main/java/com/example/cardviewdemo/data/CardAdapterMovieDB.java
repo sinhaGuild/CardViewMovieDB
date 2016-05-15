@@ -28,6 +28,7 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
     //List of movieDBAdapter for CardView list
     List<MovieDBAdapter> movieDBAdapter;
     int[] movieID;
+    //ParallaxViewController parallax = new ParallaxViewController();
 
     private ImageLoader imageLoader;
     private Context context;
@@ -38,13 +39,17 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
         //Getting all the cards
         this.movieDBAdapter = movieDBAdapter;
         this.context = context;
-        if (movieDBAdapter.size() != 0) {
-            movieID = new int[movieDBAdapter.size()];
-            for (int i = 0; i < movieDBAdapter.size(); i++) {
-                this.movieID[i] = movieDBAdapter.get(i).getMovie_id();
+        if (movieDBAdapter != null) {
+            if (movieDBAdapter.size() != 0) {
+                movieID = new int[movieDBAdapter.size()];
+                for (int i = 0; i < movieDBAdapter.size(); i++) {
+                    this.movieID[i] = movieDBAdapter.get(i).getMovie_id();
+                }
+            } else {
+                Toast.makeText(context, " is empty", Toast.LENGTH_SHORT).show();
             }
         } else {
-            Toast.makeText(context, " is empty", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "is Null", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -54,6 +59,7 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.single_card_new2, parent, false);
         ViewHolder viewHolder = new ViewHolder(v);
+        //parallax.imageParallax(viewHolder.poster_path);
         return viewHolder;
     }
 
@@ -85,6 +91,7 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
     @Override
     public void onAttachedToRecyclerView(RecyclerView recyclerView) {
         super.onAttachedToRecyclerView(recyclerView);
+        //parallax.registerImageParallax(recyclerView);
     }
 
     @Override

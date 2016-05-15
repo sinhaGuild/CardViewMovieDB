@@ -2,12 +2,16 @@ package com.example.cardviewdemo;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
+import android.view.animation.OvershootInterpolator;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -18,6 +22,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.cardviewdemo.data.CardAdapterMovieDB;
 import com.example.cardviewdemo.data.ConfigList;
 import com.example.cardviewdemo.data.MovieDBAdapter;
+import com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -26,7 +31,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+import jp.wasabeef.recyclerview.animators.adapters.SlideInBottomAnimationAdapter;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Toolbar toolbar;
     //Creating a List of movies
@@ -36,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerView.Adapter adapter;
 
+    //FAB stuff
+    private FABToolbarLayout fabToolBar;
+    private View one, two, three, four;
+    private FloatingActionButton fab;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,20 +56,99 @@ public class MainActivity extends AppCompatActivity {
         //Initializing Views
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
+        //recyclerView.setItemAnimator(new ScaleInAnimator());
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-
-        //Initializing our list
+        //Init our list
         listMovieDB = new ArrayList<>();
-
         //getting Json response and parsing it
-        getData();
+        getData(ConfigList.MDB_NOW_PLAYING);
+
+        //FAB onClick init
+        fab = (FloatingActionButton) findViewById(R.id.fabtoolbar_fab);
+
+//        //Vector animation for toolbar button
+//        Drawable drawable = fab.getDrawable();
+//        if (drawable instanceof Animatable){
+//            ((Animatable)drawable).start();
+//        }
+
+
+        fabToolBar = (FABToolbarLayout) findViewById(R.id.fabtoolbar);
+        one = findViewById(R.id.one);
+        two = findViewById(R.id.two);
+        three = findViewById(R.id.three);
+        four = findViewById(R.id.four);
+
+
+        //Fabtoolbar menu 1 Upcoming
+        one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Initializing our list
+                listMovieDB = new ArrayList<>();
+                fabToolBar.hide();
+                getData(ConfigList.MDB_UPCMONING);
+            }
+        });
+
+
+        //Fabtoolbar menu 2 Popular
+        two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Initializing our list
+                listMovieDB = new ArrayList<>();
+                fabToolBar.hide();
+                getData(ConfigList.MDB_POPULAR);
+            }
+        });
+
+        //Fabtoolbar menu 3 Now playing
+        three.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listMovieDB = new ArrayList<>();
+                fabToolBar.hide();
+                getData(ConfigList.MDB_NOW_PLAYING);
+            }
+        });
+
+        //Fabtoolbar menu 4 Latest
+        four.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listMovieDB = new ArrayList<>();
+                fabToolBar.hide();
+                getData(ConfigList.MDB_TOP_RATED);
+            }
+        });
+
+
+        //Fab Button click
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fabToolBar.show();
+            }
+        });
 
     }
 
 
+    //Hide FAB on back button press
+    public void onBackPressed() {
+        fabToolBar.hide();
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        Toast.makeText(this, "You press that button ??", Toast.LENGTH_SHORT).show();
+    }
+
     //This method will get data from the web api
-    private void getData() {
+    private void getData(String movie_group) {
 
         /**
          * Build the URL with variable value of page
@@ -68,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
                 authority(ConfigList.DATA_URL).
                 appendPath("3").
                 appendPath("movie").
-                appendPath(ConfigList.MDB_NOW_PLAYING).
+                appendPath(movie_group).
                 appendQueryParameter(ConfigList.API_KEY, ConfigList.API_KEY_VALUE).
                 appendQueryParameter(ConfigList.PAGES, String.valueOf(1));
         Log.v("URL :", builder.build().toString());
@@ -150,8 +241,14 @@ public class MainActivity extends AppCompatActivity {
         //Finally initializing our adapter
         adapter = new CardAdapterMovieDB(listMovieDB, this);
 
+        //Animator
+        SlideInBottomAnimationAdapter alphaAdapter = new SlideInBottomAnimationAdapter(adapter);
+        alphaAdapter.setDuration(1000);
+//        //Change Interpolater
+        alphaAdapter.setInterpolator(new OvershootInterpolator(0.5f));
+
         //Adding adapter to recyclerview
-        recyclerView.setAdapter(adapter);
+        recyclerView.setAdapter(alphaAdapter);
     }
 
     @Override

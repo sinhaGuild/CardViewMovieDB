@@ -1,9 +1,12 @@
 package com.example.cardviewdemo;
 
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -52,6 +55,8 @@ public class CardViewDetailActivity extends AppCompatActivity {
         }
         getDataForMovieDetail(movieID);
     }
+
+
     //Get Data and Set Data here
 
     public void getDataForMovieDetail(String movieID) {
@@ -169,6 +174,7 @@ public class CardViewDetailActivity extends AppCompatActivity {
 
         NetworkImageView poster_path = (NetworkImageView) findViewById(R.id.poster_path_detail);
         NetworkImageView backdrop_path = (NetworkImageView) findViewById(R.id.backdrop_path_detail);
+        setImageToGreyScale(backdrop_path);
         TextView original_title = (TextView) findViewById(R.id.original_title_detail);
 //        TextView release_date = (TextView) findViewById(R.id.release_date_detail);
 //        TextView vote_average = (TextView) findViewById(R.id.vote_average_detail);
@@ -180,6 +186,9 @@ public class CardViewDetailActivity extends AppCompatActivity {
 //        TextView budget = (TextView) findViewById(R.id.budget_detail);
 //        TextView revenue = (TextView) findViewById(R.id.revenue_detail);
         TextView overview = (TextView) findViewById(R.id.overview_detail);
+
+        //Make Textview scrollable
+        overview.setMovementMethod(new ScrollingMovementMethod());
 
         imageLoader = CustomVolleyRequest.getInstance(this).getImageLoader();
         imageLoader.get(item.getPoster_path(), ImageLoader.getImageListener(poster_path, R.drawable.loading, android.R.drawable.ic_dialog_alert));
@@ -205,6 +214,14 @@ public class CardViewDetailActivity extends AppCompatActivity {
 //        revenue.setText(item.getRevenue());
         overview.setText(item.getOverview());
 
+    }
+
+    //Convert ImageView to greyscale
+    public void setImageToGreyScale(NetworkImageView img) {
+        ColorMatrix matrix = new ColorMatrix();
+        matrix.setSaturation(0);
+        ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
+        img.setColorFilter(filter);
     }
 
 }

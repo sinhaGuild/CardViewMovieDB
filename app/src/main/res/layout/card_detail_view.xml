@@ -86,7 +86,6 @@
                 android:background="@drawable/textview_design_circle"
                 android:gravity="center"
                 android:scaleType="fitXY"
-                android:src="@drawable/vote"
                 android:text="8.2"
                 android:textColor="@android:color/white"
                 android:textStyle="bold" />

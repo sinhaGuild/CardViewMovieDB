@@ -30,11 +30,12 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:background="@android:color/white"
+            android:elevation="20dp"
             android:padding="1dp"
             android:scaleType="fitXY"
             android:src="@drawable/poster" />
 
-        <com.example.TextViewPlus
+        <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/original_title_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,11 +43,12 @@
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="TITLE"
-            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
             android:textStyle="bold"
-            app:customFont="fonts/Roboto-Bold.ttf" />
+            app:customFont="fonts/cover.ttf" />
 
-        <com.example.TextViewPlus
+        <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/original_title_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,11 +56,12 @@
             android:layout_toRightOf="@id/poster_path_detail"
             android:paddingLeft="10dp"
             android:text="genre details here"
-            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
 
-        <com.example.TextViewPlus
+        <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/genre_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,11 +70,12 @@
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="GENRE"
-            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
             android:textStyle="bold"
-            app:customFont="fonts/Roboto-Bold.ttf" />
+            app:customFont="fonts/cover.ttf" />
 
-        <com.example.TextViewPlus
+        <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/genre_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,10 +83,11 @@
             android:layout_toRightOf="@id/poster_path_detail"
             android:paddingLeft="10dp"
             android:text="genre details here"
-            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
-        <com.example.TextViewPlus
+        <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/language_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -91,11 +96,12 @@
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="LANGUAGE"
-            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
             android:textStyle="bold"
-            app:customFont="fonts/Roboto-Bold.ttf" />
+            app:customFont="fonts/cover.ttf" />
 
-        <com.example.TextViewPlus
+        <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/language_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -103,11 +109,12 @@
             android:layout_toRightOf="@id/poster_path_detail"
             android:paddingLeft="10dp"
             android:text="language details here"
-            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
 
-        <com.example.TextViewPlus
+        <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/production_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -116,11 +123,12 @@
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="STUDIO"
-            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
             android:textStyle="bold"
-            app:customFont="fonts/Roboto-Bold.ttf" />
+            app:customFont="fonts/cover.ttf" />
 
-        <com.example.TextViewPlus
+        <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/production_company_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -128,35 +136,12 @@
             android:layout_toRightOf="@id/poster_path_detail"
             android:paddingLeft="10dp"
             android:text="studio details here"
-            android:textSize="10sp"
-            app:customFont="fonts/Roboto-Regular.ttf" />
-
-        <com.example.TextViewPlus
-            android:id="@+id/vote_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/production_company_detail"
-            android:layout_toRightOf="@id/poster_path_detail"
-            android:paddingLeft="10dp"
-            android:paddingTop="10dp"
-            android:text="VOTE"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:customFont="fonts/Roboto-Bold.ttf" />
-
-        <com.example.TextViewPlus
-            android:id="@+id/vote_average_detail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/vote_tv"
-            android:layout_toRightOf="@id/poster_path_detail"
-            android:paddingLeft="10dp"
-            android:text="studio details here"
-            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
 
-        <com.example.TextViewPlus
+        <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/tagline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -171,7 +156,7 @@
             android:textStyle="bold"
             app:customFont="fonts/Gabrielle.ttf" />
 
-        <com.example.TextViewPlus
+        <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/overview_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -179,20 +164,42 @@
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="PLOT"
-            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
             android:textStyle="bold"
-            app:customFont="fonts/Roboto-Bold.ttf" />
+            app:customFont="fonts/cover.ttf" />
 
-        <com.example.TextViewPlus
+        <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/overview_detail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/overview_tv"
+            android:gravity=""
+            android:maxLines="100"
             android:paddingLeft="10dp"
             android:paddingTop="5dp"
+            android:scrollbars="vertical"
             android:text="movie plot here"
-            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
+
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/overview_tv">-->
+        <!--<com.example.cardviewdemo.TextViewPlus-->
+        <!--android:id="@+id/overview_detail"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/overview_tv"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:text="movie plot here"-->
+        <!--android:textSize="10sp"-->
+        <!--app:customFont="fonts/Roboto-Regular.ttf" />-->
+        <!--</ScrollView>-->
 
     </RelativeLayout>
 </LinearLayout>

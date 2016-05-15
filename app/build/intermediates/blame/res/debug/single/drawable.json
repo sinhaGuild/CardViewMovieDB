@@ -1,162 +1,174 @@
 [
     {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_main_shadow.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_main_shadow.png"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/microphone.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/microphone.png"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/loading.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/loading.png"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_feed.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_feed.png"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_dialog_material_background_light.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_full_material.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_main.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_main.png"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_track_material.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/vote.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/vote.png"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/backdrop.jpg",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/backdrop.jpg"
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_face_black_24dp.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_face_black_24dp.xml"
     },
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/poster.jpg",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/poster.jpg"
     },
     {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_text_cursor_material.xml"
     },
     {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_textfield_search_material.xml"
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_main_shadow.png",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_main_shadow.png"
     },
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/headphone.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/headphone.png"
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_dialog_material_background_light.xml"
     },
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_switch_thumb_material.xml"
     },
     {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/card_detail_shape.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/card_detail_shape.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_lucene.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_lucene.png"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/update.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/update.png"
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_top_material.xml"
     },
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/backdrop.jpg",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/backdrop.jpg"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_important_devices_black_24dp.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_important_devices_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/empty_drawable.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.github.fafaldo/fab-toolbar/1.2.0/res/drawable/empty_drawable.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/animated_vector_rotation.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/animated_vector_rotation.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/loading.png",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/loading.png"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/animated_vector_path_morph.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/animated_vector_path_morph.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/card_detail_shape.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/card_detail_shape.xml"
+    },
+    {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/textview_design_circle.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/textview_design_circle.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/classic.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/classic.png"
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/update.png",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/update.png"
     },
     {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_switch_thumb_material.xml"
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_main.png",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_main.png"
     },
     {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/love20.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/love20.png"
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_textfield_search_material.xml"
     },
     {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_batman.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_batman.png"
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_grade_black_24dp.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_grade_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_euro_symbol_black_24dp.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_euro_symbol_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_touch_app_black_24dp.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_touch_app_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_favorite_black_24dp.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_favorite_black_24dp.xml"
     },
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_check_material.xml"
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_internal_bg.xml"
     }
 ]

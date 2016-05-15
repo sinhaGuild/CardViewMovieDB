@@ -1,4 +1,4 @@
-package com.example;
+package com.example.cardviewdemo;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,8 +6,6 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.TextView;
-
-import com.example.cardviewdemo.R;
 
 public class TextViewPlus extends TextView {
     private static final String TAG = "TextView";

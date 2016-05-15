@@ -1,2 +1,0 @@
-CHANGED,/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/cardviewdemo/data/CardAdapterMovieDB$ViewHolder$override.class
-CHANGED,/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
