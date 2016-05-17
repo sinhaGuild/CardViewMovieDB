@@ -44,7 +44,7 @@ public class GridViewAdapter extends ArrayAdapter {
 
         GridViewDetail item = (GridViewDetail) data.get(position);
         holder.imageTitle.setText(item.getTitle());
-        Picasso.with(getContext()).load(item.getImage()).centerCrop().into(holder.image);
+        Picasso.with(getContext()).load(item.getImage()).into(holder.image);
         return row;
     }
 

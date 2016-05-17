@@ -18,9 +18,7 @@
         android:label="@string/app_name"
         android:screenOrientation="landscape"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.example.cardviewdemo.MainActivity"
-            android:label="@string/app_name" >
+        <activity android:name="com.example.cardviewdemo.splash.SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,16 +26,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.cardviewdemo.CardViewDetailActivity"
-            android:label="card_detail_view"
-            android:windowSoftInputMode="adjustPan" >
+            android:name="com.example.cardviewdemo.MainActivity"
+            android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.example.cardviewdemo.VideoFragment2Activity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label=""
-            android:screenOrientation="nosensor" >
-        </activity>
+            android:name="com.example.cardviewdemo.CardViewDetailActivity"
+            android:label="card_detail_view"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

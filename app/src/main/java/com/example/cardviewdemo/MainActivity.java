@@ -52,9 +52,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private View one, two, three, four;
     private FloatingActionButton fab;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         //Initializing Views
@@ -70,14 +72,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //FAB onClick init
         fab = (FloatingActionButton) findViewById(R.id.fabtoolbar_fab);
-
-//        //Vector animation for toolbar button
-//        Drawable drawable = fab.getDrawable();
-//        if (drawable instanceof Animatable){
-//            ((Animatable)drawable).start();
-//        }
-
-
         fabToolBar = (FABToolbarLayout) findViewById(R.id.fabtoolbar);
         one = findViewById(R.id.one);
         two = findViewById(R.id.two);
@@ -163,7 +157,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        Toast.makeText(this, "You press that button ??", Toast.LENGTH_SHORT).show();
+
     }
 
     //This method will get data from the web api
@@ -303,5 +297,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+
 
 }

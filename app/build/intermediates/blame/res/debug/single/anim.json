@@ -20,6 +20,14 @@
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_in_top.xml"
     },
     {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/anim/translate_y.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/anim/translate_y.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/anim/translate_y_reverse.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/anim/translate_y_reverse.xml"
+    },
+    {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_fade_in.xml"
     },

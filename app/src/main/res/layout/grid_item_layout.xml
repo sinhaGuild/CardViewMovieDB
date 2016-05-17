@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="5dp">
 
-    <com.android.volley.toolbox.NetworkImageView
+    <ImageView
         android:id="@+id/grid_image"
         android:layout_width="100dp"
         android:layout_height="100dp"

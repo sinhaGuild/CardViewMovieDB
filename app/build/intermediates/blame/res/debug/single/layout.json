@@ -24,6 +24,10 @@
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_title_item.xml"
     },
     {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/layout/splash_screen.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/layout/splash_screen.xml"
+    },
+    {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/layout/design_layout_tab_icon.xml"
     },
