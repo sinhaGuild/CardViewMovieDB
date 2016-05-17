@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollparent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -9,18 +10,18 @@
     <!--android:backgroundTintMode="multiply"-->
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
         <com.android.volley.toolbox.NetworkImageView
             android:id="@+id/backdrop_path_detail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:adjustViewBounds="true"
             android:alpha="0.4"
             android:backgroundTint="@android:color/holo_red_dark"
             android:backgroundTintMode="add"
-            android:scaleType="centerCrop"
             android:src="@drawable/backdrop" />
 
         <com.android.volley.toolbox.NetworkImageView
@@ -147,7 +148,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/poster_path_detail"
             android:gravity="center|center_vertical"
-            android:paddingBottom="20dp"
             android:paddingTop="20dp"
             android:text="@string/excerpt_example"
             android:textAlignment="center"
@@ -156,11 +156,33 @@
             android:textStyle="bold"
             app:customFont="fonts/Gabrielle.ttf" />
 
+
+        <WebView
+            android:id="@+id/video_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tagline"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" />
+        <!--<Button-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/youtube_play_button"-->
+        <!--android:background="@drawable/ic_launcher"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_below="@+id/tagline"-->
+        <!--android:tint="@android:color/white"/>-->
+
+        <!--<include layout="@layout/fragment_video"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tagline"></include>-->
+
         <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/overview_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tagline"
+            android:layout_below="@id/video_view"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="PLOT"
@@ -184,6 +206,21 @@
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/overview_detail"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:columnWidth="100dp"
+            android:drawSelectorOnTop="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+
         <!--<ScrollView-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent"-->
@@ -202,4 +239,4 @@
         <!--</ScrollView>-->
 
     </RelativeLayout>
-</LinearLayout>
+</ScrollView>

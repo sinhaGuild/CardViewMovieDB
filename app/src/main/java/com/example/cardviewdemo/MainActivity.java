@@ -2,6 +2,7 @@ package com.example.cardviewdemo;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -35,14 +36,17 @@ import jp.wasabeef.recyclerview.animators.adapters.SlideInBottomAnimationAdapter
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    //Page limit
+    public static final int pageLimit = 5;
     Toolbar toolbar;
+    //Exit by back twice
+    boolean doubleBackToExitPressedOnce = false;
     //Creating a List of movies
     private List<MovieDBAdapter> listMovieDB;
     //Creating Views
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerView.Adapter adapter;
-
     //FAB stuff
     private FABToolbarLayout fabToolBar;
     private View one, two, three, four;
@@ -62,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Init our list
         listMovieDB = new ArrayList<>();
         //getting Json response and parsing it
-        getData(ConfigList.MDB_NOW_PLAYING);
+        getData(pageLimit, ConfigList.MDB_NOW_PLAYING);
 
         //FAB onClick init
         fab = (FloatingActionButton) findViewById(R.id.fabtoolbar_fab);
@@ -88,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //Initializing our list
                 listMovieDB = new ArrayList<>();
                 fabToolBar.hide();
-                getData(ConfigList.MDB_UPCMONING);
+                getData(pageLimit, ConfigList.MDB_UPCMONING);
             }
         });
 
@@ -100,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //Initializing our list
                 listMovieDB = new ArrayList<>();
                 fabToolBar.hide();
-                getData(ConfigList.MDB_POPULAR);
+                getData(pageLimit, ConfigList.MDB_POPULAR);
             }
         });
 
@@ -110,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onClick(View v) {
                 listMovieDB = new ArrayList<>();
                 fabToolBar.hide();
-                getData(ConfigList.MDB_NOW_PLAYING);
+                getData(pageLimit, ConfigList.MDB_NOW_PLAYING);
             }
         });
 
@@ -120,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onClick(View v) {
                 listMovieDB = new ArrayList<>();
                 fabToolBar.hide();
-                getData(ConfigList.MDB_TOP_RATED);
+                getData(pageLimit, ConfigList.MDB_TOP_RATED);
             }
         });
 
@@ -139,6 +143,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //Hide FAB on back button press
     public void onBackPressed() {
         fabToolBar.hide();
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce = false;
+            }
+        }, 2000);
     }
 
 
@@ -148,50 +167,66 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     //This method will get data from the web api
-    private void getData(String movie_group) {
+    private void getData(final int uptil, final String fetchFromMovieDBSortedBy) {
 
         /**
          * Build the URL with variable value of page
          * http://api.themoviedb.org/3/movie/now_playing?api_key=f5ebdbf26f1f950bf415ff4c7d72c476";
          */
-        Uri.Builder builder = new Uri.Builder();
-        builder.scheme("https").
-                authority(ConfigList.DATA_URL).
-                appendPath("3").
-                appendPath("movie").
-                appendPath(movie_group).
-                appendQueryParameter(ConfigList.API_KEY, ConfigList.API_KEY_VALUE).
-                appendQueryParameter(ConfigList.PAGES, String.valueOf(1));
-        Log.v("URL :", builder.build().toString());
-
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, builder.build().toString(), null,
+        final String builtURL = buildURLByPage(1, fetchFromMovieDBSortedBy);
+        Log.v("URL :", builtURL);
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, builtURL, null,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
                         // display response
                         Log.d("Response", response.toString());
                         try {
-                            JSONArray jsonArray = response.getJSONArray("results");
-                            parseData(jsonArray);
-                            Log.v("Response is:", jsonArray.toString());
+                            int totalPages = Integer.parseInt(response.getString("total_pages"));
+                            for (int i = 1; i < uptil; i++) {
+                                JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
+                                        buildURLByPage(i, fetchFromMovieDBSortedBy),
+                                        null,
+                                        new Response.Listener<JSONObject>() {
+                                            @Override
+                                            public void onResponse(JSONObject response) {
+                                                try {
+                                                    JSONArray jsonArray = response.getJSONArray("results");
+                                                    parseData(jsonArray);
+                                                    Log.v("Response is:", jsonArray.toString());
+                                                    Log.d("Response", response.toString());
+                                                } catch (JSONException e) {
+                                                    e.printStackTrace();
+                                                }
+                                            }
+                                        },
+                                        new Response.ErrorListener() {
+                                            @Override
+                                            public void onErrorResponse(VolleyError error) {
+                                                Log.d("Error.Response", error.toString());
+                                            }
+                                        });
+                                //Creating request queue
+                                RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+                                //Adding request to the queue
+                                requestQueue.add(jsonObjectRequest);
+                            }
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
                     }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Log.d("Error.Response", error.toString());
-                    }
-                }
-        );
-
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("Error.Response", error.toString());
+            }
+        });
         //Creating request queue
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-
+        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         //Adding request to the queue
         requestQueue.add(jsonObjectRequest);
+    }
 
 
 //		//Creating a json array request
@@ -214,7 +249,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //				});
 
 //		requestQueue.add(jsonArrayRequest);
+
+    public String buildURLByPage(int uptilPage, String fetchFromMovieDBSortedBy) {
+        Uri.Builder builder = new Uri.Builder();
+        builder.scheme("https").
+                authority(ConfigList.DATA_URL).
+                appendPath("3").
+                appendPath("movie").
+                appendPath(fetchFromMovieDBSortedBy).
+                appendQueryParameter(ConfigList.API_KEY, ConfigList.API_KEY_VALUE).
+                appendQueryParameter(ConfigList.PAGES, String.valueOf(uptilPage));
+        return builder.build().toString();
     }
+
 
     //This method will parse json data
     private void parseData(JSONArray array) {

@@ -21,6 +21,7 @@ public class ConfigList {
     public static final String API_KEY = "api_key";
     public static final String API_KEY_VALUE = "f5ebdbf26f1f950bf415ff4c7d72c476";
     public static final String PAGES = "page";
+    public static final String VIDEO = "append_to_response";
 
     //Tags for my JSON
     public static final String TAG_IMAGE_URL = "poster_path";

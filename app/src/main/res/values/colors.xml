@@ -6,4 +6,6 @@
     <color name="textColorPrimary">#FF4081</color>
     <color name="textColorCard">#8E602F</color>
     <color name="descriptionColor">#FFF600</color>
+    <color name="shadow">#555555</color>
+    <color name="title">#777777</color>
 </resources>

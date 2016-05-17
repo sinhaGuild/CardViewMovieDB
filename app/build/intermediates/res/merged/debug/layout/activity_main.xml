@@ -26,8 +26,7 @@
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </android.support.v7.widget.RecyclerView>
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
 
         <RelativeLayout
             android:id="@id/fabtoolbar_container"
@@ -38,11 +37,11 @@
                 android:id="@id/fabtoolbar_fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:fabSize="normal"
-                app:borderWidth="5dp"
-                android:src="@drawable/ic_touch_app_black_24dp"
                 android:scaleType="fitXY"
-                app:elevation="40dp"/>
+                android:src="@drawable/ic_touch_app_black_24dp"
+                app:borderWidth="5dp"
+                app:elevation="40dp"
+                app:fabSize="normal" />
 
         </RelativeLayout>
 
