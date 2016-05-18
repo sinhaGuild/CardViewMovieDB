@@ -6,13 +6,9 @@ import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.util.Log;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.VideoView;
@@ -33,78 +29,59 @@ import java.io.InputStream;
 public class SplashActivity extends Activity {
 
     //Splash Screen
-    public static final String VIDEO_NAME = "welcome_video.mp4";
+    public static final String VIDEO_NAME = "skydiving.mp4";
     private VideoView mVideoView;
     private Button goButton_splash;
-    private TextViewPlus appname;
+    private TextViewPlus projectID;
+//    private TextViewPlus appName;
+//    Animation myAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            Window window = getWindow();
-            window.setFlags(
-                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
-                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+//            Window window = getWindow();
 //            window.setFlags(
-//                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION,
-//                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        }
+//                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
+//                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//        }
 
         setContentView(R.layout.splash_screen);
 
-        Thread timerThread = new Thread() {
-            public void run() {
-                try {
-                    findView();
-                    File videoFile = getFileStreamPath(VIDEO_NAME);
-                    Log.v(getPackageName().toString(), " video file path " + videoFile.toString());
-                    if (!videoFile.exists()) {
-                        Log.v(getPackageName().toString(), "Video file not found");
-                        videoFile = copyVideoFile();
-                    }
+        findView();
+        initView();
+        File videoFile = getFileStreamPath(VIDEO_NAME);
+        if (!videoFile.exists()) {
+            videoFile = copyVideoFile();
+        }
 
-                    playVideo(videoFile);
-                    //playAnim();
-                    sleep(5000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } finally {
-                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                    startActivity(intent);
-                }
-            }
-        };
-        timerThread.start();
-
-        //Splash Screen
-        ///Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/raw/welcome_video.mp4
+        playVideo(videoFile);
+        playAnim();
 
 
-        //When done, launch MainActivity
-//        Intent intent = new Intent(this, MainActivity.class);
-//        startActivity(intent);
-//        finish();
     }
 
     //Splash screen functions
     private void findView() {
         mVideoView = (VideoView) findViewById(R.id.videoView);
         goButton_splash = (Button) findViewById(R.id.button_splash);
-        appname = (TextViewPlus) findViewById(R.id.splash_title);
-//        formView.post(new Runnable() {
-//            @Override
-//            public void run() {
-//                int delta = formView.getTop()+formView.getHeight();
-//                formView.setTranslationY(-1 * delta);
-//            }
-//        });
+        projectID = (TextViewPlus) findViewById(R.id.splash_subTitle);
+//        appName = (TextViewPlus) findViewById(R.id.splash_title);
+//        myAnimation = AnimationUtils.loadAnimation(SplashActivity.this, R.anim.rotation);
+//        appName.startAnimation(myAnimation);
     }
 
-//    private void initView() {
-//        goButton_splash.setOnClickListener(this);
-//    }
+    private void initView() {
+        goButton_splash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
 
     private void playVideo(File videoFile) {
         mVideoView.setVideoPath(videoFile.getPath());
@@ -119,7 +96,7 @@ public class SplashActivity extends Activity {
     }
 
     private void playAnim() {
-        ObjectAnimator anim = ObjectAnimator.ofFloat(appname, "alpha", 0, 1);
+        ObjectAnimator anim = ObjectAnimator.ofFloat(projectID, "alpha", 0, 1);
         anim.setDuration(4000);
         anim.setRepeatCount(1);
         anim.setRepeatMode(ObjectAnimator.REVERSE);
@@ -127,7 +104,7 @@ public class SplashActivity extends Activity {
         anim.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
-                appname.setVisibility(View.INVISIBLE);
+                projectID.setVisibility(View.INVISIBLE);
             }
         });
     }
@@ -137,7 +114,7 @@ public class SplashActivity extends Activity {
         File videoFile;
         try {
             FileOutputStream fos = openFileOutput(VIDEO_NAME, MODE_PRIVATE);
-            InputStream in = getResources().openRawResource(R.raw.welcome_video);
+            InputStream in = getResources().openRawResource(R.raw.skydiving);
             byte[] buff = new byte[1024];
             int len = 0;
             while ((len = in.read(buff)) != -1) {

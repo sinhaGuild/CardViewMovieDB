@@ -1,4 +1,0 @@
-CHANGED,/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/cardviewdemo/splash/SplashActivity$1$override.class
-CHANGED,/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/cardviewdemo/splash/SplashActivity$override.class
-CHANGED,/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
-CHANGED,/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/cardviewdemo/splash/SplashActivity$3$override.class

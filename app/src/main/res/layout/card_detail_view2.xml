@@ -196,7 +196,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/overview_tv"
-            android:gravity=""
             android:maxLines="100"
             android:paddingLeft="10dp"
             android:paddingTop="5dp"
@@ -206,11 +205,24 @@
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/cast_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overview_detail"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:text="CAST"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:customFont="fonts/cover.ttf" />
+
         <GridView
-            android:id="@+id/gridView"
+            android:id="@+id/gridView_cast"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/overview_detail"
+            android:layout_below="@+id/cast_tv"
             android:layout_margin="5dp"
             android:clickable="true"
             android:columnWidth="100dp"
@@ -220,6 +232,86 @@
             android:numColumns="auto_fit"
             android:stretchMode="columnWidth"
             android:verticalSpacing="5dp" />
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/crew_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gridView_cast"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:text="CREW"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:customFont="fonts/cover.ttf" />
+
+        <GridView
+            android:id="@+id/gridView_crew"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/crew_tv"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:columnWidth="100dp"
+            android:drawSelectorOnTop="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/collection_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gridView_crew"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:text="COLLECTIONS"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:customFont="fonts/cover.ttf" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/collections_backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/collection_tv"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/backdrop" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/collections_poster"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/collection_tv"
+            android:layout_margin="30dp"
+            android:background="@color/colorAccent"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/poster" />
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/collection_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collections_backdrop"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="2dp"
+            android:maxLines="100"
+            android:scrollbars="vertical"
+            android:text="collections title"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:customFont="fonts/Roboto-Bold.ttf" />
+
 
         <!--<ScrollView-->
         <!--android:layout_width="match_parent"-->

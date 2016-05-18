@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private RecyclerView.Adapter adapter;
     //FAB stuff
     private FABToolbarLayout fabToolBar;
-    private View one, two, three, four;
+    private View movie_toolbar, tv_toolbar, collections_toolbar, search_toolbar;
     private FloatingActionButton fab;
 
 
@@ -68,57 +68,57 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Init our list
         listMovieDB = new ArrayList<>();
         //getting Json response and parsing it
-        getData(pageLimit, ConfigList.MDB_NOW_PLAYING);
+        getData(pageLimit, ConfigList.MOVIES_NOW_PLAYING, ConfigList.DATA_TYPE_MOVIES);
 
         //FAB onClick init
         fab = (FloatingActionButton) findViewById(R.id.fabtoolbar_fab);
         fabToolBar = (FABToolbarLayout) findViewById(R.id.fabtoolbar);
-        one = findViewById(R.id.one);
-        two = findViewById(R.id.two);
-        three = findViewById(R.id.three);
-        four = findViewById(R.id.four);
+        movie_toolbar = findViewById(R.id.one);
+        tv_toolbar = findViewById(R.id.two);
+        collections_toolbar = findViewById(R.id.three);
+        search_toolbar = findViewById(R.id.four);
 
 
         //Fabtoolbar menu 1 Upcoming
-        one.setOnClickListener(new View.OnClickListener() {
+        movie_toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Initializing our list
                 listMovieDB = new ArrayList<>();
                 fabToolBar.hide();
-                getData(pageLimit, ConfigList.MDB_UPCMONING);
+                getData(pageLimit, ConfigList.MOVIES_UPCOMING, ConfigList.DATA_TYPE_MOVIES);
             }
         });
 
 
         //Fabtoolbar menu 2 Popular
-        two.setOnClickListener(new View.OnClickListener() {
+        tv_toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Initializing our list
                 listMovieDB = new ArrayList<>();
                 fabToolBar.hide();
-                getData(pageLimit, ConfigList.MDB_POPULAR);
+                getData(pageLimit, ConfigList.TV_TOP_RATED, ConfigList.DATA_TYPE_TV);
             }
         });
 
         //Fabtoolbar menu 3 Now playing
-        three.setOnClickListener(new View.OnClickListener() {
+        collections_toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 listMovieDB = new ArrayList<>();
                 fabToolBar.hide();
-                getData(pageLimit, ConfigList.MDB_NOW_PLAYING);
+                getData(pageLimit, ConfigList.MOVIES_NOW_PLAYING, ConfigList.DATA_TYPE_MOVIES);
             }
         });
 
         //Fabtoolbar menu 4 Latest
-        four.setOnClickListener(new View.OnClickListener() {
+        search_toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 listMovieDB = new ArrayList<>();
                 fabToolBar.hide();
-                getData(pageLimit, ConfigList.MDB_TOP_RATED);
+                getData(pageLimit, ConfigList.MOVIES_TOP_RATED, ConfigList.DATA_TYPE_MOVIES);
             }
         });
 
@@ -131,7 +131,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+//        //Transitions
+//        setupWindowAnimations();
+
     }
+
+//    private void setupWindowAnimations() {
+//        Slide slide = new Slide();
+//        slide.setDuration(1000);
+//        getWindow().setExitTransition(slide);
+//
+//    }
 
 
     //Hide FAB on back button press
@@ -143,7 +153,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "One more BACK and I will QUIT", Toast.LENGTH_SHORT).show();
 
         new Handler().postDelayed(new Runnable() {
 
@@ -161,13 +171,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     //This method will get data from the web api
-    private void getData(final int uptil, final String fetchFromMovieDBSortedBy) {
+    private void getData(final int uptil, final String fetContentSortedBy, final String dataType) {
 
         /**
          * Build the URL with variable value of page
          * http://api.themoviedb.org/3/movie/now_playing?api_key=f5ebdbf26f1f950bf415ff4c7d72c476";
          */
-        final String builtURL = buildURLByPage(1, fetchFromMovieDBSortedBy);
+        final String builtURL = buildURLByPage(1, fetContentSortedBy, dataType);
         Log.v("URL :", builtURL);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, builtURL, null,
                 new Response.Listener<JSONObject>() {
@@ -179,14 +189,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             int totalPages = Integer.parseInt(response.getString("total_pages"));
                             for (int i = 1; i < uptil; i++) {
                                 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
-                                        buildURLByPage(i, fetchFromMovieDBSortedBy),
+                                        buildURLByPage(i, fetContentSortedBy, dataType),
                                         null,
                                         new Response.Listener<JSONObject>() {
                                             @Override
                                             public void onResponse(JSONObject response) {
                                                 try {
                                                     JSONArray jsonArray = response.getJSONArray("results");
-                                                    parseData(jsonArray);
+                                                    parseData(jsonArray, dataType);
                                                     Log.v("Response is:", jsonArray.toString());
                                                     Log.d("Response", response.toString());
                                                 } catch (JSONException e) {
@@ -244,12 +254,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 //		requestQueue.add(jsonArrayRequest);
 
-    public String buildURLByPage(int uptilPage, String fetchFromMovieDBSortedBy) {
+    public String buildURLByPage(int uptilPage, String fetchFromMovieDBSortedBy, String dataType) {
         Uri.Builder builder = new Uri.Builder();
         builder.scheme("https").
                 authority(ConfigList.DATA_URL).
                 appendPath("3").
-                appendPath("movie").
+                appendPath(dataType).
                 appendPath(fetchFromMovieDBSortedBy).
                 appendQueryParameter(ConfigList.API_KEY, ConfigList.API_KEY_VALUE).
                 appendQueryParameter(ConfigList.PAGES, String.valueOf(uptilPage));
@@ -258,7 +268,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     //This method will parse json data
-    private void parseData(JSONArray array) {
+    private void parseData(JSONArray array, String dataType) {
         for (int i = 0; i < array.length(); i++) {
             MovieDBAdapter movieDBAdapter = new MovieDBAdapter();
             JSONObject json = null;
@@ -267,24 +277,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 movieDBAdapter.setPoster_path(json.getString(ConfigList.TAG_IMAGE_URL));
                 movieDBAdapter.setMovie_id(json.getInt(ConfigList.MOVIE_ID));
                 movieDBAdapter.setBackdrop_path(json.getString(ConfigList.TAG_BACKDROP));
-                movieDBAdapter.setOriginalTitle(json.getString(ConfigList.TAG_TITLE));
+
+                //check if movies or TV
+                if (dataType.equals(ConfigList.DATA_TYPE_MOVIES)) {
+                    movieDBAdapter.setReleaseDate(json.getString(ConfigList.TAG_REAL_RELEASE_DATE));
+                    movieDBAdapter.setOriginalTitle(json.getString(ConfigList.TAG_TITLE));
+                } else {
+                    movieDBAdapter.setReleaseDate(json.getString(ConfigList.TAG_FIRST_AIR_DATE));
+                    movieDBAdapter.setOriginalTitle(json.getString(ConfigList.TV_NAME));
+                }
                 movieDBAdapter.setVote_average(json.getDouble(ConfigList.TAG_VOTER_RATING));
-//				movieDBAdapter.setPopularity(json.getInt(ConfigList.TAG_POPULARITY));
-//				movieDBAdapter.setLanguage(json.getString(ConfigList.TAG_LANGUAGE));
-                movieDBAdapter.setReleaseDate(json.getString(ConfigList.TAG_REAL_RELEASE_DATE));
-//				movieDBAdapter.setOverview(json.getString(ConfigList.TAG_OVERVIEW));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
             listMovieDB.add(movieDBAdapter);
         }
 
-        //Finally initializing our adapter
-        adapter = new CardAdapterMovieDB(listMovieDB, this);
+        //Finally initializing our adapter with the list of objects & pass the type of query type ie. Movies, TV
+        adapter = new CardAdapterMovieDB(listMovieDB, dataType, this);
 
         //Animator
         SlideInBottomAnimationAdapter alphaAdapter = new SlideInBottomAnimationAdapter(adapter);
-        alphaAdapter.setDuration(1000);
+        alphaAdapter.setDuration(200);
 //        //Change Interpolater
         alphaAdapter.setInterpolator(new OvershootInterpolator(0.5f));
 

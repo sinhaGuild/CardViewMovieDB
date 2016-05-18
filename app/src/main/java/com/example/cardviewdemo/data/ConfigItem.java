@@ -11,11 +11,11 @@ public class ConfigItem {
     public static final String TAG_IMAGE_URL_BUILDER = "image.tmdb.org";
 
 //    //Options for MovieDB
-//    public static final String MDB_NOW_PLAYING = "now_playing";
-//    public static final String MDB_LATEST = "latest";
-//    public static final String MDB_POPULAR = "popular";
-//    public static final String MDB_TOP_RATED = "top_rated";
-//    public static final String MDB_UPCMONING = "upcoming";
+//    public static final String MOVIES_NOW_PLAYING = "now_playing";
+//    public static final String MOVIES_LATEST = "latest";
+//    public static final String MOVIES_POPULAR = "popular";
+//    public static final String MOVIES_TOP_RATED = "top_rated";
+//    public static final String MOVIES_UPCOMING = "upcoming";
 
     //KEY
     public static final String API_KEY = "api_key";
@@ -23,8 +23,8 @@ public class ConfigItem {
     public static final String PAGES = "page";
     public static final String RESULTS = "results";
 
-    //Tags for my JSON
-    public static final String TAG_IMAGE_URL = "poster_path";
+    //Tags for my Movies
+    public static final String POSTER_PATH = "poster_path";
     public static final String TAG_BACKDROP = "backdrop_path";
     public static final String TAG_TITLE = "original_title";
     public static final String TAG_POPULARITY = "popularity";
@@ -38,6 +38,12 @@ public class ConfigItem {
     public static final String CREDITS = "credits";
     public static final String CAST = "cast";
     public static final String CREW = "crew";
+    public static final String BELONGS_TO_COLLECTION = "belongs_to_collection";
+
+    //Tags unique for TV
+    public static final String TV_NAME = "original_name";
+    public static final String TV_AIR_DATE = "first_air_date";
+    public static final String TV_STATUS = "status";
 
     //GENRES ARRAY
     public static final String GENRE = "genres";

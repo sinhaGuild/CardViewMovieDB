@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
+import android.transition.Fade;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.webkit.WebSettings;
@@ -26,6 +27,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.Volley;
 import com.example.cardviewdemo.data.Cast;
+import com.example.cardviewdemo.data.Collections;
 import com.example.cardviewdemo.data.ConfigItem;
 import com.example.cardviewdemo.data.ConfigList;
 import com.example.cardviewdemo.data.Crew;
@@ -41,12 +43,16 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by anuragsinha on 16-05-13.
  */
 public class CardViewDetailActivity extends AppCompatActivity {
+
+    String dbType = "";
+
+    Collections collection = new Collections();
+
 
     ProductionCompany[] prod = new ProductionCompany[100];
     Genre[] genre;
@@ -54,12 +60,16 @@ public class CardViewDetailActivity extends AppCompatActivity {
 
     Cast[] cast;
     Crew[] crew;
-    ArrayList<GridViewDetail> castListAdapter;
+    ArrayList<GridViewDetail> castList;
+    ArrayList<GridViewDetail> crewList;
 
     String movieID = null;
     WebView displayYoutubeVideo;
-    GridView castAndCrew;
-    GridViewAdapter castAndCrewAdapter;
+    GridView castGridView;
+    GridView crewGridView;
+    GridViewAdapter castAdapter;
+    GridViewAdapter crewAdapter;
+    MovieDBItemDetail movieDBItemDetail = new MovieDBItemDetail();
     private ImageLoader imageLoader;
 
     @Override
@@ -67,31 +77,37 @@ public class CardViewDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_detail_view);
         displayYoutubeVideo = (WebView) findViewById(R.id.video_view);
-        castAndCrew = (GridView) findViewById(R.id.gridView);
-        castListAdapter = new ArrayList<>();
+        castGridView = (GridView) findViewById(R.id.gridView_cast);
+        crewGridView = (GridView) findViewById(R.id.gridView_crew);
+        castList = new ArrayList<>();
+        crewList = new ArrayList<>();
 
         //get MovieID from Intent extras and pass
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
-            String movie_id_temp = bundle.getString("movie_id");
-            movieID = movie_id_temp;
+            dbType = (String) bundle.getSerializable("DBType");
+            movieID = (String) bundle.getSerializable("movie_id");
+//            String movie_id_temp = bundle.getString("movie_id");
+//            dbType = bundle.getString("DBType");
+//            movieID = movie_id_temp;
         } else {
             Toast.makeText(this, "Intent did not pass movie ID", Toast.LENGTH_SHORT).show();
         }
 
-        getDataForMovieDetail(movieID);
+        getDataForMovieDetail(movieID, dbType);
 
     }
 
-
-    public List<GridViewDetail> getDataForCastCrew(String movieID) {
-
-        return null;
+    private void setupWindowAnimation() {
+        Fade fade = new Fade();
+        fade.setDuration(1000);
+        getWindow().setEnterTransition(fade);
     }
+
 
     //Get Data and Set Data here
 
-    public void getDataForMovieDetail(String movieID) {
+    public void getDataForMovieDetail(String movieID, final String dbType) {
         /**
          * Build the URL with variable value of page
          * http://api.themoviedb.org/3/movie/now_playing?api_key=f5ebdbf26f1f950bf415ff4c7d72c476";
@@ -100,10 +116,10 @@ public class CardViewDetailActivity extends AppCompatActivity {
         builder.scheme("https").
                 authority(ConfigItem.DATA_URL).
                 appendPath("3").
-                appendPath("movie").
+                appendPath(dbType).
                 appendPath(movieID).
                 appendQueryParameter(ConfigList.API_KEY, ConfigList.API_KEY_VALUE).
-                appendQueryParameter(ConfigList.VIDEO, "videos,credits");
+                appendQueryParameter(ConfigList.VIDEO, "videos,credits,similar");
         Log.v("URL :", builder.build().toString());
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, builder.build().toString(), null,
@@ -112,7 +128,7 @@ public class CardViewDetailActivity extends AppCompatActivity {
                     public void onResponse(JSONObject response) {
                         // display response
                         Log.d("Response", response.toString());
-                        parseJsonObject(response);
+                        parseJsonObject(response, dbType);
                     }
                 },
                 new Response.ErrorListener() {
@@ -153,14 +169,32 @@ public class CardViewDetailActivity extends AppCompatActivity {
     }
 
     //This method will parse json data
-    private void parseJsonObject(JSONObject object) {
-        MovieDBItemDetail movieDBItemDetail = new MovieDBItemDetail();
+    private void parseJsonObject(JSONObject object, String dbType) {
         JSONArray jsonProductionCompanies;
         JSONArray jsonGenres;
         JSONArray jsonVideoArray;
         JSONArray jsonCast;
         JSONArray jsonCrew;
+        JSONObject jsonCollections;
+
+
+        //Extract Collections
         try {
+            if (object.getJSONObject(ConfigItem.BELONGS_TO_COLLECTION) != null) {
+                jsonCollections = object.getJSONObject(ConfigItem.BELONGS_TO_COLLECTION);
+                collection.setCollections_backdrop_path(jsonCollections.getString(ConfigItem.TAG_BACKDROP));
+                collection.setCollections_poster_path(jsonCollections.getString(ConfigItem.POSTER_PATH));
+                collection.setName(jsonCollections.getString(ConfigItem.NAME));
+            } else {
+                collection.setName("Oops! No Collections found.");
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+
+        try {
+
             //Extract Cast
             jsonCast = object.getJSONObject(ConfigItem.CREDITS).getJSONArray(ConfigItem.CAST);
             cast = new Cast[jsonCast.length() + 1];
@@ -170,7 +204,7 @@ public class CardViewDetailActivity extends AppCompatActivity {
                 String name = tempcast.getString("name");
                 String profilePath = tempcast.getString("profile_path");
                 cast[i] = new Cast(character, name, profilePath);
-                castListAdapter.add(new GridViewDetail(buildURL(profilePath), name));
+                castList.add(new GridViewDetail(buildURL(profilePath), name));
             }
 
             //Extract Crew
@@ -182,6 +216,7 @@ public class CardViewDetailActivity extends AppCompatActivity {
                 String profilePath = tempcrew.getString("profile_path");
                 String name = tempcrew.getString("name");
                 crew[i] = new Crew(job, profilePath, name);
+                crewList.add(new GridViewDetail(buildURL(profilePath), name));
             }
 
             //Extract videos
@@ -224,27 +259,28 @@ public class CardViewDetailActivity extends AppCompatActivity {
             movieDBItemDetail.setCast(cast);
             movieDBItemDetail.setCrew(crew);
 
-            movieDBItemDetail.setPoster_path(object.getString(ConfigItem.TAG_IMAGE_URL));
+            movieDBItemDetail.setPoster_path(object.getString(ConfigItem.POSTER_PATH));
             movieDBItemDetail.setBackdrop_path(object.getString(ConfigItem.TAG_BACKDROP));
-            movieDBItemDetail.setOriginal_title(object.getString(ConfigItem.TAG_TITLE));
-//            movieDBItemDetail.setVote_average(object.getDouble(ConfigItem.TAG_VOTER_RATING));
-//            movieDBItemDetail.setPopularity(object.getInt(ConfigItem.TAG_POPULARITY));
+
+            if (dbType.equals(ConfigList.DATA_TYPE_MOVIES)) {
+                movieDBItemDetail.setOriginal_title(object.getString(ConfigItem.TAG_TITLE));
+                movieDBItemDetail.setRelease_date(object.getString(ConfigItem.TAG_REAL_RELEASE_DATE));
+                movieDBItemDetail.setTagline(object.getString(ConfigItem.TAGLINE));
+                movieDBItemDetail.setCollection(collection);
+            } else {
+                movieDBItemDetail.setOriginal_title(object.getString(ConfigItem.TV_NAME));
+                movieDBItemDetail.setRelease_date(object.getString(ConfigItem.TV_AIR_DATE));
+                movieDBItemDetail.setTagline(object.getString(ConfigItem.TV_STATUS));
+            }
+
             movieDBItemDetail.setOriginal_language(object.getString(ConfigItem.TAG_LANGUAGE));
-            movieDBItemDetail.setRelease_date(object.getString(ConfigItem.TAG_REAL_RELEASE_DATE));
             movieDBItemDetail.setOverview(object.getString(ConfigItem.TAG_OVERVIEW));
-            movieDBItemDetail.setTagline(object.getString(ConfigItem.TAGLINE));
-//            movieDBItemDetail.setRevenue(object.getString(ConfigItem.BUDGET));
+
         } catch (JSONException e1) {
             e1.printStackTrace();
         }
 
         setCardDetail(movieDBItemDetail);
-
-//        //Finally initializing our adapter
-//        adapter = new CardAdapterMovieDB(listMovieDB, this);
-//
-//        //Adding adapter to recyclerview
-//        recyclerView.setAdapter(adapter);
     }
 
     public void setCardDetail(MovieDBItemDetail item) {
@@ -254,8 +290,14 @@ public class CardViewDetailActivity extends AppCompatActivity {
         setImageToGreyScale(backdrop_path);
         WebView displayYoutubeVideo = (WebView) findViewById(R.id.video_view);
 
-        //Grid View
-        GridView grid = (GridView) findViewById(R.id.gridView);
+        //Collections
+        NetworkImageView collections_poster = (NetworkImageView) findViewById(R.id.collections_poster);
+        NetworkImageView collections_backdrop = (NetworkImageView) findViewById(R.id.collections_backdrop);
+        setImageToGreyScale(collections_backdrop);
+        collections_poster.setImageResource(R.drawable.error_default);
+        collections_backdrop.setImageResource(R.drawable.error_default);
+        TextViewPlus collections_name = (TextViewPlus) findViewById(R.id.collection_title);
+        collections_name.setText("Oops! No Collections found.");
 
         TextView original_title = (TextView) findViewById(R.id.original_title_detail);
         TextView tagline = (TextView) findViewById(R.id.tagline);
@@ -268,22 +310,39 @@ public class CardViewDetailActivity extends AppCompatActivity {
         overview.setMovementMethod(new ScrollingMovementMethod());
 
         //Adapter setting for Cast & Crew
-        castAndCrewAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, castListAdapter);
-        castAndCrew.setAdapter(castAndCrewAdapter);
+        castAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, castList);
+        castGridView.setAdapter(castAdapter);
 
+        crewAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, crewList);
+        crewGridView.setAdapter(crewAdapter);
 
+        //Image loaders
         imageLoader = CustomVolleyRequest.getInstance(this).getImageLoader();
         imageLoader.get(item.getPoster_path(), ImageLoader.getImageListener(poster_path, R.drawable.loading, android.R.drawable.ic_dialog_alert));
         imageLoader.get(item.getBackdrop_path(), ImageLoader.getImageListener(backdrop_path, R.drawable.loading, android.R.drawable.ic_dialog_alert));
 
-        //Set default image if the API return is null
+        //Collections posters & attrs
+        imageLoader.get(item.getPoster_path(), ImageLoader.getImageListener(collections_backdrop, R.drawable.loading, android.R.drawable.ic_dialog_alert));
+        imageLoader.get(item.getBackdrop_path(), ImageLoader.getImageListener(collections_poster, R.drawable.loading, android.R.drawable.ic_dialog_alert));
+        collections_name.setText(item.getCollection().getName());
+
+
+        //Set default image for all images if the API return is null
         poster_path.setErrorImageResId(R.drawable.update);
         backdrop_path.setErrorImageResId(R.drawable.update);
+        collections_backdrop.setErrorImageResId(R.drawable.update);
+        collections_poster.setErrorImageResId(R.drawable.update);
 
-
-        //Set all other attributes
+        //Set art attributes
         poster_path.setImageUrl(item.getPoster_path(), imageLoader);
         backdrop_path.setImageUrl(item.getBackdrop_path(), imageLoader);
+
+        //Collections art
+        collections_backdrop.setImageUrl(item.getCollection().getCollections_backdrop_path(), imageLoader);
+        collections_poster.setImageUrl(item.getCollection().getCollections_poster_path(), imageLoader);
+
+
+        //Other attributes
         original_title.setText(item.getOriginal_title());
         tagline.setText(item.getTagline());
         genre.setText(item.getGenreString());

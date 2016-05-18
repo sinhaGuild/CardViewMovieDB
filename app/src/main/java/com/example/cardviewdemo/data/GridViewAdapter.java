@@ -17,9 +17,9 @@ import java.util.ArrayList;
 public class GridViewAdapter extends ArrayAdapter {
     private Context context;
     private int layoutResourceId;
-    private ArrayList data = new ArrayList();
+    private ArrayList<GridViewDetail> data = new ArrayList<GridViewDetail>();
 
-    public GridViewAdapter(Context context, int layoutResourceId, ArrayList data) {
+    public GridViewAdapter(Context context, int layoutResourceId, ArrayList<GridViewDetail> data) {
         super(context, layoutResourceId, data);
         this.layoutResourceId = layoutResourceId;
         this.context = context;
@@ -42,7 +42,7 @@ public class GridViewAdapter extends ArrayAdapter {
             holder = (ViewHolder) row.getTag();
         }
 
-        GridViewDetail item = (GridViewDetail) data.get(position);
+        GridViewDetail item = data.get(position);
         holder.imageTitle.setText(item.getTitle());
         Picasso.with(getContext()).load(item.getImage()).into(holder.image);
         return row;

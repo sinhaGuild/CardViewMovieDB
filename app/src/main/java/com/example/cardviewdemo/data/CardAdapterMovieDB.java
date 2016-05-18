@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Typeface;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,12 +36,16 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
     private ImageLoader imageLoader;
     private Context context;
 
+    //Query type = Movie, TV
+    private String dBType;
 
-    public CardAdapterMovieDB(List<MovieDBAdapter> movieDBAdapter, Context context) {
+
+    public CardAdapterMovieDB(List<MovieDBAdapter> movieDBAdapter, String dBType, Context context) {
         super();
         //Getting all the cards
         this.movieDBAdapter = movieDBAdapter;
         this.context = context;
+        this.dBType = dBType;
         if (movieDBAdapter != null) {
             if (movieDBAdapter.size() != 0) {
                 movieID = new int[movieDBAdapter.size()];
@@ -77,8 +82,6 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
         //Set default image if the API return is null
         holder.poster_path.setErrorImageResId(R.drawable.update);
         holder.backdrop_path.setErrorImageResId(R.drawable.update);
-
-        //video
 
         //Set all other attributes
         holder.poster_path.setImageUrl(movieDBAdapter1.getPoster_path(), imageLoader);
@@ -139,7 +142,12 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
                     Intent intent = new Intent(v.getContext(), CardViewDetailActivity.class);
                     int position = getAdapterPosition();
                     int movie_id = movieID[position];
-                    intent.putExtra("movie_id", String.valueOf(movie_id));
+                    Bundle bundle = new Bundle();
+                    bundle.putSerializable("movie_id", String.valueOf(movie_id));
+                    bundle.putSerializable("DBType", String.valueOf(dBType));
+                    intent.putExtras(bundle);
+//                    intent.putExtra("movie_id", String.valueOf(movie_id));
+//                    intent.putExtra("DBType", String.valueOf(dBType));
                     v.getContext().startActivity(intent);
                 }
             });
@@ -147,11 +155,7 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
             original_title = (TextView) itemView.findViewById(R.id.original_title);
             vote_average = (TextView) itemView.findViewById(R.id.vote_average);
             release_date = (TextView) itemView.findViewById(R.id.release_date);
-//            popularity = (TextView) itemView.findViewById(R.id.popularity);
-//            language = (TextView) itemView.findViewById(R.id.original_language);
-//            overview = (TextView) itemView.findViewById(R.id.overview2);
-//            original_title.setTypeface(tp);
-//            popularity.setTypeface(tp);
+
         }
 
         //Convert ImageView to greyscale
@@ -161,11 +165,5 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
             ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
             img.setColorFilter(filter);
         }
-
-//        @Override
-//        public void onClick(View v) {
-//            removeMovieCard(getAdapterPosition());
-////            Toast.makeText(context, "Location: "+getAdapterPosition(),Toast.LENGTH_SHORT).show();
-//        }
     }
 }
