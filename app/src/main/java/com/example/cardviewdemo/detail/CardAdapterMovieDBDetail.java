@@ -1,4 +1,4 @@
-package com.example.cardviewdemo.data;
+package com.example.cardviewdemo.detail;
 
 import android.content.Context;
 

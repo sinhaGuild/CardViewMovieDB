@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollparent_person"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--android:background="@drawable/backdrop"-->
+    <!--android:backgroundTint="@android:color/holo_red_dark"-->
+    <!--android:backgroundTintMode="multiply"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/poster_path_person"
+            android:layout_width="180dp"
+            android:layout_height="240dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/white"
+            android:elevation="20dp"
+            android:padding="2dp"
+            android:scaleType="fitXY" />
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/poster_path_person"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="NAME"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:customFont="fonts/cover.ttf" />
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/name_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_tv"
+            android:layout_toRightOf="@id/poster_path_person"
+            android:paddingLeft="10dp"
+            android:text="genre details here"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:customFont="fonts/Roboto-Regular.ttf" />
+
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/age_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_person"
+            android:layout_toRightOf="@id/poster_path_person"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Date of birth"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:customFont="fonts/cover.ttf" />
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/age_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/age_tv"
+            android:layout_toRightOf="@id/poster_path_person"
+            android:paddingLeft="10dp"
+            android:text="genre details here"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:customFont="fonts/Roboto-Regular.ttf" />
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/born_in_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/age_person"
+            android:layout_toRightOf="@id/poster_path_person"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Born in"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:customFont="fonts/cover.ttf" />
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/born_in_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/born_in_tv"
+            android:layout_toRightOf="@id/poster_path_person"
+            android:paddingLeft="10dp"
+            android:text="language details here"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:customFont="fonts/Roboto-Regular.ttf" />
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/bio_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/poster_path_person"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="BIOGRAPHY"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:customFont="fonts/cover.ttf" />
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/bio_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bio_tv"
+            android:maxLines="100"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:scrollbars="vertical"
+            android:text="movie plot here"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:customFont="fonts/Roboto-Regular.ttf" />
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/images_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bio_person"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:scrollbars="vertical"
+            android:text="IMAGES"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:customFont="fonts/cover.ttf" />
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_below="@id/images_title"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/purple_gradient"
+            android:padding="2dp" />
+
+    </RelativeLayout>
+</ScrollView>

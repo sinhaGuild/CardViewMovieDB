@@ -25,7 +25,7 @@
             android:src="@drawable/backdrop" />
 
         <com.android.volley.toolbox.NetworkImageView
-            android:id="@+id/poster_path_detail"
+            android:id="@+id/poster_path_person"
             android:layout_width="180dp"
             android:layout_height="240dp"
             android:layout_marginLeft="10dp"
@@ -37,10 +37,10 @@
             android:src="@drawable/poster" />
 
         <com.example.cardviewdemo.TextViewPlus
-            android:id="@+id/original_title_tv"
+            android:id="@+id/name_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/poster_path_detail"
+            android:layout_toRightOf="@+id/poster_path_person"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="TITLE"
@@ -50,11 +50,11 @@
             app:customFont="fonts/cover.ttf" />
 
         <com.example.cardviewdemo.TextViewPlus
-            android:id="@+id/original_title_detail"
+            android:id="@+id/name_person"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/original_title_tv"
-            android:layout_toRightOf="@id/poster_path_detail"
+            android:layout_below="@+id/name_tv"
+            android:layout_toRightOf="@+id/poster_path_person"
             android:paddingLeft="10dp"
             android:text="genre details here"
             android:textColor="@android:color/white"
@@ -63,11 +63,11 @@
 
 
         <com.example.cardviewdemo.TextViewPlus
-            android:id="@+id/genre_tv"
+            android:id="@+id/age_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/original_title_detail"
-            android:layout_toRightOf="@id/poster_path_detail"
+            android:layout_below="@+id/name_person"
+            android:layout_toRightOf="@+id/poster_path_person"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="GENRE"
@@ -77,11 +77,11 @@
             app:customFont="fonts/cover.ttf" />
 
         <com.example.cardviewdemo.TextViewPlus
-            android:id="@+id/genre_detail"
+            android:id="@+id/age_person"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/genre_tv"
-            android:layout_toRightOf="@id/poster_path_detail"
+            android:layout_below="@+id/age_tv"
+            android:layout_toRightOf="@+id/poster_path_person"
             android:paddingLeft="10dp"
             android:text="genre details here"
             android:textColor="@android:color/white"
@@ -89,11 +89,11 @@
             app:customFont="fonts/Roboto-Regular.ttf" />
 
         <com.example.cardviewdemo.TextViewPlus
-            android:id="@+id/language_tv"
+            android:id="@+id/born_in_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/genre_detail"
-            android:layout_toRightOf="@id/poster_path_detail"
+            android:layout_below="@+id/age_person"
+            android:layout_toRightOf="@+id/poster_path_person"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="LANGUAGE"
@@ -103,11 +103,11 @@
             app:customFont="fonts/cover.ttf" />
 
         <com.example.cardviewdemo.TextViewPlus
-            android:id="@+id/language_detail"
+            android:id="@+id/born_in_person"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/language_tv"
-            android:layout_toRightOf="@id/poster_path_detail"
+            android:layout_below="@+id/born_in_tv"
+            android:layout_toRightOf="@+id/poster_path_person"
             android:paddingLeft="10dp"
             android:text="language details here"
             android:textColor="@android:color/white"
@@ -119,8 +119,8 @@
             android:id="@+id/production_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/language_detail"
-            android:layout_toRightOf="@id/poster_path_detail"
+            android:layout_below="@+id/born_in_person"
+            android:layout_toRightOf="@+id/poster_path_person"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="STUDIO"
@@ -133,8 +133,8 @@
             android:id="@+id/production_company_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/production_tv"
-            android:layout_toRightOf="@id/poster_path_detail"
+            android:layout_below="@+id/production_tv"
+            android:layout_toRightOf="@+id/poster_path_person"
             android:paddingLeft="10dp"
             android:text="studio details here"
             android:textColor="@android:color/white"
@@ -146,7 +146,7 @@
             android:id="@+id/tagline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/poster_path_detail"
+            android:layout_below="@+id/poster_path_person"
             android:gravity="center|center_vertical"
             android:paddingTop="20dp"
             android:text="@string/excerpt_example"
@@ -176,13 +176,13 @@
         <!--<include layout="@layout/fragment_video"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@id/tagline"></include>-->
+        <!--android:layout_below="@+id/tagline"></include>-->
 
         <com.example.cardviewdemo.TextViewPlus
-            android:id="@+id/overview_tv"
+            android:id="@+id/bio_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/video_view"
+            android:layout_below="@+id/video_view"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="PLOT"
@@ -192,10 +192,10 @@
             app:customFont="fonts/cover.ttf" />
 
         <com.example.cardviewdemo.TextViewPlus
-            android:id="@+id/overview_detail"
+            android:id="@+id/bio_person"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/overview_tv"
+            android:layout_below="@+id/bio_tv"
             android:maxLines="100"
             android:paddingLeft="10dp"
             android:paddingTop="5dp"
@@ -209,7 +209,7 @@
             android:id="@+id/cast_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/overview_detail"
+            android:layout_below="@+id/bio_person"
             android:paddingLeft="10dp"
             android:paddingTop="20dp"
             android:text="CAST"
@@ -218,10 +218,10 @@
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
 
-        <GridView
+        <com.example.cardviewdemo.GridViewPlus
             android:id="@+id/gridView_cast"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_below="@+id/cast_tv"
             android:layout_margin="5dp"
             android:clickable="true"
@@ -236,20 +236,20 @@
         <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/crew_tv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/gridView_cast"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/gridView_cast"
             android:paddingLeft="10dp"
-            android:paddingTop="20dp"
+            android:paddingTop="10dp"
             android:text="CREW"
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
 
-        <GridView
+        <com.example.cardviewdemo.GridViewPlus
             android:id="@+id/gridView_crew"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_below="@+id/crew_tv"
             android:layout_margin="5dp"
             android:clickable="true"
@@ -261,12 +261,38 @@
             android:stretchMode="columnWidth"
             android:verticalSpacing="5dp" />
 
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/reviews_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/gridView_crew"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="REVIEWS"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:customFont="fonts/cover.ttf" />
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/reviews_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/reviews_tv"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:text="REVIEWS"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:customFont="fonts/Roboto-Regular.ttf" />
+
 
         <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/collection_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/gridView_crew"
+            android:layout_below="@+id/reviews_detail"
             android:paddingLeft="10dp"
             android:paddingTop="15dp"
             android:text="COLLECTIONS"
@@ -275,11 +301,23 @@
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
 
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/collections_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collection_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:customFont="fonts/Gabrielle.ttf" />
+
         <com.android.volley.toolbox.NetworkImageView
             android:id="@+id/collections_backdrop"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_below="@id/collection_tv"
+            android:layout_below="@+id/collection_tv"
             android:layout_marginTop="10dp"
             android:background="@android:color/white"
             android:scaleType="centerCrop"
@@ -300,7 +338,7 @@
             android:id="@+id/collection_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/collections_backdrop"
+            android:layout_below="@+id/collections_backdrop"
             android:layout_marginLeft="140dp"
             android:layout_marginTop="2dp"
             android:maxLines="100"
@@ -321,7 +359,7 @@
         <!--android:id="@+id/overview_detail"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@id/overview_tv"-->
+        <!--android:layout_below="@+id/overview_tv"-->
         <!--android:paddingLeft="10dp"-->
         <!--android:textColor="@android:color/white"-->
         <!--android:paddingTop="5dp"-->

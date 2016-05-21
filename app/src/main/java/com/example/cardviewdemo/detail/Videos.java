@@ -1,5 +1,5 @@
 
-package com.example.cardviewdemo.data;
+package com.example.cardviewdemo.detail;
 
 public class Videos {
 

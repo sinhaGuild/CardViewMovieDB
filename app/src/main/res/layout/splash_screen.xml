@@ -25,6 +25,13 @@
         android:textStyle="bold"
         app:customFont="fonts/Roboto-Regular.ttf" />
 
+    <!--<ProgressBar-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/splash_progress"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--style="?android:attr/progressBarStyleLarge"/>-->
+
     <com.example.cardviewdemo.TextViewPlus
         android:id="@+id/splash_subTitle"
         android:layout_width="match_parent"
@@ -47,6 +54,7 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/ic_arrow_forward_black_36dp"
         android:backgroundTint="@android:color/white"
+        android:clickable="true"
         android:elevation="50dp" />
 
 </RelativeLayout>

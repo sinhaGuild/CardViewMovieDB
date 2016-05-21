@@ -1,24 +1,32 @@
 
-package com.example.cardviewdemo.data;
+package com.example.cardviewdemo.detail;
 
 
 import android.net.Uri;
 
-public class Crew {
+import com.example.cardviewdemo.config.ConfigItem;
+
+public class CrewThumb {
 
     private String creditId;
     private String department;
-    private int id;
+    private String crewID;
     private String job;
     private String name;
     private String profilePath;
 
-    public Crew(String job, String profilePath, String name) {
+    public CrewThumb(String job, String profilePath, String name) {
         this.job = job;
         this.profilePath = profilePath;
         this.name = name;
     }
 
+    public CrewThumb(String job, String profilePath, String name, String crewID) {
+        this.crewID = crewID;
+        this.job = job;
+        this.profilePath = profilePath;
+        this.name = name;
+    }
 
     public String buildURL(String path) {
         Uri.Builder uri = new Uri.Builder();
@@ -58,17 +66,17 @@ public class Crew {
     }
 
     /**
-     * @return The id
+     * @return The crewID
      */
-    public int getId() {
-        return id;
+    public String getCrewID() {
+        return crewID;
     }
 
     /**
-     * @param id The id
+     * @param crewID The crewID
      */
-    public void setId(int id) {
-        this.id = id;
+    public void setCrewID(String crewID) {
+        this.crewID = crewID;
     }
 
     /**

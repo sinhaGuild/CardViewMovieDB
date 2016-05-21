@@ -1,4 +1,4 @@
-package com.example.cardviewdemo.data;
+package com.example.cardviewdemo.lists;
 
 import android.util.Log;
 

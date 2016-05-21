@@ -8,10 +8,6 @@
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_text_cursor_material.xml"
     },
     {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_main_shadow.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_main_shadow.png"
-    },
-    {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_light.xml"
     },
@@ -40,12 +36,28 @@
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/snake_bg.jpg"
     },
     {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/purple_gradient.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/purple_gradient.xml"
+    },
+    {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_local_movies_black_24dp.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_local_movies_black_24dp.xml"
     },
     {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/bird_square_icon.png",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/bird_square_icon.png"
+    },
+    {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/backdrop.jpg",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/backdrop.jpg"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/oval.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/oval.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/bird_icon.png",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/bird_icon.png"
     },
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_important_devices_black_24dp.xml",
@@ -72,6 +84,10 @@
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/card_detail_shape.xml"
     },
     {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/aku_icon.png",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/aku_icon.png"
+    },
+    {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/textview_design_circle.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/textview_design_circle.xml"
     },
@@ -90,10 +106,6 @@
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_main.png",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_main.png"
     },
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
@@ -152,6 +164,10 @@
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/ic_face_black_24dp.xml"
     },
     {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/gm_round_shadow_icon.png",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/gm_round_shadow_icon.png"
+    },
+    {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_spinner_textfield_background_material.xml"
     },
@@ -160,12 +176,12 @@
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_top_material.xml"
     },
     {
-        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_tv_black_24dp.xml",
@@ -186,6 +202,14 @@
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/error_default.png",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/error_default.png"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/gm_round_icon.png",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/gm_round_icon.png"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/indicator_corner_bg.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.daimajia.slider/library/1.1.5/res/drawable/indicator_corner_bg.xml"
     },
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/ic_keyboard_voice_black_48dp.png",
@@ -234,5 +258,13 @@
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/person.jpg",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/person.jpg"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/drawable/gentleman_icon.png",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/drawable/gentleman_icon.png"
     }
 ]

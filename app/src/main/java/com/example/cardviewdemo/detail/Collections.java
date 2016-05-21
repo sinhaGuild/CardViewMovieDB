@@ -1,6 +1,8 @@
-package com.example.cardviewdemo.data;
+package com.example.cardviewdemo.detail;
 
 import android.net.Uri;
+
+import com.example.cardviewdemo.config.ConfigItem;
 
 /**
  * Created by anuragsinha on 16-05-18.
@@ -18,7 +20,7 @@ public class Collections {
     }
 
     public Collections() {
-        name = "";
+        name = "No Collections";
         collections_backdrop_path = "";
         collections_poster_path = "";
     }

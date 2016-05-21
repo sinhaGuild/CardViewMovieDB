@@ -20,9 +20,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.cardviewdemo.data.CardAdapterMovieDB;
-import com.example.cardviewdemo.data.ConfigList;
-import com.example.cardviewdemo.data.MovieDBAdapter;
+import com.example.cardviewdemo.config.ConfigList;
+import com.example.cardviewdemo.lists.CardAdapterMovieDB;
+import com.example.cardviewdemo.lists.MovieDBAdapter;
 import com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout;
 
 import org.json.JSONArray;
@@ -34,7 +34,7 @@ import java.util.List;
 
 import jp.wasabeef.recyclerview.animators.adapters.SlideInBottomAnimationAdapter;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     //Page limit
     public static final int pageLimit = 5;
@@ -162,12 +162,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 doubleBackToExitPressedOnce = false;
             }
         }, 2000);
-    }
-
-
-    @Override
-    public void onClick(View v) {
-
     }
 
     //This method will get data from the web api

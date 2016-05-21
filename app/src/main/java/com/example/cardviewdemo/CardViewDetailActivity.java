@@ -1,5 +1,6 @@
 package com.example.cardviewdemo;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
@@ -8,12 +9,13 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
-import android.transition.Fade;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,17 +28,17 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.Volley;
-import com.example.cardviewdemo.data.Cast;
-import com.example.cardviewdemo.data.Collections;
-import com.example.cardviewdemo.data.ConfigItem;
-import com.example.cardviewdemo.data.ConfigList;
-import com.example.cardviewdemo.data.Crew;
-import com.example.cardviewdemo.data.Genre;
-import com.example.cardviewdemo.data.GridViewAdapter;
-import com.example.cardviewdemo.data.GridViewDetail;
-import com.example.cardviewdemo.data.MovieDBItemDetail;
-import com.example.cardviewdemo.data.ProductionCompany;
-import com.example.cardviewdemo.data.Videos;
+import com.example.cardviewdemo.config.ConfigItem;
+import com.example.cardviewdemo.config.ConfigList;
+import com.example.cardviewdemo.detail.CastThumb;
+import com.example.cardviewdemo.detail.Collections;
+import com.example.cardviewdemo.detail.CrewThumb;
+import com.example.cardviewdemo.detail.Genre;
+import com.example.cardviewdemo.detail.GridViewAdapter;
+import com.example.cardviewdemo.detail.GridViewDetail;
+import com.example.cardviewdemo.detail.MovieDBItemDetail;
+import com.example.cardviewdemo.detail.ProductionCompany;
+import com.example.cardviewdemo.detail.Videos;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -50,19 +52,14 @@ import java.util.ArrayList;
 public class CardViewDetailActivity extends AppCompatActivity {
 
     String dbType = "";
-
     Collections collection = new Collections();
-
-
     ProductionCompany[] prod = new ProductionCompany[100];
     Genre[] genre;
     Videos[] videos;
-
-    Cast[] cast;
-    Crew[] crew;
+    CastThumb[] castThumb;
+    CrewThumb[] crewThumb;
     ArrayList<GridViewDetail> castList;
     ArrayList<GridViewDetail> crewList;
-
     String movieID = null;
     WebView displayYoutubeVideo;
     GridView castGridView;
@@ -70,6 +67,7 @@ public class CardViewDetailActivity extends AppCompatActivity {
     GridViewAdapter castAdapter;
     GridViewAdapter crewAdapter;
     MovieDBItemDetail movieDBItemDetail = new MovieDBItemDetail();
+    private boolean isCollections = true;
     private ImageLoader imageLoader;
 
     @Override
@@ -77,8 +75,8 @@ public class CardViewDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_detail_view);
         displayYoutubeVideo = (WebView) findViewById(R.id.video_view);
-        castGridView = (GridView) findViewById(R.id.gridView_cast);
-        crewGridView = (GridView) findViewById(R.id.gridView_crew);
+        castGridView = (GridViewPlus) findViewById(R.id.gridView_cast);
+        crewGridView = (GridViewPlus) findViewById(R.id.gridView_crew);
         castList = new ArrayList<>();
         crewList = new ArrayList<>();
 
@@ -98,12 +96,10 @@ public class CardViewDetailActivity extends AppCompatActivity {
 
     }
 
-    private void setupWindowAnimation() {
-        Fade fade = new Fade();
-        fade.setDuration(1000);
-        getWindow().setEnterTransition(fade);
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
-
 
     //Get Data and Set Data here
 
@@ -185,37 +181,42 @@ public class CardViewDetailActivity extends AppCompatActivity {
                 collection.setCollections_backdrop_path(jsonCollections.getString(ConfigItem.TAG_BACKDROP));
                 collection.setCollections_poster_path(jsonCollections.getString(ConfigItem.POSTER_PATH));
                 collection.setName(jsonCollections.getString(ConfigItem.NAME));
+                isCollections = true;
             } else {
                 collection.setName("Oops! No Collections found.");
+                isCollections = false;
             }
         } catch (JSONException e) {
+            isCollections = false;
             e.printStackTrace();
         }
 
 
         try {
 
-            //Extract Cast
+            //Extract CastThumb
             jsonCast = object.getJSONObject(ConfigItem.CREDITS).getJSONArray(ConfigItem.CAST);
-            cast = new Cast[jsonCast.length() + 1];
+            castThumb = new CastThumb[jsonCast.length() + 1];
             for (int i = 0; i < jsonCast.length(); i++) {
                 JSONObject tempcast = jsonCast.getJSONObject(i);
                 String character = tempcast.getString("character");
                 String name = tempcast.getString("name");
                 String profilePath = tempcast.getString("profile_path");
-                cast[i] = new Cast(character, name, profilePath);
+                String castID = tempcast.getString("id");
+                castThumb[i] = new CastThumb(character, name, profilePath, castID);
                 castList.add(new GridViewDetail(buildURL(profilePath), name));
             }
 
-            //Extract Crew
+            //Extract CrewThumb
             jsonCrew = object.getJSONObject(ConfigItem.CREDITS).getJSONArray(ConfigItem.CREW);
-            crew = new Crew[jsonCrew.length() + 1];
+            crewThumb = new CrewThumb[jsonCrew.length() + 1];
             for (int i = 0; i < jsonCrew.length(); i++) {
                 JSONObject tempcrew = jsonCrew.getJSONObject(i);
                 String job = tempcrew.getString("job");
                 String profilePath = tempcrew.getString("profile_path");
                 String name = tempcrew.getString("name");
-                crew[i] = new Crew(job, profilePath, name);
+                String crewID = tempcrew.getString("id");
+                crewThumb[i] = new CrewThumb(job, profilePath, name, crewID);
                 crewList.add(new GridViewDetail(buildURL(profilePath), name));
             }
 
@@ -253,11 +254,11 @@ public class CardViewDetailActivity extends AppCompatActivity {
 
             movieDBItemDetail.setProduction_companies(prod);
             movieDBItemDetail.setGenres(genre);
-            movieDBItemDetail.setVideo(videos);
+            movieDBItemDetail.setVideos(videos);
 
-            //Cast & Crew
-            movieDBItemDetail.setCast(cast);
-            movieDBItemDetail.setCrew(crew);
+            //CastThumb & CrewThumb
+            movieDBItemDetail.setCastThumb(castThumb);
+            movieDBItemDetail.setCrewThumb(crewThumb);
 
             movieDBItemDetail.setPoster_path(object.getString(ConfigItem.POSTER_PATH));
             movieDBItemDetail.setBackdrop_path(object.getString(ConfigItem.TAG_BACKDROP));
@@ -285,7 +286,7 @@ public class CardViewDetailActivity extends AppCompatActivity {
 
     public void setCardDetail(MovieDBItemDetail item) {
 
-        NetworkImageView poster_path = (NetworkImageView) findViewById(R.id.poster_path_detail);
+        NetworkImageView poster_path = (NetworkImageView) findViewById(R.id.poster_path_person);
         NetworkImageView backdrop_path = (NetworkImageView) findViewById(R.id.backdrop_path_detail);
         setImageToGreyScale(backdrop_path);
         WebView displayYoutubeVideo = (WebView) findViewById(R.id.video_view);
@@ -297,24 +298,47 @@ public class CardViewDetailActivity extends AppCompatActivity {
         collections_poster.setImageResource(R.drawable.error_default);
         collections_backdrop.setImageResource(R.drawable.error_default);
         TextViewPlus collections_name = (TextViewPlus) findViewById(R.id.collection_title);
-        collections_name.setText("Oops! No Collections found.");
+        TextViewPlus collections_error = (TextViewPlus) findViewById(R.id.collections_error);
 
-        TextView original_title = (TextView) findViewById(R.id.original_title_detail);
+        TextView original_title = (TextView) findViewById(R.id.name_person);
         TextView tagline = (TextView) findViewById(R.id.tagline);
-        TextView genre = (TextView) findViewById(R.id.genre_detail);
-        TextView language = (TextView) findViewById(R.id.language_detail);
+        TextView genre = (TextView) findViewById(R.id.age_person);
+        TextView language = (TextView) findViewById(R.id.born_in_person);
         TextView production_company = (TextView) findViewById(R.id.production_company_detail);
-        TextView overview = (TextView) findViewById(R.id.overview_detail);
+        TextView overview = (TextView) findViewById(R.id.bio_person);
 
         //Make Textview scrollable
         overview.setMovementMethod(new ScrollingMovementMethod());
 
-        //Adapter setting for Cast & Crew
+        //Adapter setting for CastThumb & CrewThumb
         castAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, castList);
         castGridView.setAdapter(castAdapter);
+        castGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(view.getContext(), PersonDetailActivity.class);
+                Bundle bundle = new Bundle();
+                Log.e("Person item click : ", String.valueOf(castThumb[position].getCastId()));
+                bundle.putSerializable("castID", String.valueOf(castThumb[position].getCastId()));
+                bundle.putSerializable("type", "cast");
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
 
         crewAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, crewList);
         crewGridView.setAdapter(crewAdapter);
+        crewGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(view.getContext(), PersonDetailActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("crewID", String.valueOf(crewThumb[position].getCrewID()));
+                bundle.putSerializable("type", "crew");
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
 
         //Image loaders
         imageLoader = CustomVolleyRequest.getInstance(this).getImageLoader();
@@ -322,24 +346,31 @@ public class CardViewDetailActivity extends AppCompatActivity {
         imageLoader.get(item.getBackdrop_path(), ImageLoader.getImageListener(backdrop_path, R.drawable.loading, android.R.drawable.ic_dialog_alert));
 
         //Collections posters & attrs
-        imageLoader.get(item.getPoster_path(), ImageLoader.getImageListener(collections_backdrop, R.drawable.loading, android.R.drawable.ic_dialog_alert));
-        imageLoader.get(item.getBackdrop_path(), ImageLoader.getImageListener(collections_poster, R.drawable.loading, android.R.drawable.ic_dialog_alert));
-        collections_name.setText(item.getCollection().getName());
-
+        if (isCollections) {
+            imageLoader.get(item.getPoster_path(), ImageLoader.getImageListener(collections_backdrop, R.drawable.loading, android.R.drawable.ic_dialog_alert));
+            imageLoader.get(item.getBackdrop_path(), ImageLoader.getImageListener(collections_poster, R.drawable.loading, android.R.drawable.ic_dialog_alert));
+            collections_name.setText(item.getCollection().getName());
+            collections_backdrop.setImageUrl(item.getCollection().getCollections_backdrop_path(), imageLoader);
+            collections_poster.setImageUrl(item.getCollection().getCollections_poster_path(), imageLoader);
+            collections_backdrop.setErrorImageResId(R.drawable.update);
+            collections_poster.setErrorImageResId(R.drawable.update);
+        } else {
+            collections_backdrop.setVisibility(View.INVISIBLE);
+            collections_poster.setVisibility(View.INVISIBLE);
+            collections_name.setVisibility(View.INVISIBLE);
+            collections_error.setText("Oops! No Collections found.");
+            collections_error.setVisibility(View.VISIBLE);
+        }
 
         //Set default image for all images if the API return is null
         poster_path.setErrorImageResId(R.drawable.update);
         backdrop_path.setErrorImageResId(R.drawable.update);
-        collections_backdrop.setErrorImageResId(R.drawable.update);
-        collections_poster.setErrorImageResId(R.drawable.update);
+
 
         //Set art attributes
         poster_path.setImageUrl(item.getPoster_path(), imageLoader);
         backdrop_path.setImageUrl(item.getBackdrop_path(), imageLoader);
 
-        //Collections art
-        collections_backdrop.setImageUrl(item.getCollection().getCollections_backdrop_path(), imageLoader);
-        collections_poster.setImageUrl(item.getCollection().getCollections_poster_path(), imageLoader);
 
 
         //Other attributes

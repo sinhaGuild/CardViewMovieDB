@@ -1,12 +1,14 @@
 
-package com.example.cardviewdemo.data;
+package com.example.cardviewdemo.detail;
 
 import android.net.Uri;
 
-public class Cast {
+import com.example.cardviewdemo.config.ConfigItem;
+
+public class CastThumb {
 
 
-    private int castId;
+    private String castId;
     private String character;
     private String creditId;
     private int id;
@@ -14,12 +16,18 @@ public class Cast {
     private int order;
     private String profilePath;
 
-    public Cast(String character, String name, String profilePath) {
+    public CastThumb(String character, String name, String profilePath) {
         this.character = character;
         this.name = name;
         this.profilePath = profilePath;
     }
 
+    public CastThumb(String character, String name, String profilePath, String castId) {
+        this.castId = castId;
+        this.character = character;
+        this.name = name;
+        this.profilePath = profilePath;
+    }
 
     public String buildURL(String path) {
         Uri.Builder uri = new Uri.Builder();
@@ -33,14 +41,14 @@ public class Cast {
     /**
      * @return The castId
      */
-    public int getCastId() {
+    public String getCastId() {
         return castId;
     }
 
     /**
      * @param castId The cast_id
      */
-    public void setCastId(int castId) {
+    public void setCastId(String castId) {
         this.castId = castId;
     }
 

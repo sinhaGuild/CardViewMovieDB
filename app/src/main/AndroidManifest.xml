@@ -13,7 +13,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_main_shadow"
+        android:icon="@drawable/gentleman_icon"
         android:label="@string/app_name"
         android:screenOrientation="landscape"
         android:theme="@style/AppTheme">
@@ -26,11 +26,18 @@
         </activity>
         <activity
             android:name="com.example.cardviewdemo.MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:parentActivityName=".splash.SplashActivity">
         </activity>
         <activity
             android:name="com.example.cardviewdemo.CardViewDetailActivity"
             android:label="card_detail_view"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".PersonDetailActivity"
+            android:label="person_detail_view"
+            android:parentActivityName=".CardViewDetailActivity"
             android:windowSoftInputMode="adjustPan"></activity>
     </application>
 

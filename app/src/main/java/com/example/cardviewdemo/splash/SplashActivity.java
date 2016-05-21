@@ -29,10 +29,11 @@ import java.io.InputStream;
 public class SplashActivity extends Activity {
 
     //Splash Screen
-    public static final String VIDEO_NAME = "skydiving.mp4";
+    public static final String VIDEO_NAME = "lioncub.mp4";
     private VideoView mVideoView;
     private Button goButton_splash;
     private TextViewPlus projectID;
+    //private ProgressBar spinner;
 //    private TextViewPlus appName;
 //    Animation myAnimation;
 
@@ -49,7 +50,9 @@ public class SplashActivity extends Activity {
 
         setContentView(R.layout.splash_screen);
 
+
         findView();
+//        spinner.setVisibility(View.VISIBLE);
         initView();
         File videoFile = getFileStreamPath(VIDEO_NAME);
         if (!videoFile.exists()) {
@@ -67,6 +70,7 @@ public class SplashActivity extends Activity {
         mVideoView = (VideoView) findViewById(R.id.videoView);
         goButton_splash = (Button) findViewById(R.id.button_splash);
         projectID = (TextViewPlus) findViewById(R.id.splash_subTitle);
+//        spinner = (ProgressBar) findViewById(R.id.splash_progress);
 //        appName = (TextViewPlus) findViewById(R.id.splash_title);
 //        myAnimation = AnimationUtils.loadAnimation(SplashActivity.this, R.anim.rotation);
 //        appName.startAnimation(myAnimation);
@@ -91,6 +95,7 @@ public class SplashActivity extends Activity {
             public void onPrepared(MediaPlayer mediaPlayer) {
                 mediaPlayer.setLooping(true);
                 mediaPlayer.start();
+//                spinner.setVisibility(View.GONE);
             }
         });
     }
@@ -114,7 +119,7 @@ public class SplashActivity extends Activity {
         File videoFile;
         try {
             FileOutputStream fos = openFileOutput(VIDEO_NAME, MODE_PRIVATE);
-            InputStream in = getResources().openRawResource(R.raw.skydiving);
+            InputStream in = getResources().openRawResource(R.raw.lioncub);
             byte[] buff = new byte[1024];
             int len = 0;
             while ((len = in.read(buff)) != -1) {

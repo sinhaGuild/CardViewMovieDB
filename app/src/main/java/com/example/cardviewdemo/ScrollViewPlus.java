@@ -12,12 +12,12 @@ import android.widget.ScrollView;
  *
  * @author Nathan at Gravitywell
  */
-public class ModifiedScrollView extends ScrollView {
-    public ModifiedScrollView(Context context, AttributeSet attrs) {
+public class ScrollViewPlus extends ScrollView {
+    public ScrollViewPlus(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public ModifiedScrollView(Context context) {
+    public ScrollViewPlus(Context context) {
         super(context);
     }
 

@@ -30,7 +30,7 @@
             android:orientation="horizontal">
 
             <com.android.volley.toolbox.NetworkImageView
-                android:id="@+id/poster_path_detail"
+                android:id="@+id/poster_path_person"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
@@ -52,7 +52,7 @@
                 android:paddingBottom="5dp">
 
                 <TextView
-                    android:id="@+id/original_title_detail"
+                    android:id="@+id/name_person"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
@@ -132,7 +132,7 @@
                         android:textSize="15sp" />
 
                     <TextView
-                        android:id="@+id/genre_detail"
+                        android:id="@+id/age_person"
                         android:gravity="right"
                         android:padding="3dip" />
                 </TableRow>
@@ -144,7 +144,7 @@
                         android:text="Language " />
 
                     <TextView
-                        android:id="@+id/language_detail"
+                        android:id="@+id/born_in_person"
                         android:gravity="right"
                         android:padding="3dip"
                         android:text="B" />
@@ -205,7 +205,7 @@
             </TableLayout>
 
             <com.example.TextViewPlus
-                android:id="@+id/overview_detail"
+                android:id="@+id/bio_person"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
