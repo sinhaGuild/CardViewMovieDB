@@ -15,5 +15,23 @@
 
 
     <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="title">TITLE</string>
+    <string name="genre">GENRE</string>
+    <string name="language">LANGUAGE</string>
+    <string name="studio">STUDIO</string>
+    <string name="plot">PLOT</string>
+    <string name="cast">CAST</string>
+    <string name="crew">CREW</string>
+    <string name="reviews">REVIEWS</string>
+    <string name="collections">COLLECTIONS</string>
+    <string name="poster">Poster</string>
+    <string name="name">NAME</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="born_in">Born in</string>
+    <string name="biography">BIOGRAPHY</string>
+    <string name="images">IMAGES</string>
+    <string name="project_id_28">Project ID # 28</string>
+    <string name="s_i_n_h_a">S I N H A</string>
+    <string name="tv_status_tagline">"Status: "</string>
 
 </resources>

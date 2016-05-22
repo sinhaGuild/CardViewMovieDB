@@ -10,8 +10,7 @@
     <ImageView
         android:id="@+id/grid_image"
         android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/poster" />
+        android:layout_height="100dp" />
 
     <com.example.cardviewdemo.TextViewPlus
         android:id="@+id/grid_text"
@@ -19,7 +18,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:gravity="center"
-        android:text="John Doe"
         android:textColor="@android:color/white"
         android:textSize="12sp"
         app:customFont="fonts/Roboto-Regular.ttf" />

@@ -17,6 +17,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,9 +25,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.Volley;
 import com.example.cardviewdemo.config.ConfigItem;
 import com.example.cardviewdemo.config.ConfigList;
@@ -39,6 +38,7 @@ import com.example.cardviewdemo.detail.GridViewDetail;
 import com.example.cardviewdemo.detail.MovieDBItemDetail;
 import com.example.cardviewdemo.detail.ProductionCompany;
 import com.example.cardviewdemo.detail.Videos;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -68,7 +68,6 @@ public class CardViewDetailActivity extends AppCompatActivity {
     GridViewAdapter crewAdapter;
     MovieDBItemDetail movieDBItemDetail = new MovieDBItemDetail();
     private boolean isCollections = true;
-    private ImageLoader imageLoader;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -85,9 +84,6 @@ public class CardViewDetailActivity extends AppCompatActivity {
         if (bundle != null) {
             dbType = (String) bundle.getSerializable("DBType");
             movieID = (String) bundle.getSerializable("movie_id");
-//            String movie_id_temp = bundle.getString("movie_id");
-//            dbType = bundle.getString("DBType");
-//            movieID = movie_id_temp;
         } else {
             Toast.makeText(this, "Intent did not pass movie ID", Toast.LENGTH_SHORT).show();
         }
@@ -141,27 +137,6 @@ public class CardViewDetailActivity extends AppCompatActivity {
         //Adding request to the queue
         requestQueue.add(jsonObjectRequest);
 
-
-//		//Creating a json array request
-//		JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(ConfigList.DATA_URL,
-//				new Response.Listener<JSONArray>() {
-//					@Override
-//					public void onResponse(JSONArray response) {
-//						//Dismissing progress dialog
-//						loading.dismiss();
-//
-//						//calling method to parse json array
-//						parseData(response);
-//					}
-//				},
-//				new Response.ErrorListener() {
-//					@Override
-//					public void onErrorResponse(VolleyError error) {
-//
-//					}
-//				});
-
-//		requestQueue.add(jsonArrayRequest);
     }
 
     //This method will parse json data
@@ -281,25 +256,27 @@ public class CardViewDetailActivity extends AppCompatActivity {
             e1.printStackTrace();
         }
 
-        setCardDetail(movieDBItemDetail);
+        setCardDetail(movieDBItemDetail, dbType);
     }
 
-    public void setCardDetail(MovieDBItemDetail item) {
+    public void setCardDetail(MovieDBItemDetail item, String dbType) {
 
-        NetworkImageView poster_path = (NetworkImageView) findViewById(R.id.poster_path_person);
-        NetworkImageView backdrop_path = (NetworkImageView) findViewById(R.id.backdrop_path_detail);
+        ImageView poster_path = (ImageView) findViewById(R.id.poster_path_person);
+        ImageView backdrop_path = (ImageView) findViewById(R.id.backdrop_path_detail);
         setImageToGreyScale(backdrop_path);
-        WebView displayYoutubeVideo = (WebView) findViewById(R.id.video_view);
 
         //Collections
-        NetworkImageView collections_poster = (NetworkImageView) findViewById(R.id.collections_poster);
-        NetworkImageView collections_backdrop = (NetworkImageView) findViewById(R.id.collections_backdrop);
+        ImageView collections_poster = (ImageView) findViewById(R.id.collections_poster);
+        ImageView collections_backdrop = (ImageView) findViewById(R.id.collections_backdrop);
         setImageToGreyScale(collections_backdrop);
+
+        WebView displayYoutubeVideo = (WebView) findViewById(R.id.video_view);
+
         collections_poster.setImageResource(R.drawable.error_default);
         collections_backdrop.setImageResource(R.drawable.error_default);
+
         TextViewPlus collections_name = (TextViewPlus) findViewById(R.id.collection_title);
         TextViewPlus collections_error = (TextViewPlus) findViewById(R.id.collections_error);
-
         TextView original_title = (TextView) findViewById(R.id.name_person);
         TextView tagline = (TextView) findViewById(R.id.tagline);
         TextView genre = (TextView) findViewById(R.id.age_person);
@@ -340,20 +317,21 @@ public class CardViewDetailActivity extends AppCompatActivity {
             }
         });
 
-        //Image loaders
-        imageLoader = CustomVolleyRequest.getInstance(this).getImageLoader();
-        imageLoader.get(item.getPoster_path(), ImageLoader.getImageListener(poster_path, R.drawable.loading, android.R.drawable.ic_dialog_alert));
-        imageLoader.get(item.getBackdrop_path(), ImageLoader.getImageListener(backdrop_path, R.drawable.loading, android.R.drawable.ic_dialog_alert));
-
         //Collections posters & attrs
         if (isCollections) {
-            imageLoader.get(item.getPoster_path(), ImageLoader.getImageListener(collections_backdrop, R.drawable.loading, android.R.drawable.ic_dialog_alert));
-            imageLoader.get(item.getBackdrop_path(), ImageLoader.getImageListener(collections_poster, R.drawable.loading, android.R.drawable.ic_dialog_alert));
+
+            //Set Name
             collections_name.setText(item.getCollection().getName());
-            collections_backdrop.setImageUrl(item.getCollection().getCollections_backdrop_path(), imageLoader);
-            collections_poster.setImageUrl(item.getCollection().getCollections_poster_path(), imageLoader);
-            collections_backdrop.setErrorImageResId(R.drawable.update);
-            collections_poster.setErrorImageResId(R.drawable.update);
+
+            Picasso.with(this).
+                    load(item.getCollection().getCollections_backdrop_path()).
+                    error(R.drawable.face_tired).
+                    into(collections_backdrop);
+
+            Picasso.with(this).
+                    load(item.getCollection().getCollections_poster_path()).
+                    error(R.drawable.face_tired).
+                    into(collections_poster);
         } else {
             collections_backdrop.setVisibility(View.INVISIBLE);
             collections_poster.setVisibility(View.INVISIBLE);
@@ -361,24 +339,41 @@ public class CardViewDetailActivity extends AppCompatActivity {
             collections_error.setText("Oops! No Collections found.");
             collections_error.setVisibility(View.VISIBLE);
         }
+        Picasso.with(this).
+                load(item.getPoster_path()).
+                resize(poster_path.getWidth(), poster_path.getHeight()).
+                error(R.drawable.face_tired).
+                into(poster_path);
 
-        //Set default image for all images if the API return is null
-        poster_path.setErrorImageResId(R.drawable.update);
-        backdrop_path.setErrorImageResId(R.drawable.update);
-
-
-        //Set art attributes
-        poster_path.setImageUrl(item.getPoster_path(), imageLoader);
-        backdrop_path.setImageUrl(item.getBackdrop_path(), imageLoader);
-
+        Picasso.with(this).
+                load(item.getBackdrop_path()).
+                resize(backdrop_path.getWidth(), backdrop_path.getHeight()).
+                error(R.drawable.face_tired).
+                into(backdrop_path);
 
 
         //Other attributes
-        original_title.setText(item.getOriginal_title());
-        tagline.setText(item.getTagline());
-        genre.setText(item.getGenreString());
-        language.setText(item.getOriginal_language());
-        production_company.setText(item.getProductionCompanyString());
+        if (original_title != null) {
+            original_title.setText(item.getOriginal_title());
+        }
+        if (tagline != null) {
+            if (dbType.equals(ConfigList.DATA_TYPE_MOVIES)) {
+                tagline.setText(item.getTagline());
+            } else {
+                String tag_line_tv = getString(R.string.tv_status_tagline) + item.getTagline();
+                tagline.setText(tag_line_tv);
+            }
+        }
+
+        if (genre != null) {
+            genre.setText(item.getGenreString());
+        }
+        if (language != null) {
+            language.setText(item.getOriginal_language());
+        }
+        if (production_company != null) {
+            production_company.setText(item.getProductionCompanyString());
+        }
         overview.setText(item.getOverview());
 
 
@@ -397,7 +392,7 @@ public class CardViewDetailActivity extends AppCompatActivity {
     }
 
     //Convert ImageView to greyscale
-    public void setImageToGreyScale(NetworkImageView img) {
+    public void setImageToGreyScale(ImageView img) {
         ColorMatrix matrix = new ColorMatrix();
         matrix.setSaturation(0);
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);

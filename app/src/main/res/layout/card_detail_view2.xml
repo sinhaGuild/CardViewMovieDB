@@ -5,16 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <!--android:background="@drawable/backdrop"-->
-    <!--android:backgroundTint="@android:color/holo_red_dark"-->
-    <!--android:backgroundTintMode="multiply"-->
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
-        <com.android.volley.toolbox.NetworkImageView
+        <ImageView
             android:id="@+id/backdrop_path_detail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -22,28 +19,29 @@
             android:alpha="0.4"
             android:backgroundTint="@android:color/holo_red_dark"
             android:backgroundTintMode="add"
-            android:src="@drawable/backdrop" />
+            android:contentDescription="@string/poster" />
 
-        <com.android.volley.toolbox.NetworkImageView
+        <ImageView
             android:id="@+id/poster_path_person"
             android:layout_width="180dp"
             android:layout_height="240dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@android:color/white"
+            android:contentDescription="@string/poster"
             android:elevation="20dp"
             android:padding="1dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/poster" />
+            android:scaleType="fitXY" />
 
         <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/name_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/poster_path_person"
-            android:paddingLeft="10dp"
+            android:layout_toEndOf="@+id/poster_path_person"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:paddingTop="10dp"
-            android:text="TITLE"
+            android:text="@string/title"
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -54,9 +52,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/name_tv"
-            android:layout_toRightOf="@+id/poster_path_person"
-            android:paddingLeft="10dp"
-            android:text="genre details here"
+            android:layout_toEndOf="@+id/poster_path_person"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:textColor="@android:color/white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
@@ -67,10 +65,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/name_person"
-            android:layout_toRightOf="@+id/poster_path_person"
-            android:paddingLeft="10dp"
+            android:layout_toEndOf="@+id/poster_path_person"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:paddingTop="10dp"
-            android:text="GENRE"
+            android:text="@string/genre"
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -81,9 +80,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/age_tv"
-            android:layout_toRightOf="@+id/poster_path_person"
-            android:paddingLeft="10dp"
-            android:text="genre details here"
+            android:layout_toEndOf="@+id/poster_path_person"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:textColor="@android:color/white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
@@ -93,10 +92,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/age_person"
-            android:layout_toRightOf="@+id/poster_path_person"
-            android:paddingLeft="10dp"
+            android:layout_toEndOf="@+id/poster_path_person"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:paddingTop="10dp"
-            android:text="LANGUAGE"
+            android:text="@string/language"
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -107,9 +107,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/born_in_tv"
-            android:layout_toRightOf="@+id/poster_path_person"
-            android:paddingLeft="10dp"
-            android:text="language details here"
+            android:layout_toEndOf="@+id/poster_path_person"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:textColor="@android:color/white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
@@ -120,10 +120,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/born_in_person"
-            android:layout_toRightOf="@+id/poster_path_person"
-            android:paddingLeft="10dp"
+            android:layout_toEndOf="@+id/poster_path_person"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:paddingTop="10dp"
-            android:text="STUDIO"
+            android:text="@string/studio"
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -134,9 +135,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/production_tv"
-            android:layout_toRightOf="@+id/poster_path_person"
-            android:paddingLeft="10dp"
-            android:text="studio details here"
+            android:layout_toEndOf="@+id/poster_path_person"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:textColor="@android:color/white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
@@ -149,7 +150,6 @@
             android:layout_below="@+id/poster_path_person"
             android:gravity="center|center_vertical"
             android:paddingTop="20dp"
-            android:text="@string/excerpt_example"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="50sp"
@@ -164,28 +164,16 @@
             android:layout_below="@+id/tagline"
             android:layout_centerHorizontal="true"
             android:visibility="visible" />
-        <!--<Button-->
-        <!--android:layout_width="50dp"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:id="@+id/youtube_play_button"-->
-        <!--android:background="@drawable/ic_launcher"-->
-        <!--android:gravity="center"-->
-        <!--android:layout_below="@+id/tagline"-->
-        <!--android:tint="@android:color/white"/>-->
-
-        <!--<include layout="@layout/fragment_video"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@+id/tagline"></include>-->
 
         <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/bio_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/video_view"
-            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:paddingTop="10dp"
-            android:text="PLOT"
+            android:text="@string/plot"
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -197,10 +185,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/bio_tv"
             android:maxLines="100"
-            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:paddingTop="5dp"
             android:scrollbars="vertical"
-            android:text="movie plot here"
             android:textColor="@android:color/white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
@@ -210,9 +198,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/bio_person"
-            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:paddingTop="20dp"
-            android:text="CAST"
+            android:text="@string/cast"
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -238,9 +227,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/gridView_cast"
-            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:paddingTop="10dp"
-            android:text="CREW"
+            android:text="@string/crew"
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -266,9 +256,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/gridView_crew"
-            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:paddingTop="10dp"
-            android:text="REVIEWS"
+            android:text="@string/reviews"
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -279,11 +270,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/reviews_tv"
-            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:paddingTop="20dp"
-            android:text="REVIEWS"
             android:textColor="@android:color/white"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textStyle="bold"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
@@ -293,9 +284,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/reviews_detail"
-            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
             android:paddingTop="15dp"
-            android:text="COLLECTIONS"
+            android:text="@string/collections"
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -306,67 +298,49 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/collection_tv"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:textSize="25sp"
             android:textStyle="bold"
             android:visibility="invisible"
             app:customFont="fonts/Gabrielle.ttf" />
 
-        <com.android.volley.toolbox.NetworkImageView
+        <ImageView
             android:id="@+id/collections_backdrop"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_below="@+id/collection_tv"
             android:layout_marginTop="10dp"
             android:background="@android:color/white"
-            android:scaleType="centerCrop"
-            android:src="@drawable/backdrop" />
+            android:contentDescription="@string/collections"
+            android:scaleType="centerCrop" />
 
-        <com.android.volley.toolbox.NetworkImageView
+        <ImageView
             android:id="@+id/collections_poster"
             android:layout_width="100dp"
             android:layout_height="150dp"
             android:layout_below="@+id/collection_tv"
             android:layout_margin="30dp"
             android:background="@color/colorAccent"
+            android:contentDescription="@string/collections"
             android:padding="2dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/poster" />
+            android:scaleType="centerCrop" />
 
         <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/collection_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/collections_backdrop"
-            android:layout_marginLeft="140dp"
+            android:layout_marginStart="140dp"
             android:layout_marginTop="2dp"
             android:maxLines="100"
             android:scrollbars="vertical"
-            android:text="collections title"
             android:textAllCaps="true"
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/Roboto-Bold.ttf" />
 
-
-        <!--<ScrollView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_below="@+id/overview_tv">-->
-        <!--<com.example.cardviewdemo.TextViewPlus-->
-        <!--android:id="@+id/overview_detail"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@+id/overview_tv"-->
-        <!--android:paddingLeft="10dp"-->
-        <!--android:textColor="@android:color/white"-->
-        <!--android:paddingTop="5dp"-->
-        <!--android:text="movie plot here"-->
-        <!--android:textSize="10sp"-->
-        <!--app:customFont="fonts/Roboto-Regular.ttf" />-->
-        <!--</ScrollView>-->
 
     </RelativeLayout>
 </ScrollView>

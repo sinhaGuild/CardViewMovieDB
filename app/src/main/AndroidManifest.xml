@@ -13,7 +13,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/gentleman_icon"
+        android:icon="@drawable/gm_round_shadow_icon"
         android:label="@string/app_name"
         android:screenOrientation="landscape"
         android:theme="@style/AppTheme">
