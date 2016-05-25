@@ -4,12 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--<include-->
-    <!--android:id="@+id/toolbar"-->
-    <!--layout="@layout/row_toolbar"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_width="match_parent"></include>-->
-
     <com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout
         android:id="@+id/fabtoolbar"
         android:layout_width="match_parent"
@@ -38,12 +32,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_touch_app_black_24dp"
+                android:src="@drawable/ic_menu_white"
                 android:tint="@color/colorAccent"
                 app:borderWidth="5dp"
-                app:elevation="40dp"
+                app:elevation="5dp"
                 app:fabSize="normal" />
 
         </RelativeLayout>
@@ -58,7 +51,8 @@
             <ImageView
                 android:id="@+id/one"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_local_movies_black_24dp"
@@ -67,7 +61,8 @@
             <ImageView
                 android:id="@+id/two"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_tv_black_24dp"
@@ -76,7 +71,8 @@
             <ImageView
                 android:id="@+id/three"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_playlist_add_check_black_24dp"
@@ -85,13 +81,20 @@
             <ImageView
                 android:id="@+id/four"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_keyboard_voice_black_24dp"
                 android:tint="@color/colorAccent" />
 
         </LinearLayout>
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/SearchViewTheme" />
 
     </com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout>
 </RelativeLayout>

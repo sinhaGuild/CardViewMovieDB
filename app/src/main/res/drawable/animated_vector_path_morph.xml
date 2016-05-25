@@ -3,5 +3,5 @@
     android:drawable="@drawable/ic_touch_app_black_24dp">
     <target
         android:name="morph"
-        android:animation="@anim/path_morph" />
+        android:animation="@anim/rotate_simple" />
 </animated-vector>

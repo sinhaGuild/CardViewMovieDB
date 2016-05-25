@@ -1,15 +1,20 @@
 package com.example.cardviewdemo.lists;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +36,9 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
     //ParallaxViewController parallax = new ParallaxViewController();
 
     private Context context;
+
+    // Allows to remember the last item shown on screen
+    private int lastPosition = -1;
 
     //Query type = Movie, TV
     private String dBType;
@@ -56,7 +64,6 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
         }
     }
 
-
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, final int viewType) {
         View v = LayoutInflater.from(parent.getContext())
@@ -66,6 +73,18 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
         return viewHolder;
     }
 
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
+        //parallax.registerImageParallax(recyclerView);
+    }
+
+    @Override
+    public int getItemCount() {
+        return movieDBAdapter.size();
+    }
+
+    @TargetApi(Build.VERSION_CODES.M)
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
@@ -88,28 +107,27 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
         holder.vote_average.setText(movieDBAdapter1.getVote_average());
         holder.release_date.setText(movieDBAdapter1.getReleaseDate());
 
-    }
-
-    @Override
-    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
-        super.onAttachedToRecyclerView(recyclerView);
-        //parallax.registerImageParallax(recyclerView);
-    }
-
-    @Override
-    public int getItemCount() {
-        return movieDBAdapter.size();
+        setAnimation(holder.container, position);
     }
 
     /**
-     * Remove Movie card from RecyclerView
+     * Animate list as its loading while scrolling down
      *
+     * @param viewToAnimate
      * @param position
      */
+    private void setAnimation(View viewToAnimate, int position) {
+        // If the bound view wasn't previously displayed on screen, it's animated
+        if (position > lastPosition) {
+            Animation animation = AnimationUtils.loadAnimation(context, R.anim.scroll_down);
+            viewToAnimate.startAnimation(animation);
+            lastPosition = position;
+        }
+    }
 
-    public void removeMovieCard(int position) {
-        movieDBAdapter.remove(position);
-        notifyItemRemoved(position);
+    @Override
+    public void onViewAttachedToWindow(ViewHolder holder) {
+        holder.clearAnimation();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
@@ -119,16 +137,17 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
         public TextView release_date;
         public TextView language;
         public TextView vote_average;
+        public LinearLayout container;
 
         public ViewHolder(final View itemView) {
             super(itemView);
+            container = (LinearLayout) itemView.findViewById(R.id.container);
             //Recycler onClick event
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(v.getContext(), CardViewDetailActivity.class);
-                    int position = getAdapterPosition();
-                    int movie_id = movieID[position];
+                    int movie_id = movieID[getAdapterPosition()];
                     Bundle bundle = new Bundle();
                     bundle.putSerializable("movie_id", String.valueOf(movie_id));
                     bundle.putSerializable("DBType", String.valueOf(dBType));
@@ -149,12 +168,27 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
 
         }
 
+        /**
+         * Remove Movie card from RecyclerView
+         *
+         * @param position
+         */
+
+        public void removeMovieCard(int position) {
+            movieDBAdapter.remove(position);
+            notifyItemRemoved(position);
+        }
+
         //Convert ImageView to greyscale
         public void setImageToGreyScale(ImageView img) {
             ColorMatrix matrix = new ColorMatrix();
             matrix.setSaturation(0);
             ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
             img.setColorFilter(filter);
+        }
+
+        public void clearAnimation() {
+            container.clearAnimation();
         }
     }
 }

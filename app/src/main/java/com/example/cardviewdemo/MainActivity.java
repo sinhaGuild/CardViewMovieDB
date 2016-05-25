@@ -1,5 +1,7 @@
 package com.example.cardviewdemo;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -7,10 +9,13 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.Toast;
 
@@ -47,10 +52,15 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerView.Adapter adapter;
+
     //FAB stuff
     private FABToolbarLayout fabToolBar;
     private View movie_toolbar, tv_toolbar, collections_toolbar, search_toolbar;
     private FloatingActionButton fab;
+
+    //Search
+    private SearchView searchView;
+    private SearchManager searchManager;
 
 
     @Override
@@ -62,9 +72,30 @@ public class MainActivity extends AppCompatActivity {
         //Initializing Views
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
-        //recyclerView.setItemAnimator(new ScaleInAnimator());
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+
+        //Search bar
+        searchView = (SearchView) findViewById(R.id.search);
+        // Sets searchable configuration defined in searchable.xml for this SearchView
+        searchManager =
+                (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                searchFor(query);
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String query) {
+                filterSearchFor(query);
+                return true;
+            }
+        });
+
+
         //Init our list
         listMovieDB = new ArrayList<>();
         //getting Json response and parsing it
@@ -78,15 +109,30 @@ public class MainActivity extends AppCompatActivity {
         collections_toolbar = findViewById(R.id.three);
         search_toolbar = findViewById(R.id.four);
 
+        //Hide fabToolbar if scroll event has happened
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+
+                if (newState != RecyclerView.SCROLL_STATE_IDLE) {
+                    fabToolBar.hide();
+                }
+            }
+        });
 
         //Fabtoolbar menu 1 Upcoming
         movie_toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Animation rotation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_simple);
+                rotation.setDuration(1000);
+                v.startAnimation(rotation);
                 //Initializing our list
                 listMovieDB = new ArrayList<>();
-                fabToolBar.hide();
+                //fabToolBar.hide();
                 getData(pageLimit, ConfigList.MOVIES_UPCOMING, ConfigList.DATA_TYPE_MOVIES);
+                fabToolBar.hide();
             }
         });
 
@@ -95,10 +141,13 @@ public class MainActivity extends AppCompatActivity {
         tv_toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Animation rotation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_simple);
+                rotation.setDuration(500);
+                v.startAnimation(rotation);
                 //Initializing our list
                 listMovieDB = new ArrayList<>();
-                fabToolBar.hide();
                 getData(pageLimit, ConfigList.TV_TOP_RATED, ConfigList.DATA_TYPE_TV);
+                fabToolBar.hide();
             }
         });
 
@@ -106,9 +155,12 @@ public class MainActivity extends AppCompatActivity {
         collections_toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Animation rotation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_simple);
+                rotation.setDuration(500);
+                v.startAnimation(rotation);
                 listMovieDB = new ArrayList<>();
-                fabToolBar.hide();
                 getData(pageLimit, ConfigList.MOVIES_NOW_PLAYING, ConfigList.DATA_TYPE_MOVIES);
+                fabToolBar.hide();
             }
         });
 
@@ -116,9 +168,12 @@ public class MainActivity extends AppCompatActivity {
         search_toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Animation rotation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_simple);
+                rotation.setDuration(500);
+                v.startAnimation(rotation);
                 listMovieDB = new ArrayList<>();
-                fabToolBar.hide();
                 getData(pageLimit, ConfigList.MOVIES_TOP_RATED, ConfigList.DATA_TYPE_MOVIES);
+                fabToolBar.hide();
             }
         });
 
@@ -136,6 +191,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    /**
+     * Search
+     *
+     * @param query
+     */
+
+    private void searchFor(String query) {
+    }
+
+    private void filterSearchFor(String query) {
+    }
+
 //    private void setupWindowAnimations() {
 //        Slide slide = new Slide();
 //        slide.setDuration(1000);
@@ -147,6 +215,7 @@ public class MainActivity extends AppCompatActivity {
     //Hide FAB on back button press
     public void onBackPressed() {
         fabToolBar.hide();
+        searchView.clearFocus();
         if (doubleBackToExitPressedOnce) {
             super.onBackPressed();
             return;
@@ -293,9 +362,7 @@ public class MainActivity extends AppCompatActivity {
         //Animator
         SlideInBottomAnimationAdapter alphaAdapter = new SlideInBottomAnimationAdapter(adapter);
         alphaAdapter.setDuration(200);
-//        //Change Interpolater
         alphaAdapter.setInterpolator(new OvershootInterpolator(0.5f));
-
         //Adding adapter to recyclerview
         recyclerView.setAdapter(alphaAdapter);
     }

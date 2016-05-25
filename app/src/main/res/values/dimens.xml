@@ -5,4 +5,8 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="corner_radius_oval">250dp</dimen>
 
+    <!-- Search bar -->
+    <integer name="duration_bar">800</integer>
+    <integer name="duration_search">800</integer>
+
 </resources>
