@@ -13,9 +13,22 @@
         -->
     </style>
 
-    <style name="SearchViewTheme">
-        <item name="colorControlActivated">@color/colorAccent</item>
-        <item name="colorControlNormal">@color/colorAccent</item>
+    <style name="SearchView">
+        <item name="floatingSearch_backgroundColor">#80FFFFFF</item>
+        <item name="floatingSearch_viewTextColor">@android:color/white</item>
+        <item name="floatingSearch_hintTextColor">@android:color/white</item>
+        <item name="floatingSearch_dividerColor">@color/colorPrimary</item>
+        <item name="floatingSearch_clearBtnColor">@android:color/white</item>
+        <item name="floatingSearch_leftActionColor">@android:color/white</item>
+        <item name="floatingSearch_menuItemIconColor">@android:color/white</item>
+        <item name="floatingSearch_suggestionRightIconColor">@android:color/white</item>
+        <item name="floatingSearch_actionMenuOverflowColor">@android:color/white</item>
+    </style>
+
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">30dp</item>
+        <item name="android:maxWidth">48dp</item>
+        <item name="android:width">38dp</item>
     </style>
 
     <!-- Application theme. -->

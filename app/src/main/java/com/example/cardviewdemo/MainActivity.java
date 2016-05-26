@@ -1,19 +1,19 @@
 package com.example.cardviewdemo;
 
-import android.app.SearchManager;
-import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
@@ -25,10 +25,19 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.arlib.floatingsearchview.FloatingSearchView;
+import com.arlib.floatingsearchview.suggestions.SearchSuggestionsAdapter;
+import com.arlib.floatingsearchview.suggestions.model.SearchSuggestion;
+import com.arlib.floatingsearchview.util.view.BodyTextView;
+import com.arlib.floatingsearchview.util.view.IconImageView;
 import com.example.cardviewdemo.config.ConfigList;
+import com.example.cardviewdemo.config.ConfigSearch;
+import com.example.cardviewdemo.detail.SearchDetail;
+import com.example.cardviewdemo.detail.SearchSuggestionsMovieDB;
 import com.example.cardviewdemo.lists.CardAdapterMovieDB;
 import com.example.cardviewdemo.lists.MovieDBAdapter;
 import com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -43,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Page limit
     public static final int pageLimit = 5;
+    private final String TAG = "MainActivity";
     Toolbar toolbar;
     //Exit by back twice
     boolean doubleBackToExitPressedOnce = false;
@@ -59,8 +69,9 @@ public class MainActivity extends AppCompatActivity {
     private FloatingActionButton fab;
 
     //Search
-    private SearchView searchView;
-    private SearchManager searchManager;
+    private FloatingSearchView mSearchView;
+    private ViewGroup mParentView;
+    private DrawerLayout mDrawerLayout;
 
 
     @Override
@@ -68,33 +79,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+//        SearchDetail.getInstance(this);
+
+        //Initializing Search views
+        mSearchView = (FloatingSearchView) findViewById(R.id.floating_search_view);
+        mParentView = (ViewGroup) findViewById(R.id.search_parent_view);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.search_drawer_layout);
+        setSearchListeners();
+
 
         //Initializing Views
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-
-        //Search bar
-        searchView = (SearchView) findViewById(R.id.search);
-        // Sets searchable configuration defined in searchable.xml for this SearchView
-        searchManager =
-                (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                searchFor(query);
-                return true;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String query) {
-                filterSearchFor(query);
-                return true;
-            }
-        });
-
 
         //Init our list
         listMovieDB = new ArrayList<>();
@@ -193,6 +191,235 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
+     * SEARCH LISTENERS
+     * setOnQueryChangeListener
+     * setOnSearchListener
+     * setOnFocusChangeListener
+     * setOnMenuItemClickListener
+     * setOnLeftMenuClickListener
+     * setOnHomeActionClickListener
+     * setOnBindSuggestionCallback
+     * Drawer listeners for open, close etc.
+     */
+
+    private void setSearchListeners() {
+
+        mSearchView.setOnQueryChangeListener(new FloatingSearchView.OnQueryChangeListener() {
+            @Override
+            public void onSearchTextChanged(String oldQuery, final String newQuery) {
+
+                if (!oldQuery.equals("") && newQuery.equals("")) {
+                    mSearchView.clearSuggestions();
+                } else {
+
+                    //this shows the top left circular progress
+                    //you can call it where ever you want, but
+                    //it makes sense to do it when loading something in
+                    //the background.
+                    mSearchView.showProgress();
+
+                    //simulates a query call to a data source
+                    //with a new query.
+                    SearchDetail.findByQuery(MainActivity.this, newQuery, new SearchDetail.OnFindResultsListener() {
+
+                        @Override
+                        public void onResults(List<SearchSuggestionsMovieDB> results) {
+
+                            //this will swap the data and
+                            //render the collapse/expand animations as necessary
+                            mSearchView.swapSuggestions(results);
+
+                            //let the users know that the background
+                            //process has completed
+                            mSearchView.hideProgress();
+                        }
+                    });
+                }
+
+                Log.d(TAG, "onSearchTextChanged()");
+            }
+        });
+
+
+        /**
+         * On Suggestions click
+         * if media_type is TV or movies - raise intent CardViewDetailActivity - it needs id
+         */
+        mSearchView.setOnSearchListener(new FloatingSearchView.OnSearchListener() {
+            @Override
+            public void onSuggestionClicked(SearchSuggestion searchSuggestion) {
+
+                SearchSuggestionsMovieDB searchSuggestionsMovieDB = (SearchSuggestionsMovieDB) searchSuggestion;
+
+                if (searchSuggestion != null) {
+                    switch (((SearchSuggestionsMovieDB) searchSuggestion).getMedia_type()) {
+                        case ConfigSearch.MEDIA_TYPE_MOVIE:
+                            Intent intentMovie = new Intent(getApplicationContext(), CardViewDetailActivity.class);
+                            Bundle extrasMovies = new Bundle();
+                            extrasMovies.putSerializable("DBType", ConfigList.DATA_TYPE_MOVIES);
+                            extrasMovies.putSerializable("movie_id", searchSuggestionsMovieDB.getId());
+                            intentMovie.putExtras(extrasMovies);
+                            startActivity(intentMovie);
+                            break;
+                        case ConfigSearch.MEDIA_TYPE_TV:
+                            Intent intentTV = new Intent(getApplicationContext(), CardViewDetailActivity.class);
+                            Bundle extrasTV = new Bundle();
+                            extrasTV.putSerializable("DBType", ConfigList.DATA_TYPE_TV);
+                            extrasTV.putSerializable("movie_id", searchSuggestionsMovieDB.getId());
+                            intentTV.putExtras(extrasTV);
+                            startActivity(intentTV);
+                            break;
+                        case ConfigSearch.MEDIA_TYPE_PERSON:
+                            Intent intentPerson = new Intent(getApplicationContext(), PersonDetailActivity.class);
+                            Bundle extrasPerson = new Bundle();
+                            extrasPerson.putSerializable("type", "cast");
+                            extrasPerson.putSerializable("castID", searchSuggestionsMovieDB.getId());
+                            intentPerson.putExtras(extrasPerson);
+                            startActivity(intentPerson);
+                            break;
+                    }
+                }
+
+                Log.d(TAG, "onSuggestionClicked()");
+
+            }
+
+            @Override
+            public void onSearchAction() {
+
+                Log.d(TAG, "onSearchAction()");
+            }
+        });
+
+//        mSearchView.setOnFocusChangeListener(new FloatingSearchView.OnFocusChangeListener() {
+//            @Override
+//            public void onFocus() {
+//
+//                //show suggestions when search bar gains focus (typically history suggestions)
+//                mSearchView.swapSuggestions(SearchDetail.getHistory(MainActivity.this, 3));
+//
+//                Log.d(TAG, "onFocus()");
+//            }
+//
+//            @Override
+//            public void onFocusCleared() {
+//
+//                Log.d(TAG, "onFocusCleared()");
+//            }
+//        });
+
+////        handle menu clicks the same way as you would
+////        in a regular activity
+//        mSearchView.setOnMenuItemClickListener(new FloatingSearchView.OnMenuItemClickListener() {
+//            @Override
+//            public void onActionMenuItemSelected(MenuItem item) {
+//
+//                if (item.getItemId() == R.id.action_change_colors) {
+//
+//                    //demonstrate setting colors for items
+//                    mSearchView.setBackgroundColor(Color.parseColor("#ECE7D5"));
+//                    mSearchView.setViewTextColor(Color.parseColor("#657A81"));
+//                    mSearchView.setHintTextColor(Color.parseColor("#596D73"));
+//                    mSearchView.setActionMenuOverflowColor(Color.parseColor("#B58900"));
+//                    mSearchView.setMenuItemIconColor(Color.parseColor("#2AA198"));
+//                    mSearchView.setLeftActionIconColor(Color.parseColor("#657A81"));
+//                    mSearchView.setClearBtnColor(Color.parseColor("#D30102"));
+//                    mSearchView.setSuggestionRightIconColor(Color.parseColor("#BCADAD"));
+//                    mSearchView.setDividerColor(Color.parseColor("#dfd7b9"));
+//
+//                } else {
+//
+//                    //just print action
+//                    Toast.makeText(getApplicationContext(), item.getTitle(),
+//                            Toast.LENGTH_SHORT).show();
+//                }
+//
+//            }
+//        });
+
+//        //use this listener to listen to menu clicks when app:floatingSearch_leftAction="showHamburger"
+//        mSearchView.setOnLeftMenuClickListener(new FloatingSearchView.OnLeftMenuClickListener() {
+//            @Override
+//            public void onMenuOpened() {
+//                Log.d(TAG, "onMenuOpened()");
+//
+//                mDrawerLayout.openDrawer(GravityCompat.START);
+//            }
+//
+//            @Override
+//            public void onMenuClosed() {
+//                Log.d(TAG, "onMenuClosed()");
+//
+//                mDrawerLayout.closeDrawer(GravityCompat.START);
+//            }
+//        });
+//
+//        //use this listener to listen to menu clicks when app:floatingSearch_leftAction="showHome"
+//        mSearchView.setOnHomeActionClickListener(new FloatingSearchView.OnHomeActionClickListener() {
+//            @Override
+//            public void onHomeClicked() {
+//
+//                Log.d(TAG, "onHomeClicked()");
+//            }
+//        });
+
+        /*
+         * Here you have access to the left icon and the text of a given suggestion
+         * item when as it is bound to the suggestion list. You can utilize this
+         * callback to change some properties of the left icon and the text. For example, you
+         * can load left icon images using your favorite image loading library, or change text color.
+         *
+         * Some restrictions:
+         * 1. You can modify the height, eidth, margin, or padding of the text and left icon.
+         * 2. You can't modify the text's size.
+         *
+         * Modifications to these properties will be ignored silently.
+         */
+        mSearchView.setOnBindSuggestionCallback(new SearchSuggestionsAdapter.OnBindSuggestionCallback() {
+            @Override
+            public void onBindSuggestion(IconImageView leftIcon, BodyTextView bodyText, SearchSuggestion item, int itemPosition) {
+
+                SearchSuggestionsMovieDB searchSuggestions = (SearchSuggestionsMovieDB) item;
+
+                if (searchSuggestions.ismIsHistory()) {
+                    leftIcon.setImageDrawable(leftIcon.getResources().getDrawable(R.drawable.ic_history_black_24dp));
+                    leftIcon.setAlpha(.36f);
+                } else {
+                    leftIcon.setScaleY(2);
+                    Picasso.with(getApplicationContext()).load(searchSuggestions.getBackdrop_image()).into(leftIcon);
+                }
+                //leftIcon.setImageDrawable(new ColorDrawable(Color.parseColor(colorSuggestion.getColor().getHex())));
+            }
+
+        });
+
+        mDrawerLayout.setDrawerListener(new DrawerLayout.DrawerListener() {
+            @Override
+            public void onDrawerSlide(View drawerView, float slideOffset) {
+            }
+
+            @Override
+            public void onDrawerOpened(View drawerView) {
+
+                //since the drawer might have opened as a results of
+                //a click on the left menu, we need to make sure
+                //to close it right after the drawer opens, so that
+                //it is closed when the drawer is  closed.
+                mSearchView.closeMenu(false);
+            }
+
+            @Override
+            public void onDrawerClosed(View drawerView) {
+            }
+
+            @Override
+            public void onDrawerStateChanged(int newState) {
+            }
+        });
+    }
+
+
+    /**
      * Search
      *
      * @param query
@@ -215,7 +442,6 @@ public class MainActivity extends AppCompatActivity {
     //Hide FAB on back button press
     public void onBackPressed() {
         fabToolBar.hide();
-        searchView.clearFocus();
         if (doubleBackToExitPressedOnce) {
             super.onBackPressed();
             return;

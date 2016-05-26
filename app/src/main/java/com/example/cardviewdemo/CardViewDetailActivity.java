@@ -111,7 +111,7 @@ public class CardViewDetailActivity extends AppCompatActivity {
                 appendPath(dbType).
                 appendPath(movieID).
                 appendQueryParameter(ConfigList.API_KEY, ConfigList.API_KEY_VALUE).
-                appendQueryParameter(ConfigList.VIDEO, "videos,credits,similar");
+                appendQueryParameter(ConfigList.APPEND_TO_RESPONSE, "videos,credits,similar");
         Log.v("URL :", builder.build().toString());
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, builder.build().toString(), null,
