@@ -10,7 +10,8 @@
     <ImageView
         android:id="@+id/grid_image"
         android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_height="100dp"
+        android:transitionName="@string/cast_transition" />
 
     <com.example.cardviewdemo.TextViewPlus
         android:id="@+id/grid_text"
@@ -18,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:gravity="center"
-        android:textColor="@android:color/white"
+        android:textColor="@color/text_white"
         android:textSize="12sp"
         app:customFont="fonts/Roboto-Regular.ttf" />
 

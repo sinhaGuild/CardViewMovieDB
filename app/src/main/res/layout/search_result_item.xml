@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="250sp"
         android:layout_marginTop="5dp"
-        card_view:cardBackgroundColor="#1E1E1E">
+        card_view:cardBackgroundColor="@color/colorPrimary">
 
         <ImageView
             android:id="@+id/search_backdrop_path"
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:background="@color/colorPrimary"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/text_white"
                     android:textSize="6sp" />
 
             </LinearLayout>

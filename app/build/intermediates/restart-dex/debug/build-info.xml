@@ -4,26 +4,26 @@
     api-level="22"
     density="xxxhdpi"
     format="7"
-    timestamp="372545422934387" >
+    timestamp="426854221747083" >
 
     <task
         name="javac"
-        duration="1119" />
+        duration="718" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="12" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
     <artifact
         location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="372545422934387" >
+    <build timestamp="426854221747083" >
         <artifact
             location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />

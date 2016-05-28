@@ -44,7 +44,6 @@
                     app:borderWidth="5dp"
                     app:elevation="5dp"
                     app:fabSize="normal" />
-
             </RelativeLayout>
 
             <LinearLayout
@@ -61,7 +60,8 @@
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:scaleType="centerInside"
-                    android:src="@drawable/nowplaying_toolbar" />
+                    android:src="@drawable/in_theatres"
+                    android:tint="@color/colorAccent" />
 
                 <ImageView
                     android:id="@+id/two"
@@ -70,7 +70,8 @@
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:scaleType="centerInside"
-                    android:src="@drawable/tv_toolbar" />
+                    android:src="@drawable/tv"
+                    android:tint="@color/colorAccent" />
 
                 <ImageView
                     android:id="@+id/three"
@@ -79,7 +80,8 @@
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:scaleType="centerInside"
-                    android:src="@drawable/camera_toolbar" />
+                    android:src="@drawable/upcoming"
+                    android:tint="@color/colorAccent" />
 
                 <ImageView
                     android:id="@+id/four"
@@ -88,7 +90,8 @@
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:scaleType="centerInside"
-                    android:src="@drawable/toprated_toolbar" />
+                    android:src="@drawable/popular"
+                    android:tint="@color/colorAccent" />
 
             </LinearLayout>
 
@@ -131,7 +134,7 @@
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@android:color/white"
+        android:background="@color/text_white"
         android:choiceMode="singleChoice"
         android:dividerHeight="0dp">
 

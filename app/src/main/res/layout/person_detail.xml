@@ -19,10 +19,11 @@
             android:layout_height="240dp"
             android:layout_margin="5dp"
             android:layout_marginStart="10dp"
-            android:background="@android:color/white"
+            android:background="@color/text_white"
             android:elevation="20dp"
             android:padding="2dp"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            android:transitionName="@string/cast_transition" />
 
         <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/name_tv"
@@ -34,7 +35,7 @@
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:text="@string/name"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
@@ -47,7 +48,7 @@
             android:layout_toEndOf="@id/poster_path_person"
             android:paddingEnd="10dp"
             android:paddingStart="10dp"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
@@ -62,7 +63,7 @@
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:text="@string/date_of_birth"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
@@ -75,7 +76,7 @@
             android:layout_toEndOf="@id/poster_path_person"
             android:paddingEnd="10dp"
             android:paddingStart="10dp"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
@@ -89,7 +90,7 @@
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:text="@string/born_in"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
@@ -102,7 +103,7 @@
             android:layout_toEndOf="@id/poster_path_person"
             android:paddingEnd="10dp"
             android:paddingStart="10dp"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
@@ -115,7 +116,7 @@
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:text="@string/biography"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
@@ -130,7 +131,7 @@
             android:paddingStart="10dp"
             android:paddingTop="5dp"
             android:scrollbars="vertical"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
@@ -146,7 +147,7 @@
             android:paddingTop="10dp"
             android:scrollbars="vertical"
             android:text="@string/images"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             app:customFont="fonts/cover.ttf" />
 

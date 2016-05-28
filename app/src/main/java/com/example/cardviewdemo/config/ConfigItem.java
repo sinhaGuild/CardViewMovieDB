@@ -41,6 +41,9 @@ public class ConfigItem {
     public static final String CREW = "crew";
     public static final String BELONGS_TO_COLLECTION = "belongs_to_collection";
 
+    public static final String REVIEWS = "reviews";
+    public static final String AUTHOR = "author";
+    public static final String CONTENT = "content";
     //Tags unique for TV
     public static final String TV_NAME = "original_name";
     public static final String TV_AIR_DATE = "first_air_date";

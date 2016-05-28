@@ -11,6 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <ProgressBar
+        android:id="@+id/splash_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
     <com.example.cardviewdemo.TextViewPlus
         android:id="@+id/splash_title"
         android:layout_width="match_parent"
@@ -20,7 +26,7 @@
         android:gravity="center_vertical|center"
         android:text="@string/s_i_n_h_a"
         android:textAllCaps="true"
-        android:textColor="@android:color/white"
+        android:textColor="@color/text_white"
         android:textSize="60sp"
         android:textStyle="bold"
         app:customFont="fonts/Roboto-Regular.ttf" />
@@ -33,7 +39,7 @@
         android:gravity="center_vertical|center"
         android:text="@string/project_id_28"
         android:textAllCaps="true"
-        android:textColor="@android:color/white"
+        android:textColor="@color/text_white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:customFont="fonts/cover.ttf" />
@@ -46,7 +52,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:background="@drawable/ic_arrow_forward_black_36dp"
-        android:backgroundTint="@android:color/white"
+        android:backgroundTint="@color/text_white"
         android:clickable="true"
         android:elevation="50dp" />
 

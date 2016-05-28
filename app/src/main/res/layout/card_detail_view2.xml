@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_detail_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/scrollparent"
     android:layout_width="match_parent"
@@ -11,15 +17,15 @@
         android:layout_height="match_parent">
 
 
-        <ImageView
-            android:id="@+id/backdrop_path_detail"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:alpha="0.4"
-            android:backgroundTint="@android:color/holo_red_dark"
-            android:backgroundTintMode="add"
-            android:contentDescription="@string/poster" />
+        <!--<ImageView-->
+        <!--android:id="@+id/backdrop_path_detail"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:alpha="0.4"-->
+        <!--android:backgroundTint="@android:color/holo_red_dark"-->
+        <!--android:backgroundTintMode="add"-->
+        <!--android:contentDescription="@string/poster"/>-->
 
         <ImageView
             android:id="@+id/poster_path_person"
@@ -42,7 +48,7 @@
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:text="@string/title"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
@@ -55,7 +61,7 @@
             android:layout_toEndOf="@+id/poster_path_person"
             android:paddingEnd="10dp"
             android:paddingStart="10dp"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
@@ -70,7 +76,7 @@
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:text="@string/genre"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
@@ -83,7 +89,7 @@
             android:layout_toEndOf="@+id/poster_path_person"
             android:paddingEnd="10dp"
             android:paddingStart="10dp"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
@@ -97,7 +103,7 @@
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:text="@string/language"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
@@ -110,7 +116,7 @@
             android:layout_toEndOf="@+id/poster_path_person"
             android:paddingEnd="10dp"
             android:paddingStart="10dp"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
@@ -125,7 +131,7 @@
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:text="@string/studio"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
@@ -138,7 +144,7 @@
             android:layout_toEndOf="@+id/poster_path_person"
             android:paddingEnd="10dp"
             android:paddingStart="10dp"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
@@ -151,8 +157,8 @@
             android:gravity="center|center_vertical"
             android:paddingTop="20dp"
             android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textSize="50sp"
+            android:textColor="@color/text_white"
+            android:textSize="38sp"
             android:textStyle="bold"
             app:customFont="fonts/Gabrielle.ttf" />
 
@@ -174,7 +180,7 @@
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:text="@string/plot"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
@@ -189,7 +195,7 @@
             android:paddingStart="10dp"
             android:paddingTop="5dp"
             android:scrollbars="vertical"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
@@ -202,7 +208,7 @@
             android:paddingStart="10dp"
             android:paddingTop="20dp"
             android:text="@string/cast"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
@@ -231,7 +237,7 @@
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:text="@string/crew"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
@@ -260,22 +266,41 @@
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:text="@string/reviews"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
 
         <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/review_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gridView_crew"
+            android:layout_marginTop="20dp"
+            android:gravity="end"
+            android:maxLines="100"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:scrollbars="vertical"
+            android:text="Author"
+            android:textColor="@color/text_white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:customFont="fonts/Roboto-Regular.ttf" />
+
+
+        <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/reviews_detail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/reviews_tv"
+            android:layout_below="@+id/review_author"
             android:paddingEnd="10dp"
             android:paddingStart="10dp"
-            android:paddingTop="20dp"
-            android:textColor="@android:color/white"
+            android:paddingTop="5dp"
+            android:textColor="@color/text_white"
             android:textSize="12sp"
-            android:textStyle="bold"
+            android:textStyle="italic"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
 
@@ -288,7 +313,7 @@
             android:paddingStart="10dp"
             android:paddingTop="15dp"
             android:text="@string/collections"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/cover.ttf" />
@@ -311,7 +336,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/collection_tv"
             android:layout_marginTop="10dp"
-            android:background="@android:color/white"
+            android:background="@color/text_white"
             android:contentDescription="@string/collections"
             android:scaleType="centerCrop" />
 
@@ -336,7 +361,7 @@
             android:maxLines="100"
             android:scrollbars="vertical"
             android:textAllCaps="true"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:customFont="fonts/Roboto-Bold.ttf" />
@@ -344,3 +369,4 @@
 
     </RelativeLayout>
 </ScrollView>
+</LinearLayout>

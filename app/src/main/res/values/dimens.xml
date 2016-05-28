@@ -10,4 +10,9 @@
     <integer name="duration_search">800</integer>
     <dimen name="search_view_inset">5dp</dimen>
 
+    <!--Transitions-->
+    <integer name="anim_duration_very_long">1500</integer>
+    <integer name="anim_duration_long">500</integer>
+    <integer name="anim_duration_medium">300</integer>
+
 </resources>

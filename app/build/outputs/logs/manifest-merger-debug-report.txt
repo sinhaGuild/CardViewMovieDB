@@ -174,7 +174,7 @@ MERGED from [com.android.support:support-v4:23.4.0] /Users/anuragsinha/AndroidSt
 	android:allowBackup
 		ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:15:9-35
 	android:icon
-		ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:16:9-54
+		ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:16:9-43
 	android:theme
 		ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:19:9-40
 activity#com.example.cardviewdemo.splash.SplashActivity

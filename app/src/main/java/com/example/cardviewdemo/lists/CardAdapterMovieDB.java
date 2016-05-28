@@ -94,12 +94,14 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
         //Set poster path
         Picasso.with(context).
                 load(movieDBAdapter1.getPoster_path()).
+                placeholder(R.drawable.placeholder).
                 error(R.drawable.face_tired).
                 into(holder.poster_path);
 
         //Set backdrop path
         Picasso.with(context).
                 load(movieDBAdapter1.getBackdrop_path()).
+                placeholder(R.drawable.placeholder).
                 error(R.drawable.face_tired).
                 into(holder.backdrop_path);
 

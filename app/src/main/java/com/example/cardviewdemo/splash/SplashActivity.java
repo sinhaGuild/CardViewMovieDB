@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
@@ -29,11 +30,11 @@ import java.io.InputStream;
 public class SplashActivity extends Activity {
 
     //Splash Screen
-    public static final String VIDEO_NAME = "lioncub.mp4";
+    public static final String VIDEO_NAME = "cub.mp4";
     private VideoView mVideoView;
     private Button goButton_splash;
     private TextViewPlus projectID;
-    //private ProgressBar spinner;
+    private ProgressBar spinner;
 //    private TextViewPlus appName;
 //    Animation myAnimation;
 
@@ -52,16 +53,15 @@ public class SplashActivity extends Activity {
 
 
         findView();
-//        spinner.setVisibility(View.VISIBLE);
+        spinner.setVisibility(View.VISIBLE);
         initView();
         File videoFile = getFileStreamPath(VIDEO_NAME);
         if (!videoFile.exists()) {
             videoFile = copyVideoFile();
         }
-
+        spinner.setVisibility(View.GONE);
         playVideo(videoFile);
         playAnim();
-
 
     }
 
@@ -70,7 +70,7 @@ public class SplashActivity extends Activity {
         mVideoView = (VideoView) findViewById(R.id.videoView);
         goButton_splash = (Button) findViewById(R.id.button_splash);
         projectID = (TextViewPlus) findViewById(R.id.splash_subTitle);
-//        spinner = (ProgressBar) findViewById(R.id.splash_progress);
+        spinner = (ProgressBar) findViewById(R.id.splash_progress);
 //        appName = (TextViewPlus) findViewById(R.id.splash_title);
 //        myAnimation = AnimationUtils.loadAnimation(SplashActivity.this, R.anim.rotation);
 //        appName.startAnimation(myAnimation);
@@ -119,7 +119,7 @@ public class SplashActivity extends Activity {
         File videoFile;
         try {
             FileOutputStream fos = openFileOutput(VIDEO_NAME, MODE_PRIVATE);
-            InputStream in = getResources().openRawResource(R.raw.lioncub);
+            InputStream in = getResources().openRawResource(R.raw.cub);
             byte[] buff = new byte[1024];
             int len = 0;
             while ((len = in.read(buff)) != -1) {
@@ -132,7 +132,7 @@ public class SplashActivity extends Activity {
         }
         videoFile = getFileStreamPath(VIDEO_NAME);
         if (!videoFile.exists())
-            throw new RuntimeException("video file has problem, are you sure you have welcome_video.mp4 in res/raw folder?");
+            throw new RuntimeException("video file has problem, are you sure you have the mp4 in res/raw folder?");
         return videoFile;
     }
 

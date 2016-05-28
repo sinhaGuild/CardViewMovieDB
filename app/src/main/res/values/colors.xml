@@ -8,4 +8,8 @@
     <color name="descriptionColor">#FFF600</color>
     <color name="shadow">#555555</color>
     <color name="title">#777777</color>
+    <color name="text_white">#FFFFFF</color>
+
+
+    <color name="alternate_colorPrimary">#EFFDFD</color>
 </resources>

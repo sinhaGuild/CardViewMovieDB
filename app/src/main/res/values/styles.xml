@@ -34,7 +34,10 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="colorAccent">#FFF</item>
-
+        <!--<item name="android:windowContentTransitions">true</item>-->
+        <!-- specify shared element transitions -->
+        <!--<item name="android:windowSharedElementEnterTransition">@transition/activity_slide</item>-->
+        <!--<item name="android:windowSharedElementExitTransition">@transition/activity_fade</item>-->
     </style>
 
 </resources>
