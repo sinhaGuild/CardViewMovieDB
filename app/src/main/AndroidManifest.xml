@@ -49,7 +49,6 @@
             android:label="person_detail_view"
             android:parentActivityName=".CardViewDetailActivity"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".CollectionsDetailActivity"></activity>
     </application>
 
 </manifest>

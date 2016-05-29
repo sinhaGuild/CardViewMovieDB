@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         //Init our list
         listMovieDB = new ArrayList<>();
         //getting Json response and parsing it
-        getData(pageLimit, ConfigList.MOVIES_NOW_PLAYING, ConfigList.DATA_TYPE_MOVIES);
+        getData(pageLimit, ConfigList.MOVIES_UPCOMING, ConfigList.DATA_TYPE_MOVIES);
 
         //FAB onClick init
         fab = (FloatingActionButton) findViewById(R.id.fabtoolbar_fab);
