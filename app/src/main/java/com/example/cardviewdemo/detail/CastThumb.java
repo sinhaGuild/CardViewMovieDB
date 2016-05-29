@@ -15,6 +15,15 @@ public class CastThumb {
     private String name;
     private int order;
     private String profilePath;
+    private String media_type;
+
+    public CastThumb(String character, String name, String profilePath, String castId, String media_type) {
+        this.character = character;
+        this.name = name;
+        this.profilePath = profilePath;
+        this.castId = castId;
+        this.media_type = media_type;
+    }
 
     public CastThumb(String character, String name, String profilePath) {
         this.character = character;
@@ -27,6 +36,14 @@ public class CastThumb {
         this.character = character;
         this.name = name;
         this.profilePath = profilePath;
+    }
+
+    public String getMedia_type() {
+        return media_type;
+    }
+
+    public void setMedia_type(String media_type) {
+        this.media_type = media_type;
     }
 
     public String buildURL(String path) {

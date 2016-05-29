@@ -40,5 +40,7 @@
     <string name="search_hint">Search</string>
     <string name="app_label" />
     <string name="cast_transition">cast_transition</string>
+    <string name="lead_cast">Lead Cast Credits</string>
+    <string name="crew_credits">Crew Cedits</string>
 
 </resources>

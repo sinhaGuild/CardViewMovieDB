@@ -24,4 +24,5 @@ public class ConfigPerson {
     public static final String IMAGES = "images";
     public static final String PROFILES = "profiles";
     public static final String PERSON_POSTER_PATH = "file_path";
+    public static final String COMBINED_CREDITS = "combined_credits";
 }

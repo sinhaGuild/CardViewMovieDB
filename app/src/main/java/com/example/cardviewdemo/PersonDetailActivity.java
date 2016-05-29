@@ -1,11 +1,15 @@
 package com.example.cardviewdemo;
 
+import android.content.Intent;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,6 +27,10 @@ import com.example.cardviewdemo.config.ConfigItem;
 import com.example.cardviewdemo.config.ConfigList;
 import com.example.cardviewdemo.config.ConfigPerson;
 import com.example.cardviewdemo.detail.Cast;
+import com.example.cardviewdemo.detail.CastThumb;
+import com.example.cardviewdemo.detail.CrewThumb;
+import com.example.cardviewdemo.detail.GridViewAdapter;
+import com.example.cardviewdemo.detail.GridViewDetail;
 import com.mxn.soul.slidingcard_core.ContainerView;
 import com.mxn.soul.slidingcard_core.SlidingCard;
 import com.squareup.picasso.Picasso;
@@ -31,6 +39,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -43,6 +52,14 @@ public class PersonDetailActivity extends AppCompatActivity implements Container
     String crewID;
     Cast cast;
     SliderLayout sliderShow;
+    CastThumb[] castThumb;
+    CrewThumb[] crewThumb;
+    ArrayList<GridViewDetail> castList;
+    ArrayList<GridViewDetail> crewList;
+    GridView castGridView;
+    GridView crewGridView;
+    GridViewAdapter castAdapter;
+    GridViewAdapter crewAdapter;
     private List<String> images;
 
     @Override
@@ -51,6 +68,12 @@ public class PersonDetailActivity extends AppCompatActivity implements Container
 
         setContentView(R.layout.person_detail);
         sliderShow = (SliderLayout) findViewById(R.id.slider);
+
+        castGridView = (GridViewPlus) findViewById(R.id.gridView_castedin);
+        crewGridView = (GridViewPlus) findViewById(R.id.gridView_crewin);
+
+        castList = new ArrayList<>();
+        crewList = new ArrayList<>();
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
@@ -115,6 +138,8 @@ public class PersonDetailActivity extends AppCompatActivity implements Container
         JSONObject jsonImageOb;
         JSONArray jsonImages;
         images = cast.getCastImages();
+        JSONArray jsonCast;
+        JSONArray jsonCrew;
 
         if (response != null) {
 
@@ -143,8 +168,96 @@ public class PersonDetailActivity extends AppCompatActivity implements Container
                 e.printStackTrace();
             }
 
+
+            //Extract CastThumb
+            try {
+                jsonCast = response.getJSONObject(ConfigPerson.COMBINED_CREDITS).getJSONArray(ConfigItem.CAST);
+                castThumb = new CastThumb[jsonCast.length() + 1];
+                for (int i = 0; i < jsonCast.length(); i++) {
+                    JSONObject tempcast = jsonCast.getJSONObject(i);
+                    String media_type = tempcast.getString("media_type");
+                    if (media_type.equals(ConfigList.DATA_TYPE_MOVIES)) {
+                        String character = tempcast.getString("character");
+                        String name = tempcast.getString("original_title");
+                        String profilePath = tempcast.getString("poster_path");
+                        String castID = tempcast.getString("id");
+                        castThumb[i] = new CastThumb(character, name, profilePath, castID, media_type);
+                        castList.add(new GridViewDetail(buildURL(profilePath), name));
+                    } else {
+                        String character = tempcast.getString("character");
+                        String name = tempcast.getString("name");
+                        String profilePath = tempcast.getString("poster_path");
+                        String castID = tempcast.getString("id");
+                        castThumb[i] = new CastThumb(character, name, profilePath, castID, media_type);
+                        castList.add(new GridViewDetail(buildURL(profilePath), name));
+                    }
+                }
+
+                //Extract CrewThumb
+                jsonCrew = response.getJSONObject(ConfigPerson.COMBINED_CREDITS).getJSONArray(ConfigItem.CREW);
+                crewThumb = new CrewThumb[jsonCrew.length() + 1];
+                for (int i = 0; i < jsonCrew.length(); i++) {
+                    JSONObject tempcrew = jsonCrew.getJSONObject(i);
+                    String media_type = tempcrew.getString("media_type");
+                    if (media_type.equals(ConfigList.DATA_TYPE_MOVIES)) {
+                        String job = tempcrew.getString("job");
+                        String profilePath = tempcrew.getString("poster_path");
+                        String name = tempcrew.getString("original_title");
+                        String crewID = tempcrew.getString("id");
+                        crewThumb[i] = new CrewThumb(job, profilePath, name, crewID, media_type);
+                        crewList.add(new GridViewDetail(buildURL(profilePath), name));
+
+                    } else {
+                        String job = tempcrew.getString("job");
+                        String profilePath = tempcrew.getString("poster_path");
+                        String name = tempcrew.getString("name");
+                        String crewID = tempcrew.getString("id");
+                        crewThumb[i] = new CrewThumb(job, profilePath, name, crewID, media_type);
+                        crewList.add(new GridViewDetail(buildURL(profilePath), name));
+                    }
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
             setPersonDetailPage(cast);
+            setPersonDetailBio(crewList, castList);
         }
+
+    }
+
+    private void setPersonDetailBio(ArrayList<GridViewDetail> crewList, ArrayList<GridViewDetail> castList) {
+
+        //Adapter setting for CastThumb & CrewThumb
+        castAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, castList);
+        castGridView.setAdapter(castAdapter);
+        castGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(view.getContext(), CardViewDetailActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("movie_id", String.valueOf(castThumb[position].getCastId()));
+                bundle.putSerializable("DBType", String.valueOf(castThumb[position].getMedia_type()));
+                intent.putExtras(bundle);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        crewAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, crewList);
+        crewGridView.setAdapter(crewAdapter);
+        crewGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(view.getContext(), CardViewDetailActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("movie_id", String.valueOf(crewThumb[position].getCrewID()));
+                bundle.putSerializable("DBType", String.valueOf(crewThumb[position].getMedia_type()));
+                intent.putExtras(bundle);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
     }
 

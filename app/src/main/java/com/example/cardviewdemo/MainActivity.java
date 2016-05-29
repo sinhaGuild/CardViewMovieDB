@@ -18,6 +18,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -52,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
 
     //Page limit
     public static final int pageLimit = 5;
+    //Video Background
+    public static final String VIDEO_NAME = "landscapes.mp4";
     private final String TAG = "MainActivity";
     Toolbar toolbar;
     //Exit by back twice
@@ -62,16 +65,15 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerView.Adapter adapter;
-
     //FAB stuff
     private FABToolbarLayout fabToolBar;
     private View movie_toolbar, tv_toolbar, collections_toolbar, search_toolbar;
     private FloatingActionButton fab;
-
     //Search
     private FloatingSearchView mSearchView;
     private ViewGroup mParentView;
     private DrawerLayout mDrawerLayout;
+    private VideoView mVideoView;
 
 
     @Override
@@ -86,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
         mParentView = (ViewGroup) findViewById(R.id.search_parent_view);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.search_drawer_layout);
         setSearchListeners();
-
 
         //Initializing Views
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -188,7 +189,6 @@ public class MainActivity extends AppCompatActivity {
 //        setupWindowAnimations();
 
     }
-
 
     /**
      * SEARCH LISTENERS

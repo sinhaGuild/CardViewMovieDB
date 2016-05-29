@@ -21,7 +21,6 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -72,8 +71,8 @@ public class CardViewDetailActivity extends AppCompatActivity {
     Reviews reviews = new Reviews();
     String movieID = null;
     WebView displayYoutubeVideo;
-    GridView castGridView;
-    GridView crewGridView;
+    GridViewPlus castGridView;
+    GridViewPlus crewGridView;
     GridViewAdapter castAdapter;
     GridViewAdapter crewAdapter;
     MovieDBItemDetail movieDBItemDetail = new MovieDBItemDetail();
@@ -84,9 +83,9 @@ public class CardViewDetailActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_detail_view);
-        displayYoutubeVideo = (WebView) findViewById(R.id.video_view);
-        castGridView = (GridViewPlus) findViewById(R.id.gridView_cast);
-        crewGridView = (GridViewPlus) findViewById(R.id.gridView_crew);
+        displayYoutubeVideo = (WebView) findViewById(R.id.trailer_video_view);
+        castGridView = (GridViewPlus) findViewById(R.id.gridView_castedin);
+        crewGridView = (GridViewPlus) findViewById(R.id.gridView_crewin);
 
         castList = new ArrayList<>();
         crewList = new ArrayList<>();
@@ -309,7 +308,7 @@ public class CardViewDetailActivity extends AppCompatActivity {
         TextViewPlus review_author = (TextViewPlus) findViewById(R.id.review_author);
         TextViewPlus review_detail = (TextViewPlus) findViewById(R.id.reviews_detail);
 
-        WebView displayYoutubeVideo = (WebView) findViewById(R.id.video_view);
+        WebView displayYoutubeVideo = (WebView) findViewById(R.id.trailer_video_view);
 
         collections_poster.setImageResource(R.drawable.error_default);
         collections_backdrop.setImageResource(R.drawable.error_default);
@@ -345,7 +344,11 @@ public class CardViewDetailActivity extends AppCompatActivity {
         }
         if (tagline != null) {
             if (dbType.equals(ConfigList.DATA_TYPE_MOVIES)) {
-                tagline.setText(item.getTagline());
+                if (item.getTagline().equals("")) {
+                    tagline.setVisibility(View.GONE);
+                } else {
+                    tagline.setText(item.getTagline());
+                }
             }
         } else {
             String tag_line_tv = getString(R.string.tv_status_tagline) + item.getTagline();

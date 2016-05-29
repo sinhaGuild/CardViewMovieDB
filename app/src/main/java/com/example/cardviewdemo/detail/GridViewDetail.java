@@ -7,10 +7,17 @@ public class GridViewDetail {
 
     private String image;
     private String title;
+    private String media_type;
 
     public GridViewDetail(String image, String title) {
         super();
         this.image = image;
+        this.title = title;
+    }
+
+    public GridViewDetail(String image, String title, String media_type) {
+        this.image = image;
+        this.media_type = media_type;
         this.title = title;
     }
 

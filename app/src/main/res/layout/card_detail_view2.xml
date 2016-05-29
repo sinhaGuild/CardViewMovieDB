@@ -164,7 +164,7 @@
 
 
         <WebView
-            android:id="@+id/video_view"
+            android:id="@+id/trailer_video_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tagline"
@@ -175,7 +175,7 @@
             android:id="@+id/bio_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/video_view"
+            android:layout_below="@+id/trailer_video_view"
             android:paddingEnd="10dp"
             android:paddingStart="10dp"
             android:paddingTop="10dp"
@@ -200,7 +200,7 @@
             app:customFont="fonts/Roboto-Regular.ttf" />
 
         <com.example.cardviewdemo.TextViewPlus
-            android:id="@+id/cast_tv"
+            android:id="@+id/person_castedin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/bio_person"
@@ -214,10 +214,10 @@
             app:customFont="fonts/cover.ttf" />
 
         <com.example.cardviewdemo.GridViewPlus
-            android:id="@+id/gridView_cast"
+            android:id="@+id/gridView_castedin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/cast_tv"
+            android:layout_below="@+id/person_castedin"
             android:layout_margin="5dp"
             android:clickable="true"
             android:columnWidth="100dp"
@@ -229,10 +229,10 @@
             android:verticalSpacing="5dp" />
 
         <com.example.cardviewdemo.TextViewPlus
-            android:id="@+id/crew_tv"
+            android:id="@+id/person_crewin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/gridView_cast"
+            android:layout_below="@+id/gridView_castedin"
             android:paddingEnd="10dp"
             android:paddingStart="10dp"
             android:paddingTop="10dp"
@@ -243,10 +243,10 @@
             app:customFont="fonts/cover.ttf" />
 
         <com.example.cardviewdemo.GridViewPlus
-            android:id="@+id/gridView_crew"
+            android:id="@+id/gridView_crewin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/crew_tv"
+            android:layout_below="@+id/person_crewin"
             android:layout_margin="5dp"
             android:clickable="true"
             android:columnWidth="100dp"
@@ -261,7 +261,7 @@
             android:id="@+id/reviews_tv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/gridView_crew"
+            android:layout_below="@+id/gridView_crewin"
             android:paddingEnd="10dp"
             android:paddingStart="10dp"
             android:paddingTop="10dp"
@@ -275,7 +275,7 @@
             android:id="@+id/review_author"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/gridView_crew"
+            android:layout_below="@+id/gridView_crewin"
             android:layout_marginTop="20dp"
             android:gravity="end"
             android:maxLines="100"

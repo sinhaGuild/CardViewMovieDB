@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:2:1-55:12
+ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:2:1-54:12
 	package
 		ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml
@@ -115,7 +115,7 @@ ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main
 	android:name
 		ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:15:30-80
 application
-ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:17:5-53:19
+ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:17:5-52:19
 MERGED from [com.android.support:support-v4:23.4.0] /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
@@ -228,7 +228,3 @@ ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main
 		ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:51:13-52
 	android:name
 		ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:48:13-49
-activity#com.example.cardviewdemo.CollectionsDetailActivity
-ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:52:9-72
-	android:name
-		ADDED from /Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/AndroidManifest.xml:52:19-60

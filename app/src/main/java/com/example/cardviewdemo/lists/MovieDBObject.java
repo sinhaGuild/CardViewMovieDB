@@ -71,7 +71,14 @@ public class MovieDBObject {
     }
 
     public String getReleaseDate() {
-        return release_date;
+        if (release_date.length() == 4) {
+            return release_date;
+        } else if (release_date.length() > 4) {
+            return release_date.substring(0, Math.min(release_date.length(), 4));
+        } else {
+            // whatever is appropriate in this case
+            throw new IllegalArgumentException("word has less than 3 characters!");
+        }
     }
 
     public void setReleaseDate(String realName) {

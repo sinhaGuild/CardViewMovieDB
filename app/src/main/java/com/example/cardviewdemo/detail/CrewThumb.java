@@ -14,6 +14,16 @@ public class CrewThumb {
     private String job;
     private String name;
     private String profilePath;
+    private String media_type;
+
+    public CrewThumb(String job, String profilePath, String name, String crewID, String media_type) {
+        this.crewID = crewID;
+
+        this.job = job;
+        this.media_type = media_type;
+        this.name = name;
+        this.profilePath = profilePath;
+    }
 
     public CrewThumb(String job, String profilePath, String name) {
         this.job = job;
@@ -26,6 +36,14 @@ public class CrewThumb {
         this.job = job;
         this.profilePath = profilePath;
         this.name = name;
+    }
+
+    public String getMedia_type() {
+        return media_type;
+    }
+
+    public void setMedia_type(String media_type) {
+        this.media_type = media_type;
     }
 
     public String buildURL(String path) {

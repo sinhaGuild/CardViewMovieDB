@@ -67,7 +67,7 @@ public class SplashActivity extends Activity {
 
     //Splash screen functions
     private void findView() {
-        mVideoView = (VideoView) findViewById(R.id.videoView);
+        mVideoView = (MyVideoView) findViewById(R.id.videoView);
         goButton_splash = (Button) findViewById(R.id.button_splash);
         projectID = (TextViewPlus) findViewById(R.id.splash_subTitle);
         spinner = (ProgressBar) findViewById(R.id.splash_progress);

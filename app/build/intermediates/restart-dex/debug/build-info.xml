@@ -4,7 +4,7 @@
     api-level="22"
     density="xxxhdpi"
     format="7"
-    timestamp="444105970245091" >
+    timestamp="490764670949924" >
 
     <task
         name="javac"
@@ -23,12 +23,12 @@
         location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/resources-debug.ap_"
         type="RESOURCES" />
 
-    <build timestamp="442675289677338" >
+    <build timestamp="489760786313254" >
         <artifact
             location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="444105970245091" >
+    <build timestamp="490764670949924" >
         <artifact
             location="/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/resources-debug.ap_"
             type="RESOURCES" />
