@@ -87,6 +87,7 @@ public class CardViewDetailActivity extends AppCompatActivity {
         displayYoutubeVideo = (WebView) findViewById(R.id.video_view);
         castGridView = (GridViewPlus) findViewById(R.id.gridView_cast);
         crewGridView = (GridViewPlus) findViewById(R.id.gridView_crew);
+
         castList = new ArrayList<>();
         crewList = new ArrayList<>();
         reviewsList = new ArrayList<>();

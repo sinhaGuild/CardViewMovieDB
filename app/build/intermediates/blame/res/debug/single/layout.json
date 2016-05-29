@@ -212,6 +212,10 @@
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_bar.xml"
     },
     {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/layout/activity_collections_detail.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/layout/activity_collections_detail.xml"
+    },
+    {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_item_material.xml"
     },
@@ -274,6 +278,10 @@
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/layout/search_results.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/layout/search_results.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/layout/collections_list_item.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/layout/collections_list_item.xml"
     },
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/layout/sliding_card_root.xml",

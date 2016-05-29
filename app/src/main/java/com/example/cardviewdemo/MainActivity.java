@@ -35,7 +35,7 @@ import com.example.cardviewdemo.config.ConfigSearch;
 import com.example.cardviewdemo.detail.SearchDetail;
 import com.example.cardviewdemo.detail.SearchSuggestionsMovieDB;
 import com.example.cardviewdemo.lists.CardAdapterMovieDB;
-import com.example.cardviewdemo.lists.MovieDBAdapter;
+import com.example.cardviewdemo.lists.MovieDBObject;
 import com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout;
 import com.squareup.picasso.Picasso;
 
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     //Exit by back twice
     boolean doubleBackToExitPressedOnce = false;
     //Creating a List of movies
-    private List<MovieDBAdapter> listMovieDB;
+    private List<MovieDBObject> listMovieDB;
     //Creating Views
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
@@ -559,27 +559,27 @@ public class MainActivity extends AppCompatActivity {
     //This method will parse json data
     private void parseData(JSONArray array, String dataType) {
         for (int i = 0; i < array.length(); i++) {
-            MovieDBAdapter movieDBAdapter = new MovieDBAdapter();
+            MovieDBObject movieDBObject = new MovieDBObject();
             JSONObject json = null;
             try {
                 json = array.getJSONObject(i);
-                movieDBAdapter.setPoster_path(json.getString(ConfigList.TAG_IMAGE_URL));
-                movieDBAdapter.setMovie_id(json.getInt(ConfigList.MOVIE_ID));
-                movieDBAdapter.setBackdrop_path(json.getString(ConfigList.TAG_BACKDROP));
+                movieDBObject.setPoster_path(json.getString(ConfigList.TAG_IMAGE_URL));
+                movieDBObject.setMovie_id(json.getInt(ConfigList.MOVIE_ID));
+                movieDBObject.setBackdrop_path(json.getString(ConfigList.TAG_BACKDROP));
 
                 //check if movies or TV
                 if (dataType.equals(ConfigList.DATA_TYPE_MOVIES)) {
-                    movieDBAdapter.setReleaseDate(json.getString(ConfigList.TAG_REAL_RELEASE_DATE));
-                    movieDBAdapter.setOriginalTitle(json.getString(ConfigList.TAG_TITLE));
+                    movieDBObject.setReleaseDate(json.getString(ConfigList.TAG_REAL_RELEASE_DATE));
+                    movieDBObject.setOriginalTitle(json.getString(ConfigList.TAG_TITLE));
                 } else {
-                    movieDBAdapter.setReleaseDate(json.getString(ConfigList.TAG_FIRST_AIR_DATE));
-                    movieDBAdapter.setOriginalTitle(json.getString(ConfigList.TV_NAME));
+                    movieDBObject.setReleaseDate(json.getString(ConfigList.TAG_FIRST_AIR_DATE));
+                    movieDBObject.setOriginalTitle(json.getString(ConfigList.TV_NAME));
                 }
-                movieDBAdapter.setVote_average(json.getDouble(ConfigList.TAG_VOTER_RATING));
+                movieDBObject.setVote_average(json.getDouble(ConfigList.TAG_VOTER_RATING));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            listMovieDB.add(movieDBAdapter);
+            listMovieDB.add(movieDBObject);
         }
 
         //Finally initializing our adapter with the list of objects & pass the type of query type ie. Movies, TV

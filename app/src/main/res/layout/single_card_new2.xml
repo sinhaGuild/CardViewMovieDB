@@ -3,6 +3,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="1dp"
     android:clickable="true"
     android:orientation="vertical">
 
@@ -12,7 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="250sp"
         android:layout_marginTop="5dp"
-        card_view:cardBackgroundColor="@color/colorPrimary">
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
 
         <ImageView
             android:id="@+id/backdrop_path"
@@ -39,7 +42,7 @@
                 android:layout_marginTop="100dp"
                 android:background="@color/colorAccent"
                 android:padding="1dp"
-                android:scaleType="fitCenter" />
+                android:scaleType="fitXY" />
 
             <LinearLayout
                 android:id="@+id/mTextGroupCardList"
@@ -59,7 +62,7 @@
                     android:gravity="center_vertical"
                     android:textAllCaps="true"
                     android:textColor="@color/colorAccent"
-                    android:textSize="15sp"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
                 <TextView
                     android:id="@+id/release_date"
@@ -67,8 +70,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:background="@color/colorPrimary"
-                    android:textColor="@color/text_white"
-                    android:textSize="6sp" />
+                    android:textColor="@color/text_black"
+                    android:textSize="8sp" />
 
             </LinearLayout>
 
@@ -77,12 +80,12 @@
                 android:layout_width="30sp"
                 android:layout_height="30sp"
                 android:layout_gravity="bottom"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginEnd="5dp"
                 android:background="@drawable/textview_design_circle"
                 android:gravity="center"
                 android:scaleType="fitXY"
-                android:textColor="@color/text_white"
+                android:textColor="@color/text_black"
                 android:textStyle="bold" />
 
         </LinearLayout>

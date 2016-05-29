@@ -29,9 +29,9 @@ import java.util.List;
  */
 public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.ViewHolder> {
 
-    //List of movieDBAdapter for CardView list
+    //List of movieDBObject for CardView list
     public static final String TAG = "CardAdapterMovieDB Class ";
-    List<MovieDBAdapter> movieDBAdapter;
+    List<MovieDBObject> movieDBObject;
     int[] movieID;
     //ParallaxViewController parallax = new ParallaxViewController();
 
@@ -44,17 +44,17 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
     private String dBType;
 
 
-    public CardAdapterMovieDB(List<MovieDBAdapter> movieDBAdapter, String dBType, Context context) {
+    public CardAdapterMovieDB(List<MovieDBObject> movieDBObject, String dBType, Context context) {
         super();
         //Getting all the cards
-        this.movieDBAdapter = movieDBAdapter;
+        this.movieDBObject = movieDBObject;
         this.context = context;
         this.dBType = dBType;
-        if (movieDBAdapter != null) {
-            if (movieDBAdapter.size() != 0) {
-                movieID = new int[movieDBAdapter.size()];
-                for (int i = 0; i < movieDBAdapter.size(); i++) {
-                    this.movieID[i] = movieDBAdapter.get(i).getMovie_id();
+        if (movieDBObject != null) {
+            if (movieDBObject.size() != 0) {
+                movieID = new int[movieDBObject.size()];
+                for (int i = 0; i < movieDBObject.size(); i++) {
+                    this.movieID[i] = movieDBObject.get(i).getMovie_id();
                 }
             } else {
                 Toast.makeText(context, " is empty", Toast.LENGTH_SHORT).show();
@@ -81,7 +81,7 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
 
     @Override
     public int getItemCount() {
-        return movieDBAdapter.size();
+        return movieDBObject.size();
     }
 
     @TargetApi(Build.VERSION_CODES.M)
@@ -89,25 +89,25 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
     public void onBindViewHolder(ViewHolder holder, int position) {
 
         //Initialize Card List
-        MovieDBAdapter movieDBAdapter1 = movieDBAdapter.get(position);
+        MovieDBObject movieDBObject1 = movieDBObject.get(position);
 
         //Set poster path
         Picasso.with(context).
-                load(movieDBAdapter1.getPoster_path()).
+                load(movieDBObject1.getPoster_path()).
                 placeholder(R.drawable.placeholder).
                 error(R.drawable.face_tired).
                 into(holder.poster_path);
 
         //Set backdrop path
         Picasso.with(context).
-                load(movieDBAdapter1.getBackdrop_path()).
+                load(movieDBObject1.getBackdrop_path()).
                 placeholder(R.drawable.placeholder).
                 error(R.drawable.face_tired).
                 into(holder.backdrop_path);
 
-        holder.original_title.setText(movieDBAdapter1.getOriginalTitle());
-        holder.vote_average.setText(movieDBAdapter1.getVote_average());
-        holder.release_date.setText(movieDBAdapter1.getReleaseDate());
+        holder.original_title.setText(movieDBObject1.getOriginalTitle());
+        holder.vote_average.setText(movieDBObject1.getVote_average());
+        holder.release_date.setText(movieDBObject1.getReleaseDate());
 
         setAnimation(holder.container, position);
     }
@@ -177,7 +177,7 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
          */
 
         public void removeMovieCard(int position) {
-            movieDBAdapter.remove(position);
+            movieDBObject.remove(position);
             notifyItemRemoved(position);
         }
 

@@ -32,7 +32,6 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <color name="alternate_colorPrimary">#EFFDFD</color>
     <color name="background">#FFFFFF</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
@@ -53,8 +52,8 @@
     <color name="cardview_shadow_start_color">#37000000</color>
     <color name="clear_btn_color">#787878</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorPrimary">#1E1E1E</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#EFFDFD</color>
+    <color name="colorPrimaryDark">#DDDDDD</color>
     <color name="dark_gray">#787878</color>
     <color name="descriptionColor">#FFF600</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
@@ -125,6 +124,7 @@
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="textColorCard">#8E602F</color>
     <color name="textColorPrimary">#FF4081</color>
+    <color name="text_black">#000000</color>
     <color name="text_white">#FFFFFF</color>
     <color name="title">#777777</color>
     <color name="transparent">#00000000</color>
@@ -257,6 +257,7 @@
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
     <dimen name="corner_radius_oval">250dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_bottom_sheet_modal_elevation">16dp</dimen>
     <dimen name="design_bottom_sheet_modal_peek_height">256dp</dimen>
