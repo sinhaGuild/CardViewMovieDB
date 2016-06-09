@@ -24,6 +24,10 @@
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_in_top.xml"
     },
     {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/anim/default_dialog_in.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/fr.tvbarthel.blurdialogfragment/lib/2.1.6/res/anim/default_dialog_in.xml"
+    },
+    {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_fade_in.xml"
     },
@@ -70,5 +74,9 @@
     {
         "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/anim/rotate_simple.xml",
         "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/src/main/res/anim/rotate_simple.xml"
+    },
+    {
+        "merged": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/res/merged/debug/anim/default_dialog_out.xml",
+        "source": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/fr.tvbarthel.blurdialogfragment/lib/2.1.6/res/anim/default_dialog_out.xml"
     }
 ]

@@ -14,7 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
-import com.example.cardviewdemo.MainActivity;
+import com.example.cardviewdemo.OnboardingActivity;
 import com.example.cardviewdemo.R;
 import com.example.cardviewdemo.TextViewPlus;
 
@@ -80,7 +80,7 @@ public class SplashActivity extends Activity {
         goButton_splash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, OnboardingActivity.class);
                 startActivity(intent);
                 finish();
             }

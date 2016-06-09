@@ -45,8 +45,27 @@
                     "startLine": 4,
                     "startColumn": 4,
                     "startOffset": 189,
+                    "endColumn": 67,
+                    "endOffset": 252
+                },
+                "from": {
+                    "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/fr.tvbarthel.blurdialogfragment/lib/2.1.6/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 192,
+                        "endColumn": 67,
+                        "endOffset": 255
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 257,
                     "endColumn": 69,
-                    "endOffset": 254
+                    "endOffset": 322
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-land/values-land.xml",
@@ -61,11 +80,11 @@
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 259,
+                    "startOffset": 327,
                     "endColumn": 63,
-                    "endOffset": 318
+                    "endOffset": 386
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-land/values-land.xml",
@@ -80,11 +99,11 @@
             },
             {
                 "to": {
-                    "startLine": 6,
+                    "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 323,
+                    "startOffset": 391,
                     "endColumn": 70,
-                    "endOffset": 389
+                    "endOffset": 457
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-land/values-land.xml",
@@ -99,11 +118,11 @@
             },
             {
                 "to": {
-                    "startLine": 7,
+                    "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 394,
+                    "startOffset": 462,
                     "endColumn": 67,
-                    "endOffset": 457
+                    "endOffset": 525
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-land/values-land.xml",
@@ -118,12 +137,12 @@
             },
             {
                 "to": {
-                    "startLine": 8,
+                    "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 462,
-                    "endLine": 11,
+                    "startOffset": 530,
+                    "endLine": 12,
                     "endColumn": 12,
-                    "endOffset": 639
+                    "endOffset": 707
                 },
                 "from": {
                     "file": "/Users/anuragsinha/AndroidStudioProjects/CardViewMovieDB/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/values-land/values-land.xml",

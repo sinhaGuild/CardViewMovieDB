@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib-2.1.6">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/fr.tvbarthel.blurdialogfragment/lib/2.1.6/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/fr.tvbarthel.blurdialogfragment/lib/2.1.6/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/fr.tvbarthel.blurdialogfragment/lib/2.1.6/f13608ae3f70ffd22b8686b599a48cfe6c8de42a/lib-2.1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

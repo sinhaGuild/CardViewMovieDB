@@ -5,12 +5,14 @@
     <!--<color name="colorAccent">#FF4081</color>-->
     <!--<color name="text_white">#FFFFFF</color>-->
 
-    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimary">#232323</color>
     <!--<color name="colorPrimaryDark">#DDDDDD</color>-->
     <color name="colorPrimaryDark">#545454</color>
+    <color name="colorPrimaryDark2">#DDDDDD</color>
     <color name="colorAccent">#FF00FF</color>
     <color name="text_white">#FFFFFF</color>
     <color name="text_black">#000000</color>
+    <color name="transparent_tv">#8000</color>
 
 
     <color name="textColorPrimary">#FF4081</color>

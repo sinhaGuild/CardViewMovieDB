@@ -99,9 +99,7 @@ public class CardViewDetailActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Intent did not pass movie ID", Toast.LENGTH_SHORT).show();
         }
-
         getDataForMovieDetail(movieID, dbType);
-
     }
 
     @Override

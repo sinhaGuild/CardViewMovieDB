@@ -1,12 +1,12 @@
 package com.example.cardviewdemo.lists;
 
 import android.annotation.TargetApi;
+import android.app.FragmentManager;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.os.Build;
-import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,8 +18,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.cardviewdemo.CardViewDetailActivity;
 import com.example.cardviewdemo.R;
+import com.example.cardviewdemo.TextViewPlus;
+import com.example.cardviewdemo.dialogs.DialogFragmentLayout;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -135,8 +136,8 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
     class ViewHolder extends RecyclerView.ViewHolder {
         public ImageView poster_path;
         public ImageView backdrop_path;
-        public TextView original_title;
-        public TextView release_date;
+        public TextViewPlus original_title;
+        public TextViewPlus release_date;
         public TextView language;
         public TextView vote_average;
         public LinearLayout container;
@@ -148,13 +149,20 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(v.getContext(), CardViewDetailActivity.class);
+
+                    FragmentManager manager = ((FragmentActivity) context).getFragmentManager();
+
                     int movie_id = movieID[getAdapterPosition()];
-                    Bundle bundle = new Bundle();
-                    bundle.putSerializable("movie_id", String.valueOf(movie_id));
-                    bundle.putSerializable("DBType", String.valueOf(dBType));
-                    intent.putExtras(bundle);
-                    v.getContext().startActivity(intent);
+                    DialogFragmentLayout fragment
+                            = DialogFragmentLayout.newInstance(8, 4.0f, true, false, String.valueOf(movie_id), dBType);
+                    fragment.show(manager, "blur_sample");
+//                    Intent intent = new Intent(v.getContext(), DialogFragmentActivity.class);
+//                    int movie_id = movieID[getAdapterPosition()];
+//                    Bundle bundle = new Bundle();
+//                    bundle.putSerializable("movie_id", String.valueOf(movie_id));
+//                    bundle.putSerializable("DBType", String.valueOf(dBType));
+//                    intent.putExtras(bundle);
+//                    v.getContext().startActivity(intent);
                 }
             });
 
@@ -164,9 +172,9 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
             //Set background Image to Grey
             setImageToGreyScale(poster_path);
 
-            original_title = (TextView) itemView.findViewById(R.id.original_title);
+            original_title = (TextViewPlus) itemView.findViewById(R.id.original_title);
             vote_average = (TextView) itemView.findViewById(R.id.vote_average);
-            release_date = (TextView) itemView.findViewById(R.id.release_date);
+            release_date = (TextViewPlus) itemView.findViewById(R.id.release_date);
 
         }
 

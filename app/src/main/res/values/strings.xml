@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">CardViewMovieDB</string>
+    <string name="app_name">CardB</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
@@ -42,5 +42,6 @@
     <string name="cast_transition">cast_transition</string>
     <string name="lead_cast">Lead Cast Credits</string>
     <string name="crew_credits">Crew Cedits</string>
+    <string name="dialog_fragment_title">Blur Dialog Fragment\\n\\nhttps://github.com/tvbarthel/BlurDialogFragment</string>
 
 </resources>

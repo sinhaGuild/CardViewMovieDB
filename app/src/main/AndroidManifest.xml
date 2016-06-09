@@ -11,12 +11,12 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--<android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<android:uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/bird_icon"
+        android:icon="@drawable/monkey"
         android:label="@string/app_name"
         android:screenOrientation="landscape"
         android:theme="@style/AppTheme">
@@ -28,9 +28,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".OnboardingActivity"
             android:label="@string/app_name"
             android:parentActivityName=".splash.SplashActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".OnboardingActivity"></activity>
+        <activity
+            android:name=".dialogs.DialogFragmentActivity"
+            android:label="dialogs_view"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan" />
         <!-- <activity android:name=".SearchActivity"> -->
         <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.SEARCH" /> -->

@@ -9,7 +9,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -18,7 +17,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.Toast;
-import android.widget.VideoView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -54,11 +52,11 @@ public class MainActivity extends AppCompatActivity {
     //Page limit
     public static final int pageLimit = 5;
     //Video Background
-    public static final String VIDEO_NAME = "landscapes.mp4";
     private final String TAG = "MainActivity";
-    Toolbar toolbar;
     //Exit by back twice
     boolean doubleBackToExitPressedOnce = false;
+    String mDBType;
+    String mMovieID;
     //Creating a List of movies
     private List<MovieDBObject> listMovieDB;
     //Creating Views
@@ -73,15 +71,12 @@ public class MainActivity extends AppCompatActivity {
     private FloatingSearchView mSearchView;
     private ViewGroup mParentView;
     private DrawerLayout mDrawerLayout;
-    private VideoView mVideoView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-//        SearchDetail.getInstance(this);
 
         //Initializing Search views
         mSearchView = (FloatingSearchView) findViewById(R.id.floating_search_view);
@@ -98,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         //Init our list
         listMovieDB = new ArrayList<>();
         //getting Json response and parsing it
-        getData(pageLimit, ConfigList.MOVIES_UPCOMING, ConfigList.DATA_TYPE_MOVIES);
+        getData(pageLimit, ConfigList.MOVIES_TOP_RATED, ConfigList.DATA_TYPE_MOVIES);
 
         //FAB onClick init
         fab = (FloatingActionButton) findViewById(R.id.fabtoolbar_fab);
@@ -252,32 +247,24 @@ public class MainActivity extends AppCompatActivity {
                 SearchSuggestionsMovieDB searchSuggestionsMovieDB = (SearchSuggestionsMovieDB) searchSuggestion;
 
                 if (searchSuggestion != null) {
+                    Intent mIntent = new Intent(getApplicationContext(), CardViewDetailActivity.class);
+                    Bundle extras = new Bundle();
                     switch (((SearchSuggestionsMovieDB) searchSuggestion).getMedia_type()) {
                         case ConfigSearch.MEDIA_TYPE_MOVIE:
-                            Intent intentMovie = new Intent(getApplicationContext(), CardViewDetailActivity.class);
-                            Bundle extrasMovies = new Bundle();
-                            extrasMovies.putSerializable("DBType", ConfigList.DATA_TYPE_MOVIES);
-                            extrasMovies.putSerializable("movie_id", searchSuggestionsMovieDB.getId());
-                            intentMovie.putExtras(extrasMovies);
-                            startActivity(intentMovie);
+                            extras.putSerializable("DBType", ConfigList.DATA_TYPE_MOVIES);
+                            extras.putSerializable("movie_id", searchSuggestionsMovieDB.getId());
                             break;
                         case ConfigSearch.MEDIA_TYPE_TV:
-                            Intent intentTV = new Intent(getApplicationContext(), CardViewDetailActivity.class);
-                            Bundle extrasTV = new Bundle();
-                            extrasTV.putSerializable("DBType", ConfigList.DATA_TYPE_TV);
-                            extrasTV.putSerializable("movie_id", searchSuggestionsMovieDB.getId());
-                            intentTV.putExtras(extrasTV);
-                            startActivity(intentTV);
+                            extras.putSerializable("DBType", ConfigList.DATA_TYPE_TV);
+                            extras.putSerializable("movie_id", searchSuggestionsMovieDB.getId());
                             break;
                         case ConfigSearch.MEDIA_TYPE_PERSON:
-                            Intent intentPerson = new Intent(getApplicationContext(), PersonDetailActivity.class);
-                            Bundle extrasPerson = new Bundle();
-                            extrasPerson.putSerializable("type", "cast");
-                            extrasPerson.putSerializable("castID", searchSuggestionsMovieDB.getId());
-                            intentPerson.putExtras(extrasPerson);
-                            startActivity(intentPerson);
+                            extras.putSerializable("type", "cast");
+                            extras.putSerializable("castID", searchSuggestionsMovieDB.getId());
                             break;
                     }
+                    mIntent.putExtras(extras);
+                    startActivity(mIntent);
                 }
 
                 Log.d(TAG, "onSuggestionClicked()");
@@ -431,13 +418,6 @@ public class MainActivity extends AppCompatActivity {
     private void filterSearchFor(String query) {
     }
 
-//    private void setupWindowAnimations() {
-//        Slide slide = new Slide();
-//        slide.setDuration(1000);
-//        getWindow().setExitTransition(slide);
-//
-//    }
-
 
     //Hide FAB on back button press
     public void onBackPressed() {
@@ -460,7 +440,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //This method will get data from the web api
-    private void getData(final int uptil, final String fetContentSortedBy, final String dataType) {
+    private void getData(final int page, final String fetContentSortedBy, final String dataType) {
 
         /**
          * Build the URL with variable value of page
@@ -476,7 +456,7 @@ public class MainActivity extends AppCompatActivity {
                         Log.d("Response", response.toString());
                         try {
                             int totalPages = Integer.parseInt(response.getString("total_pages"));
-                            for (int i = 1; i < uptil; i++) {
+                            for (int i = 1; i < page; i++) {
                                 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
                                         buildURLByPage(i, fetContentSortedBy, dataType),
                                         null,
@@ -587,8 +567,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Animator
         SlideInBottomAnimationAdapter alphaAdapter = new SlideInBottomAnimationAdapter(adapter);
-        alphaAdapter.setDuration(200);
-        alphaAdapter.setInterpolator(new OvershootInterpolator(0.5f));
+        alphaAdapter.setDuration(100);
+        alphaAdapter.setInterpolator(new OvershootInterpolator(1f));
         //Adding adapter to recyclerview
         recyclerView.setAdapter(alphaAdapter);
     }

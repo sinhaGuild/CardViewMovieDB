@@ -14,15 +14,16 @@
         android:layout_width="match_parent"
         android:layout_height="250sp"
         android:layout_marginTop="1dp"
-        card_view:cardBackgroundColor="@color/colorPrimaryDark"
+        card_view:cardBackgroundColor="@color/colorPrimaryDark2"
         card_view:cardElevation="1dp"
         card_view:cardUseCompatPadding="true">
 
         <ImageView
             android:id="@+id/backdrop_path"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:src="@drawable/backdrop"
             android:foregroundTint="@color/colorPrimary"
             android:foregroundTintMode="add"
             android:scaleType="centerCrop" />
@@ -37,55 +38,52 @@
                 android:id="@+id/poster_path"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="100dp"
                 android:background="@color/colorAccent"
-                android:src="@drawable/poster"
                 android:padding="1dp"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:src="@drawable/poster" />
 
             <LinearLayout
                 android:id="@+id/mTextGroupCardList"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_toEndOf="@+id/poster_path"
+                android:layout_height="75dp"
                 android:layout_alignBottom="@+id/poster_path"
-                android:orientation="vertical"
-                android:background="@android:color/transparent"
-                android:paddingEnd="10dp"
-                android:layout_marginEnd="2dp">
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="2dp"
+                android:layout_toEndOf="@+id/poster_path"
+                android:orientation="vertical">
 
                 <com.example.cardviewdemo.TextViewPlus
                     android:id="@+id/original_title"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:background="@android:color/transparent"
                     android:gravity="end"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:background="@color/transparent_tv"
+                    android:text="TITLE TITLE TITLE"
                     android:textAllCaps="true"
                     android:textColor="@color/text_white"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    android:text="TITLE TITLE TITLE"
-                    android:paddingStart="2dp"
-                    android:paddingEnd="2dp"
-                    app:customFont="fonts/QuattrocentoSans-Regular.ttf"/>
+                    android:textSize="20sp"
+                    app:customFont="fonts/Roboto-Regular.ttf" />
+
                 <com.example.cardviewdemo.TextViewPlus
                     android:id="@+id/release_date"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="bottom"
                     android:gravity="end"
-                    android:background="@android:color/transparent"
-                    android:textColor="@color/text_white"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:background="@color/transparent_tv"
                     android:text="2005"
-                    android:paddingStart="2dp"
-                    android:paddingEnd="2dp"
-                    app:customFont="fonts/Roboto-Regular.ttf"/>
+                    android:textColor="@color/text_white"
+                    android:textSize="15sp"
+                    app:customFont="fonts/Roboto-Regular.ttf" />
 
             </LinearLayout>
 
@@ -93,16 +91,16 @@
                 android:id="@+id/vote_average"
                 android:layout_width="40sp"
                 android:layout_height="40sp"
-                android:background="@drawable/textview_design_circle"
                 android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/textview_design_circle"
+                android:elegantTextHeight="false"
                 android:gravity="center_vertical|center_horizontal"
                 android:scaleType="fitXY"
                 android:text="2.0"
-                android:textSize="12sp"
                 android:textColor="@color/text_white"
-                android:textStyle="bold"
-                android:elegantTextHeight="false"
-                android:layout_margin="10dp" />
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
 
