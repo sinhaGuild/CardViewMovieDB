@@ -14,11 +14,11 @@
             android:id="@+id/dialog_poster_path_person"
             android:layout_width="150dp"
             android:layout_height="200dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
             android:background="@android:color/white"
             android:contentDescription="@string/poster"
-            android:elevation="20dp"
+            android:elevation="5dp"
             android:padding="1dp"
             android:scaleType="fitXY" />
 
@@ -103,6 +103,33 @@
             android:textSize="12sp"
             app:customFont="fonts/Roboto-Regular.ttf" />
 
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/dialog_runtime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_language"
+            android:layout_toEndOf="@+id/dialog_poster_path_person"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/runtime"
+            android:textColor="@color/text_white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:customFont="fonts/cover.ttf" />
+
+        <com.example.cardviewdemo.TextViewPlus
+            android:id="@+id/dialog_runtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_runtime_tv"
+            android:layout_toEndOf="@+id/dialog_poster_path_person"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/text_white"
+            android:textSize="12sp"
+            app:customFont="fonts/Roboto-Regular.ttf" />
+
 
         <com.example.cardviewdemo.TextViewPlus
             android:id="@+id/dialog_tagline"
@@ -116,7 +143,6 @@
             android:textSize="30sp"
             android:textStyle="bold"
             app:customFont="fonts/Gabrielle.ttf" />
-
 
         <ImageView
             android:id="@+id/dialog_more"

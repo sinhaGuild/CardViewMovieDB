@@ -180,9 +180,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        //Transitions
-//        setupWindowAnimations();
-
     }
 
     /**

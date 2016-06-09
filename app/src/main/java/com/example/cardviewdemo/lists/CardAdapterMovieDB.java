@@ -156,13 +156,6 @@ public class CardAdapterMovieDB extends RecyclerView.Adapter<CardAdapterMovieDB.
                     DialogFragmentLayout fragment
                             = DialogFragmentLayout.newInstance(8, 4.0f, true, false, String.valueOf(movie_id), dBType);
                     fragment.show(manager, "blur_sample");
-//                    Intent intent = new Intent(v.getContext(), DialogFragmentActivity.class);
-//                    int movie_id = movieID[getAdapterPosition()];
-//                    Bundle bundle = new Bundle();
-//                    bundle.putSerializable("movie_id", String.valueOf(movie_id));
-//                    bundle.putSerializable("DBType", String.valueOf(dBType));
-//                    intent.putExtras(bundle);
-//                    v.getContext().startActivity(intent);
                 }
             });
 

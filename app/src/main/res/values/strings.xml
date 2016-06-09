@@ -43,5 +43,6 @@
     <string name="lead_cast">Lead Cast Credits</string>
     <string name="crew_credits">Crew Cedits</string>
     <string name="dialog_fragment_title">Blur Dialog Fragment\\n\\nhttps://github.com/tvbarthel/BlurDialogFragment</string>
+    <string name="runtime">RUNTIME</string>
 
 </resources>

@@ -56,4 +56,5 @@ public class ConfigItem {
     public static final String TAG_LANGUAGE = "original_language";
 
 
+    public static final String RUNTIME = "runtime";
 }

@@ -35,11 +35,6 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:parentActivityName=".OnboardingActivity"></activity>
-        <activity
-            android:name=".dialogs.DialogFragmentActivity"
-            android:label="dialogs_view"
-            android:parentActivityName=".MainActivity"
-            android:windowSoftInputMode="adjustPan" />
         <!-- <activity android:name=".SearchActivity"> -->
         <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.SEARCH" /> -->

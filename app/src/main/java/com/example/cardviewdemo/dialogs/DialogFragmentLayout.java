@@ -86,6 +86,8 @@ public class DialogFragmentLayout extends BlurDialogFragment {
     private String mMovieID;
     private RelativeLayout mRoot;
     private ImageView mMoreArrow;
+    private TextViewPlus mRuntime;
+    private TextViewPlus mRuntimeTitle;
 
 
     /**
@@ -163,6 +165,8 @@ public class DialogFragmentLayout extends BlurDialogFragment {
         mGenre = (TextViewPlus) view.findViewById(R.id.dialog_genre);
         mTagline = (TextViewPlus) view.findViewById(R.id.dialog_tagline);
         mMoreArrow = (ImageView) view.findViewById(R.id.dialog_more);
+        mRuntime = (TextViewPlus) view.findViewById(R.id.dialog_runtime);
+        mRuntimeTitle = (TextViewPlus) view.findViewById(R.id.dialog_runtime_tv);
         mMoreArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -278,6 +282,7 @@ public class DialogFragmentLayout extends BlurDialogFragment {
             if (dbType.equals(ConfigList.DATA_TYPE_MOVIES)) {
                 movieDBItemDetail.setOriginal_title(object.getString(ConfigItem.TAG_TITLE));
                 movieDBItemDetail.setTagline(object.getString(ConfigItem.TAGLINE));
+                movieDBItemDetail.setRuntime(object.getString(ConfigItem.RUNTIME));
             } else {
                 movieDBItemDetail.setOriginal_title(object.getString(ConfigItem.TV_NAME));
                 movieDBItemDetail.setTagline(object.getString(ConfigItem.TV_STATUS));
@@ -321,18 +326,24 @@ public class DialogFragmentLayout extends BlurDialogFragment {
         if (mTitle != null) {
             mTitle.setText(item.getOriginal_title());
         }
+
         if (mTagline != null) {
             if (dbType.equals(ConfigList.DATA_TYPE_MOVIES)) {
+                mRuntime.setText(item.getRuntime());
                 if (item.getTagline().equals("")) {
                     mTagline.setVisibility(View.GONE);
                 } else {
                     mTagline.setText(item.getTagline());
                 }
+            } else {
+                mRuntime.setVisibility(View.GONE);
+                mRuntimeTitle.setVisibility(View.GONE);
             }
         } else {
             String tag_line_tv = getString(R.string.tv_status_tagline) + item.getTagline();
             mTagline.setText(tag_line_tv);
         }
+
 
         Picasso.with(getActivity()).
                 load(item.getPoster_path()).
