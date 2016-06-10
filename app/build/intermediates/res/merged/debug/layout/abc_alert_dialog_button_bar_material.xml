@@ -19,17 +19,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/buttonPanel"
+    style="?attr/buttonBarStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:gravity="bottom"
     android:layoutDirection="locale"
     android:orientation="horizontal"
+    android:paddingBottom="4dp"
     android:paddingLeft="12dp"
     android:paddingRight="12dp"
     android:paddingTop="4dp"
-    android:paddingBottom="4dp"
-    android:gravity="bottom"
-    app:allowStacking="@bool/abc_allow_stacked_button_bar"
-    style="?attr/buttonBarStyle">
+    app:allowStacking="@bool/abc_allow_stacked_button_bar">
 
     <Button
         android:id="@android:id/button3"

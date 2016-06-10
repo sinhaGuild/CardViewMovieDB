@@ -1,24 +1,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.cardviewdemo.MainActivity" >
+    tools:context="com.example.cardviewdemo.MainActivity">
 
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never"/>
-    <item
-        android:id="@+id/action_search"
-        android:icon="@drawable/ic_keyboard_voice_black_24dp"
-        android:title="action_search"
-        app:showAsAction="ifRoom|collapseActionView"></item>
+    <item android:id="@+id/action_settings" android:orderInCategory="100"
+        android:title="@string/action_settings" app:showAsAction="never" />
+    <item android:id="@+id/action_search" android:icon="@drawable/ic_keyboard_voice_black_24dp"
+        android:title="action_search" app:showAsAction="ifRoom|collapseActionView"></item>
     <!--<item-->
-        <!--android:title="MovieDB"-->
-        <!--android:id="@+id/action_MovieDB"-->
-        <!--android:icon="@drawable/classic"-->
-        <!--android:orderInCategory="200"-->
-        <!--app:showAsAction="always">-->
+    <!--android:title="MovieDB"-->
+    <!--android:id="@+id/action_MovieDB"-->
+    <!--android:icon="@drawable/classic"-->
+    <!--android:orderInCategory="200"-->
+    <!--app:showAsAction="always">-->
     <!--</item>-->
 
 </menu>

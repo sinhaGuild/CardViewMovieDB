@@ -1,38 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cardviewdemo"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.example.cardviewdemo" android:versionCode="1" android:versionName="1.0">
 
-    <uses-sdk
-        android:minSdkVersion="21"
-        android:targetSdkVersion="23" />
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
     <!-- <android:uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
-    <application
-        android:name="com.android.tools.fd.runtime.BootstrapApplication"
-        android:allowBackup="true"
-        android:icon="@drawable/monkey"
-        android:label="@string/app_name"
-        android:screenOrientation="landscape"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name="com.example.cardviewdemo.splash.SplashActivity" >
+    <application android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true" android:icon="@drawable/monkey" android:label="@string/app_name"
+        android:screenOrientation="landscape" android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.cardviewdemo.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.cardviewdemo.OnboardingActivity"
+        <activity android:name="com.example.cardviewdemo.OnboardingActivity"
             android:label="@string/app_name"
             android:parentActivityName="com.example.cardviewdemo.splash.SplashActivity" />
-        <activity
-            android:name="com.example.cardviewdemo.MainActivity"
+        <activity android:name="com.example.cardviewdemo.MainActivity"
             android:label="@string/app_name"
             android:parentActivityName="com.example.cardviewdemo.OnboardingActivity" />
         <!-- <activity android:name=".SearchActivity"> -->
@@ -43,13 +34,11 @@
         <!-- android:name="android.app.searchable" -->
         <!-- android:resource="@xml/searchable" /> -->
         <!-- </activity> -->
-        <activity
-            android:name="com.example.cardviewdemo.CardViewDetailActivity"
+        <activity android:name="com.example.cardviewdemo.CardViewDetailActivity"
             android:label="card_detail_view"
             android:parentActivityName="com.example.cardviewdemo.MainActivity"
             android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.example.cardviewdemo.PersonDetailActivity"
+        <activity android:name="com.example.cardviewdemo.PersonDetailActivity"
             android:label="person_detail_view"
             android:parentActivityName="com.example.cardviewdemo.CardViewDetailActivity"
             android:windowSoftInputMode="adjustPan" />
